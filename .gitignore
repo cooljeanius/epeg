@@ -10,3 +10,8 @@ stamp-h1
 libtool
 */CVS
 */*/CVS
+config.h
+Makefile
+*/Makefile
+*/*/Makefile
+epeg-config
