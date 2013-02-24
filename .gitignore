@@ -8,3 +8,5 @@
 */*/.deps/*.*o
 stamp-h1
 libtool
+*/CVS
+*/*/CVS
