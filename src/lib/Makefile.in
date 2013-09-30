@@ -242,6 +242,7 @@ LD = @LD@
 LDFLAGS = -L/usr/local/lib \
 		       -L@prefix@/lib
 
+LIBM = @LIBM@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LIBTOOL = @LIBTOOL@

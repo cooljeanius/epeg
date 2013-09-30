@@ -48,6 +48,7 @@ AC_PATH_PROG([RDJPGCOM],[rdjpgcom])
 AC_PATH_PROG([WRJPGCOM],[wrjpgcom])
 
 # Checks for libraries.
+LT_LIB_M
 # FIXME: Replace `main' with a function in `-ljpeg':
 AC_CHECK_LIB([jpeg],[main])
 # AX_* macros require the autoconf-archive package
@@ -136,6 +137,7 @@ AC_SUBST([my_libs])
 
 AC_CONFIG_FILES([
 Makefile
+doc/latex/Makefile
 src/Makefile
 src/lib/Makefile
 src/bin/Makefile
