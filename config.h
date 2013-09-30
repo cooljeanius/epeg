@@ -1,6 +1,9 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* Define if building universal (internal helper macro) */
+/* #undef AC_APPLE_UNIVERSAL_BUILD */
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
@@ -26,19 +29,19 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the <jconfig.h> header file. */
-/* #undef HAVE_JCONFIG_H */
+#define HAVE_JCONFIG_H 1
 
 /* Define to 1 if you have the <jerror.h> header file. */
-/* #undef HAVE_JERROR_H */
+#define HAVE_JERROR_H 1
 
 /* Define to 1 if you have the <jmorecfg.h> header file. */
-/* #undef HAVE_JMORECFG_H */
+#define HAVE_JMORECFG_H 1
 
 /* Define to 1 if you have the <jpeglib.h> header file. */
-/* #undef HAVE_JPEGLIB_H */
+#define HAVE_JPEGLIB_H 1
 
 /* Define to 1 if you have the `jpeg' library (-ljpeg). */
-/* #undef HAVE_LIBJPEG */
+#define HAVE_LIBJPEG 1
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
@@ -101,19 +104,19 @@
 #define PACKAGE "epeg"
 
 /* Installation directory for user executables */
-#define PACKAGE_BIN_DIR "/opt/local/bin"
+#define PACKAGE_BIN_DIR "/usr/local/bin"
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "raster@rasterman.com"
 
 /* Installation directory for libraries */
-#define PACKAGE_LIB_DIR "/opt/local/lib"
+#define PACKAGE_LIB_DIR "/usr/local/lib"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "epeg"
 
 /* Source code directory */
-#define PACKAGE_SOURCE_DIR "/opt/local/var/macports/build/_opt_local_var_macports_sources_rsync.macports.org_release_tarballs_ports_graphics_epeg/epeg/work/epeg-0.9.0"
+#define PACKAGE_SOURCE_DIR "/Users/ericgallager/GitHubReposFromOtherComputers/epeg"
 
 /* Define to the full name and version of this package. */
 #define PACKAGE_STRING "epeg 0.9.0"
@@ -126,6 +129,9 @@
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.9.0"
+
+/* Define to 1 if the C compiler supports function prototypes. */
+#define PROTOTYPES 1
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -155,6 +161,18 @@
 /* Version number of package */
 #define VERSION "0.9.0"
 
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+/* #  undef WORDS_BIGENDIAN */
+# endif
+#endif
+
 /* Define to 1 if on MINIX. */
 /* #undef _MINIX */
 
@@ -164,6 +182,9 @@
 
 /* Define to 1 if you need to in order for `stat' and other things to work. */
 /* #undef _POSIX_SOURCE */
+
+/* Define like PROTOTYPES; this can be used by system headers. */
+#define __PROTOTYPES 1
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
