@@ -13,6 +13,7 @@ libtool
 confdefs.h
 config.h
 conftest*
+conf*/*.awk
 Makefile
 */Makefile
 */*/Makefile
