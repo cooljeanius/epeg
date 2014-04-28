@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="struct__Eet__Memfile__Write__Info" kind="struct"><name>_Eet_Memfile_Write_Info</name>
+    <member refid="struct__Eet__Memfile__Write__Info_1a62550407aee49e65c782941b16f469d8" kind="variable"><name>f</name></member>
+    <member refid="struct__Eet__Memfile__Write__Info_1a347d9ef9d415ccada2a96c6807e87fbe" kind="variable"><name>data</name></member>
+    <member refid="struct__Eet__Memfile__Write__Info_1a2a1f9bbefbec9be2dea51ca566511957" kind="variable"><name>size</name></member>
+  </compound>
+  <compound refid="epeg_8c" kind="file"><name>epeg.c</name>
+    <member refid="epeg_8c_1a359255b849555840ffd0860f74b1370b" kind="define"><name>MIN</name></member>
+    <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
+    <member refid="epeg_8c_1aa03171b6ccd3d8001d991640ab9fce68" kind="typedef"><name>Eet_Memfile_Write_Info</name></member>
+    <member refid="epeg_8c_1a541c1a50a8f0be3111f02e08c5cd6b87" kind="variable"><name>_epeg_memfile_info_alloc_num</name></member>
+    <member refid="epeg_8c_1a846dccee6ef74e7b2affd8ebd9fb48cd" kind="variable"><name>_epeg_memfile_info_num</name></member>
+    <member refid="epeg_8c_1a76214c0162ff781925af95f2f3be15e2" kind="variable"><name>_epeg_memfile_info</name></member>
+    <member refid="epeg_8c_1acf535fd90db7bcf1a82dbe15a50c2a8a" kind="function"><name>_epeg_open_header</name></member>
+    <member refid="epeg_8c_1a34d52540e579ae654881d3be16d19cef" kind="function"><name>_epeg_decode</name></member>
+    <member refid="epeg_8c_1ab0adef2394722a2cc7bdd33ec06ae42e" kind="function"><name>_epeg_scale</name></member>
+    <member refid="epeg_8c_1ae8695051f772eab34219a680b8e1dd8f" kind="function"><name>_epeg_decode_for_trim</name></member>
+    <member refid="epeg_8c_1a0c0ab083531f6313b9ed79b0c1e0fa74" kind="function"><name>_epeg_trim</name></member>
+    <member refid="epeg_8c_1a30a4e820dc4a083dcb7e6dad777f6d6b" kind="function"><name>_epeg_encode</name></member>
+    <member refid="epeg_8c_1a15f7830f31f23ee1ba5d86e1ec4f5b52" kind="function"><name>_epeg_fatal_error_handler</name></member>
+    <member refid="epeg_8c_1ac046eceb33af487e670a6b18d15ccae7" kind="function"><name>epeg_file_open</name></member>
+    <member refid="epeg_8c_1a9df9756f2e34e67701e7d88bcb43fd16" kind="function"><name>epeg_memory_open</name></member>
+    <member refid="epeg_8c_1a3b8680bdbf470d1a634618e5308ce147" kind="function"><name>epeg_size_get</name></member>
+    <member refid="epeg_8c_1a290a722dddc53761d213524ce0e89284" kind="function"><name>epeg_colorspace_get</name></member>
+    <member refid="epeg_8c_1a800dc04316740427b1f4366d973ff4e4" kind="function"><name>epeg_decode_size_set</name></member>
+    <member refid="epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda" kind="function"><name>epeg_decode_bounds_set</name></member>
+    <member refid="epeg_8c_1afe41e06c6667542ad4685730538e03f7" kind="function"><name>epeg_decode_colorspace_set</name></member>
+    <member refid="epeg_8c_1aa3e359181a6a48bd84708828364bf094" kind="function"><name>epeg_pixels_get</name></member>
+    <member refid="epeg_8c_1a2dee06509f945c8e56efe30975e77806" kind="function"><name>epeg_pixels_get_as_RGB8</name></member>
+    <member refid="epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f" kind="function"><name>epeg_pixels_free</name></member>
+    <member refid="epeg_8c_1ab4aea6482399797f2f4ada02e9962b7f" kind="function"><name>epeg_comment_get</name></member>
+    <member refid="epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52" kind="function"><name>epeg_thumbnail_comments_get</name></member>
+    <member refid="epeg_8c_1ab96605b1c21ec8d791df705a5117233c" kind="function"><name>epeg_comment_set</name></member>
+    <member refid="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc" kind="function"><name>epeg_quality_set</name></member>
+    <member refid="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51" kind="function"><name>epeg_thumbnail_comments_enable</name></member>
+    <member refid="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4" kind="function"><name>epeg_file_output_set</name></member>
+    <member refid="epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8" kind="function"><name>epeg_memory_output_set</name></member>
+    <member refid="epeg_8c_1a12a018084510ebdc0e627f56305fea79" kind="function"><name>epeg_encode</name></member>
+    <member refid="epeg_8c_1a327dab144744ba5f1892643d627e6df0" kind="function"><name>epeg_trim</name></member>
+    <member refid="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c" kind="function"><name>epeg_close</name></member>
+    <member refid="epeg_8c_1a81c3337c4b13ae443e5666625e55eec5" kind="function"><name>_epeg_memfile_read_open</name></member>
+    <member refid="epeg_8c_1a801d6fb607e27d00017db7bfc6c7f212" kind="function"><name>_epeg_memfile_read_close</name></member>
+    <member refid="epeg_8c_1a04551cf55da2a78566c25cee433fc7bc" kind="function"><name>_epeg_memfile_write_open</name></member>
+    <member refid="epeg_8c_1ad794241cb0e85dc676c5fe8ad0fb0de3" kind="function"><name>_epeg_memfile_write_close</name></member>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

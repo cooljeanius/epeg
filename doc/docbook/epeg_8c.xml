@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="epeg_8c">
+    <title>epeg.c File Reference</title>
+    <programlisting>#include &lt;stdio.h&gt;</programlisting>
+    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
+    <programlisting>#include &quot;Epeg.h&quot;</programlisting>
+    <programlisting>#include &quot;epeg_private.h&quot;</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1a359255b849555840ffd0860f74b1370b">MIN</link> ((__x) &lt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct _Eet_Memfile_Write_Info  <link linkend="epeg_8c_1aa03171b6ccd3d8001d991640ab9fce68">Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1a541c1a50a8f0be3111f02e08c5cd6b87">_epeg_memfile_info_alloc_num</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1a846dccee6ef74e7b2affd8ebd9fb48cd">_epeg_memfile_info_num</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Eet_Memfile_Write_Info * <link linkend="epeg_8c_1a76214c0162ff781925af95f2f3be15e2">_epeg_memfile_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Epeg_Image * <link linkend="epeg_8c_1acf535fd90db7bcf1a82dbe15a50c2a8a">_epeg_open_header</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1a34d52540e579ae654881d3be16d19cef">_epeg_decode</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1ab0adef2394722a2cc7bdd33ec06ae42e">_epeg_scale</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1ae8695051f772eab34219a680b8e1dd8f">_epeg_decode_for_trim</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1a0c0ab083531f6313b9ed79b0c1e0fa74">_epeg_trim</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="epeg_8c_1a30a4e820dc4a083dcb7e6dad777f6d6b">_epeg_encode</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="epeg_8c_1a15f7830f31f23ee1ba5d86e1ec4f5b52">_epeg_fatal_error_handler</link> (
+j_common_ptr cinfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Epeg_Image * <link linkend="epeg_8c_1ac046eceb33af487e670a6b18d15ccae7">epeg_file_open</link> (
+const char * file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Epeg_Image * <link linkend="epeg_8c_1a9df9756f2e34e67701e7d88bcb43fd16">epeg_memory_open</link> (
+unsigned char * data, int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a3b8680bdbf470d1a634618e5308ce147">epeg_size_get</link> (
+Epeg_Image * im, int * w, int * h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a290a722dddc53761d213524ce0e89284">epeg_colorspace_get</link> (
+Epeg_Image * im, int * space)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link> (
+Epeg_Image * im, int w, int h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set</link> (
+Epeg_Image * im, int x, int y, int w, int h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set</link> (
+Epeg_Image * im, Epeg_Colorspace colorspace)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const void * <link linkend="epeg_8c_1aa3e359181a6a48bd84708828364bf094">epeg_pixels_get</link> (
+Epeg_Image * im, int x, int y, int w, int h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const void * <link linkend="epeg_8c_1a2dee06509f945c8e56efe30975e77806">epeg_pixels_get_as_RGB8</link> (
+Epeg_Image * im, int x, int y, int w, int h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free</link> (
+Epeg_Image * im, const void * data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="epeg_8c_1ab4aea6482399797f2f4ada02e9962b7f">epeg_comment_get</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get</link> (
+Epeg_Image * im, Epeg_Thumbnail_Info * info)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1ab96605b1c21ec8d791df705a5117233c">epeg_comment_set</link> (
+Epeg_Image * im, const char * comment)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link> (
+Epeg_Image * im, int quality)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link> (
+Epeg_Image * im, int onoff)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link> (
+Epeg_Image * im, const char * file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set</link> (
+Epeg_Image * im, unsigned char ** data, int * size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="epeg_8c_1a327dab144744ba5f1892643d627e6df0">epeg_trim</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link> (
+Epeg_Image * im)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FILE * <link linkend="epeg_8c_1a81c3337c4b13ae443e5666625e55eec5">_epeg_memfile_read_open</link> (
+void * data, size_t size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1a801d6fb607e27d00017db7bfc6c7f212">_epeg_memfile_read_close</link> (
+FILE * f)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FILE * <link linkend="epeg_8c_1a04551cf55da2a78566c25cee433fc7bc">_epeg_memfile_write_open</link> (
+void ** data, size_t * size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="epeg_8c_1ad794241cb0e85dc676c5fe8ad0fb0de3">_epeg_memfile_write_close</link> (
+FILE * f)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>Epeg JPEG Thumbnailer library. </para>
+
+<para>These routines are used for the Epeg library. </para>
+    <para>Definition in file /Users/ericgallager/epeg/epeg.c</para>
+    </simplesect>
+</section>

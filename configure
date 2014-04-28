@@ -595,7 +595,7 @@ PACKAGE_STRING='epeg 0.9.0'
 PACKAGE_BUGREPORT='raster@rasterman.com'
 PACKAGE_URL=''
 
-ac_unique_file="configure.in"
+ac_unique_file="epeg.c.in"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>
@@ -2418,9 +2418,8 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-
 ac_aux_dir=
-for ac_dir in "$srcdir" "$srcdir/.." "$srcdir/../.."; do
+for ac_dir in build-aux "$srcdir"/build-aux; do
   if test -f "$ac_dir/install-sh"; then
     ac_aux_dir=$ac_dir
     ac_install_sh="$ac_aux_dir/install-sh -c"
@@ -2436,7 +2435,7 @@ for ac_dir in "$srcdir" "$srcdir/.." "$srcdir/../.."; do
   fi
 done
 if test -z "$ac_aux_dir"; then
-  as_fn_error $? "cannot find install-sh, install.sh, or shtool in \"$srcdir\" \"$srcdir/..\" \"$srcdir/../..\"" "$LINENO" 5
+  as_fn_error $? "cannot find install-sh, install.sh, or shtool in build-aux \"$srcdir\"/build-aux" "$LINENO" 5
 fi
 
 # These three variables are undocumented and unsupported,
@@ -2446,6 +2445,8 @@ fi
 ac_config_guess="$SHELL $ac_aux_dir/config.guess"  # Please don't use this var.
 ac_config_sub="$SHELL $ac_aux_dir/config.sub"  # Please don't use this var.
 ac_configure="$SHELL $ac_aux_dir/configure"  # Please don't use this var.
+
+
 
 
 # Make sure we can run config.sub.
@@ -4784,8 +4785,8 @@ if test "$ac_res" != no; then :
   test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
 
 fi
- if test "x$CC" = "x"; then
-	test -z "$CC"
+ if test "x${CC}" = "x"; then
+	test -z "${CC}"
 	ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
 ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
@@ -5385,7 +5386,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 else
-	test ! -z "$CC" && export CC
+	test ! -z "${CC}" && export CC
 
 	if test $ac_cv_c_compiler_gnu = yes; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether $CC needs -traditional" >&5
@@ -6074,6 +6075,7 @@ else
   { $as_echo "$as_me:${as_lineno-$LINENO}: result: no, using $LN_S" >&5
 $as_echo "no, using $LN_S" >&6; }
 fi
+
 
 case `pwd` in
   *\ * | *\	*)
@@ -16375,8 +16377,8 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 # Only expand once:
 
 
-if test "x$RANLIB" = "x"; then
-	test -z "$RANLIB"
+if test "x${RANLIB}" = "x"; then
+	test -z "${RANLIB}"
 	if test -n "$ac_tool_prefix"; then
   # Extract the first word of "${ac_tool_prefix}ranlib", so it can be a program name with args.
 set dummy ${ac_tool_prefix}ranlib; ac_word=$2
@@ -16470,9 +16472,15 @@ else
 fi
 
 else
-	test ! -z "$RANLIB" && export RANLIB
+	test ! -z "${RANLIB}" && export RANLIB
 
 fi
+
+
+
+
+
+
 # Extract the first word of "cjpeg", so it can be a program name with args.
 set dummy cjpeg; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
@@ -16807,8 +16815,52 @@ fi
 esac
 
 
-# FIXME: Replace `main' with a function in `-ljpeg':
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -ljpeg" >&5
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for jpeg_destroy_compress in -ljpeg" >&5
+$as_echo_n "checking for jpeg_destroy_compress in -ljpeg... " >&6; }
+if ${ac_cv_lib_jpeg_jpeg_destroy_compress+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-ljpeg  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char jpeg_destroy_compress ();
+int
+main ()
+{
+return jpeg_destroy_compress ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_jpeg_jpeg_destroy_compress=yes
+else
+  ac_cv_lib_jpeg_jpeg_destroy_compress=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_jpeg_jpeg_destroy_compress" >&5
+$as_echo "$ac_cv_lib_jpeg_jpeg_destroy_compress" >&6; }
+if test "x$ac_cv_lib_jpeg_jpeg_destroy_compress" = xyes; then :
+  cat >>confdefs.h <<_ACEOF
+#define HAVE_LIBJPEG 1
+_ACEOF
+
+  LIBS="-ljpeg $LIBS"
+
+else
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -ljpeg" >&5
 $as_echo_n "checking for main in -ljpeg... " >&6; }
 if ${ac_cv_lib_jpeg_main+:} false; then :
   $as_echo_n "(cached) " >&6
@@ -16847,7 +16899,9 @@ _ACEOF
 
 fi
 
-# AX_* macros require the autoconf-archive package
+
+fi
+
 
 
 # Check whether --with-gd was given.
@@ -16858,8 +16912,8 @@ else
 fi
 
 
-	if test "$with_gd" != no; then
-		# Extract the first word of "gdlib-config", so it can be a program name with args.
+    if test "x${with_gd}" != "xno"; then
+        # Extract the first word of "gdlib-config", so it can be a program name with args.
 set dummy gdlib-config; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
 $as_echo_n "checking for $ac_word... " >&6; }
@@ -16872,7 +16926,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-as_dummy="$with_gd/bin:$PATH"
+as_dummy="${with_gd}/bin:${PATH}"
 for as_dir in $as_dummy
 do
   IFS=$as_save_IFS
@@ -16900,14 +16954,14 @@ $as_echo "no" >&6; }
 fi
 
 
-		if test -n "$GDLIB_CONFIG"; then
-			GD_CFLAGS=`$GDLIB_CONFIG --cflags`
-			GD_LDFLAGS=`$GDLIB_CONFIG --ldflags`
-			GD_LIBS=`$GDLIB_CONFIG --libs`
-		elif test -d "$with_gd"; then
-			GD_CFLAGS="-I$with_gd/include"
-			GD_LDFLAGS="-L$with_gd/lib"
-			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for inflateReset in -lz" >&5
+        if test -n "${GDLIB_CONFIG}"; then
+            GD_CFLAGS=`${GDLIB_CONFIG} --cflags`
+            GD_LDFLAGS=`${GDLIB_CONFIG} --ldflags`
+            GD_LIBS=`${GDLIB_CONFIG} --libs`
+        elif test -d "${with_gd}"; then
+            GD_CFLAGS="-I${with_gd}/include"
+            GD_LDFLAGS="-L${with_gd}/lib"
+            { $as_echo "$as_me:${as_lineno-$LINENO}: checking for inflateReset in -lz" >&5
 $as_echo_n "checking for inflateReset in -lz... " >&6; }
 if ${ac_cv_lib_z_inflateReset+:} false; then :
   $as_echo_n "(cached) " >&6
@@ -16947,13 +17001,13 @@ if test "x$ac_cv_lib_z_inflateReset" = xyes; then :
   GD_LIBS="-lz"
 fi
 
-			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for png_check_sig in -lpng" >&5
+            { $as_echo "$as_me:${as_lineno-$LINENO}: checking for png_check_sig in -lpng" >&5
 $as_echo_n "checking for png_check_sig in -lpng... " >&6; }
 if ${ac_cv_lib_png_png_check_sig+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
-LIBS="-lpng $GD_LIBS $LIBS"
+LIBS="-lpng ${GD_LIBS} $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -16984,23 +17038,23 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_png_png_check_sig" >&5
 $as_echo "$ac_cv_lib_png_png_check_sig" >&6; }
 if test "x$ac_cv_lib_png_png_check_sig" = xyes; then :
-  GD_LIBS="-lpng $GD_LIBS"
+  GD_LIBS="-lpng ${GD_LIBS}"
 fi
 
-		fi
+        fi
 
-		save_CFLAGS="$CFLAGS"
-		CFLAGS="$GD_CFLAGS $CFLAGS"
-		save_LDFLAGS="$LDFLAGS"
-		LDFLAGS="$GD_LDFLAGS $LDFLAGS"
+        save_CFLAGS="${CFLAGS}"
+        CFLAGS="${GD_CFLAGS} ${CFLAGS}"
+        save_LDFLAGS="${LDFLAGS}"
+        LDFLAGS="${GD_LDFLAGS} $LDFLAGS"
 
-		{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageCreate in -lgd" >&5
+        { $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageCreate in -lgd" >&5
 $as_echo_n "checking for gdImageCreate in -lgd... " >&6; }
 if ${ac_cv_lib_gd_gdImageCreate+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
-LIBS="-lgd $GD_LIBS $LIBS"
+LIBS="-lgd ${GD_LIBS} $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -17035,13 +17089,13 @@ if test "x$ac_cv_lib_gd_gdImageCreate" = xyes; then :
 
 $as_echo "#define HAVE_GD 1" >>confdefs.h
 
-			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageGif in -lgd" >&5
+            { $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageGif in -lgd" >&5
 $as_echo_n "checking for gdImageGif in -lgd... " >&6; }
 if ${ac_cv_lib_gd_gdImageGif+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
-LIBS="-lgd "$GD_LIBS" $LIBS"
+LIBS="-lgd "${GD_LIBS}" $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -17073,17 +17127,18 @@ fi
 $as_echo "$ac_cv_lib_gd_gdImageGif" >&6; }
 if test "x$ac_cv_lib_gd_gdImageGif" = xyes; then :
 
+
 $as_echo "#define HAVE_GD_GIF 1" >>confdefs.h
 
 fi
 
-			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageJpeg in -lgd" >&5
+            { $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImageJpeg in -lgd" >&5
 $as_echo_n "checking for gdImageJpeg in -lgd... " >&6; }
 if ${ac_cv_lib_gd_gdImageJpeg+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
-LIBS="-lgd "$GD_LIBS" $LIBS"
+LIBS="-lgd "${GD_LIBS}" $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -17115,17 +17170,18 @@ fi
 $as_echo "$ac_cv_lib_gd_gdImageJpeg" >&6; }
 if test "x$ac_cv_lib_gd_gdImageJpeg" = xyes; then :
 
+
 $as_echo "#define HAVE_GD_JPEG 1" >>confdefs.h
 
 fi
 
-			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImagePng in -lgd" >&5
+            { $as_echo "$as_me:${as_lineno-$LINENO}: checking for gdImagePng in -lgd" >&5
 $as_echo_n "checking for gdImagePng in -lgd... " >&6; }
 if ${ac_cv_lib_gd_gdImagePng+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
-LIBS="-lgd "$GD_LIBS" $LIBS"
+LIBS="-lgd "${GD_LIBS}" $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -17157,26 +17213,27 @@ fi
 $as_echo "$ac_cv_lib_gd_gdImagePng" >&6; }
 if test "x$ac_cv_lib_gd_gdImagePng" = xyes; then :
 
+
 $as_echo "#define HAVE_GD_PNG 1" >>confdefs.h
 
 fi
 
-			GD_LIBS="-lgd $GD_LIBS"
+            GD_LIBS="-lgd ${GD_LIBS}"
 
 else
   with_gd=no
 fi
 
 
-		CFLAGS="$save_CFLAGS"
-		LDFLAGS="$save_LDFLAGS"
-	fi
+        CFLAGS="${save_CFLAGS}"
+        LDFLAGS="${save_LDFLAGS}"
+    fi
 
-	if test "$with_gd" = "no"; then
-		GD_CFLAGS="";
-		GD_LDFLAGS="";
-		GD_LIBS="";
-	fi
+    if test "x${with_gd}" = "xno"; then
+        GD_CFLAGS="";
+        GD_LDFLAGS="";
+        GD_LIBS="";
+    fi
 
 
 
@@ -17819,7 +17876,7 @@ _ACEOF
 
 fi
 
-packagesrcdir=`cd $srcdir && pwd`
+packagesrcdir=`cd ${srcdir} && pwd`
 
 cat >>confdefs.h <<_ACEOF
 #define PACKAGE_SOURCE_DIR "${packagesrcdir}"
@@ -17831,7 +17888,7 @@ my_libs="-ljpeg"
 
 
 
-ac_config_files="$ac_config_files Makefile doc/latex/Makefile src/Makefile src/lib/Makefile src/bin/Makefile epeg-config"
+ac_config_files="$ac_config_files Makefile doc/Makefile doc/latex/Makefile doc/texinfo/Makefile src/Makefile src/lib/Makefile src/bin/Makefile epeg-config"
 
 ac_config_commands="$ac_config_commands default"
 
@@ -18956,7 +19013,9 @@ do
     "config.h") CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
     "libtool") CONFIG_COMMANDS="$CONFIG_COMMANDS libtool" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+    "doc/Makefile") CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
     "doc/latex/Makefile") CONFIG_FILES="$CONFIG_FILES doc/latex/Makefile" ;;
+    "doc/texinfo/Makefile") CONFIG_FILES="$CONFIG_FILES doc/texinfo/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
     "src/lib/Makefile") CONFIG_FILES="$CONFIG_FILES src/lib/Makefile" ;;
     "src/bin/Makefile") CONFIG_FILES="$CONFIG_FILES src/bin/Makefile" ;;

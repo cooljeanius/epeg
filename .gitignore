@@ -34,4 +34,5 @@ doc/latex/*.ilg
 doc/latex/*.ind
 doc/latex/*.toc
 *.out
-
+*(Autosaved)*
+epeg-*.*.*/*

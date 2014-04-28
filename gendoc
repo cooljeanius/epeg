@@ -1,12 +1,29 @@
 #!/bin/sh
 cp ./epeg.c.in ./epeg.c
-#for I in `find ./src/lib -name "Epeg.h" -print`; do
-#  cat $I >> ./epeg.c
-#done
-for I in `find ./src/lib -name "*.c" -print`; do
-  cat $I >> ./epeg.c
+if test "x${ALSO_CHECK_HEADERS}" = "xYES"; then
+  for I in `find ./src/lib -name "Epeg.h" -print`; do
+    cat ${I} >> ./epeg.c
+  done
+fi
+for J in `find ./src/lib -name "*.c" -print`; do
+  cat ${J} >> ./epeg.c
 done
-rm -rf ./doc/html ./doc/latex ./doc/man
-doxygen
-cp doc/img/*.png doc/html/
+if test -x `which doxygen`; then
+  rm -rf ./doc/def || rmdir ./doc/def
+  rm -rf ./doc/docbook || rmdir ./doc/docbook
+  rm -rf ./doc/doxylatex || rmdir ./doc/doxylatex
+  # skip removing html output dir because non-doxygentaed files also get put
+  # into it
+  # also skip regular latex dir because it has non-doxygenated files
+  rm -rf ./doc/man || rmdir ./doc/man
+  rm -rf ./doc/perlmod || rmdir ./doc/perlmod
+  rm -rf ./doc/rtf || rmdir ./doc/rtf
+  rm -rf ./doc/xml || rmdir ./doc/xml
+  doxygen
+  cp doc/img/*.png doc/html/
+else
+  echo "doxygen is needed to generate documentation." >&2
+  exit 1
+fi
+
 exit 0

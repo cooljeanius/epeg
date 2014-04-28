@@ -12,16 +12,16 @@
 /* Define to 1 if you have the `fmemopen' function. */
 #undef HAVE_FMEMOPEN
 
-/* Define if you have gd library. */
+/* Define to 1 if you have the gd library. */
 #undef HAVE_GD
 
-/* Define if GD supports gif. */
+/* Define to 1 if GD supports gif. */
 #undef HAVE_GD_GIF
 
-/* Define if GD supports jpeg. */
+/* Define to 1 if GD supports jpeg. */
 #undef HAVE_GD_JPEG
 
-/* Define if GD supports png. */
+/* Define to 1 if GD supports png. */
 #undef HAVE_GD_PNG
 
 /* Define to 1 if you have the <inttypes.h> header file. */

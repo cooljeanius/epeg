@@ -1,283 +1,409 @@
-.TH "epeg.c" 3 "19 Jan 2004" "Epeg" \" -*- nroff -*-
+.TH "epeg.c" 3 "Sun Apr 27 2014" "Version 0.9.0" "Epeg" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-epeg.c \- Epeg JPEG Thumbnailer library.  
+epeg.c \- 
+Epeg JPEG Thumbnailer library\&.  
 
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'Epeg\&.h'\fP
+.br
+\fC#include 'epeg_private\&.h'\fP
+.br
+
 .SS "Functions"
 
 .in +1c
 .ti -1c
-.RI "Epeg_Image * \fBepeg_file_open\fP (const  char *file)"
+.RI "Epeg_Image * \fBepeg_file_open\fP (const char *file)"
 .br
-.RI "\fIOpen a JPEG image by filename. \fP"
+.RI "\fIOpen a JPEG image by filename\&. \fP"
 .ti -1c
 .RI "Epeg_Image * \fBepeg_memory_open\fP (unsigned char *data, int size)"
 .br
-.RI "\fIOpen a JPEG image stored in memory. \fP"
+.RI "\fIOpen a JPEG image stored in memory\&. \fP"
 .ti -1c
 .RI "void \fBepeg_size_get\fP (Epeg_Image *im, int *w, int *h)"
 .br
-.RI "\fIReturn the original JPEG pixel size. \fP"
+.RI "\fIReturn the original JPEG pixel size\&. \fP"
+.ti -1c
+.RI "void \fBepeg_colorspace_get\fP (Epeg_Image *im, int *space)"
+.br
+.RI "\fIReturn the original JPEG pixel color space\&. \fP"
 .ti -1c
 .RI "void \fBepeg_decode_size_set\fP (Epeg_Image *im, int w, int h)"
 .br
-.RI "\fISet the size of the image to decode in pixels. \fP"
+.RI "\fISet the size of the image to decode in pixels\&. \fP"
 .ti -1c
 .RI "void \fBepeg_decode_colorspace_set\fP (Epeg_Image *im, Epeg_Colorspace colorspace)"
 .br
-.RI "\fISet the colorspace in which to decode the image. \fP"
+.RI "\fISet the colorspace in which to decode the image\&. \fP"
 .ti -1c
-.RI "const  void * \fBepeg_pixels_get\fP (Epeg_Image *im, int x, int y, int w, int h)"
+.RI "const void * \fBepeg_pixels_get\fP (Epeg_Image *im, int x, int y, int w, int h)"
 .br
-.RI "\fIGet a segment of decoded pixels from an image. \fP"
+.RI "\fIGet a segment of decoded pixels from an image\&. \fP"
 .ti -1c
-.RI "void \fBepeg_pixels_free\fP (Epeg_Image *im, const  void *data)"
+.RI "const void * \fBepeg_pixels_get_as_RGB8\fP (Epeg_Image *im, int x, int y, int w, int h)"
 .br
-.RI "\fIFree requested pixel block from an image. \fP"
+.RI "\fIGet a segment of decoded pixels from an image\&. \fP"
 .ti -1c
-.RI "const  char * \fBepeg_comment_get\fP (Epeg_Image *im)"
+.RI "void \fBepeg_pixels_free\fP (Epeg_Image *im, const void *data)"
 .br
-.RI "\fIGet the image comment field as a string. \fP"
+.RI "\fIFree requested pixel block from an image\&. \fP"
+.ti -1c
+.RI "const char * \fBepeg_comment_get\fP (Epeg_Image *im)"
+.br
+.RI "\fIGet the image comment field as a string\&. \fP"
 .ti -1c
 .RI "void \fBepeg_thumbnail_comments_get\fP (Epeg_Image *im, Epeg_Thumbnail_Info *info)"
 .br
-.RI "\fIGet thumbnail comments of loaded image. \fP"
+.RI "\fIGet thumbnail comments of loaded image\&. \fP"
 .ti -1c
-.RI "void \fBepeg_comment_set\fP (Epeg_Image *im, const  char *comment)"
+.RI "void \fBepeg_comment_set\fP (Epeg_Image *im, const char *comment)"
 .br
-.RI "\fISet the comment field of the image for saving. \fP"
+.RI "\fISet the comment field of the image for saving\&. \fP"
 .ti -1c
 .RI "void \fBepeg_quality_set\fP (Epeg_Image *im, int quality)"
 .br
-.RI "\fISet the encoding quality of the saved image. \fP"
+.RI "\fISet the encoding quality of the saved image\&. \fP"
 .ti -1c
 .RI "void \fBepeg_thumbnail_comments_enable\fP (Epeg_Image *im, int onoff)"
 .br
-.RI "\fIEnable thumbnail comments in saved image. \fP"
+.RI "\fIEnable thumbnail comments in saved image\&. \fP"
 .ti -1c
-.RI "void \fBepeg_file_output_set\fP (Epeg_Image *im, const  char *file)"
+.RI "void \fBepeg_file_output_set\fP (Epeg_Image *im, const char *file)"
 .br
-.RI "\fISet the output file path for the image when saved. \fP"
+.RI "\fISet the output file path for the image when saved\&. \fP"
 .ti -1c
 .RI "void \fBepeg_memory_output_set\fP (Epeg_Image *im, unsigned char **data, int *size)"
 .br
-.RI "\fISet the output file to be a block of allocated memory. \fP"
+.RI "\fISet the output file to be a block of allocated memory\&. \fP"
 .ti -1c
-.RI "void \fBepeg_encode\fP (Epeg_Image *im)"
+.RI "int \fBepeg_encode\fP (Epeg_Image *im)"
 .br
-.RI "\fIThis saved the image to its specified destination. \fP"
+.RI "\fIThis saves the image to its specified destination\&. \fP"
+.ti -1c
+.RI "int \fBepeg_trim\fP (Epeg_Image *im)"
+.br
+.RI "\fIFIXME: Document this\&. \fP"
 .ti -1c
 .RI "void \fBepeg_close\fP (Epeg_Image *im)"
 .br
-.RI "\fIClose an image handle. \fP"
+.RI "\fIClose an image handle\&. \fP"
 .in -1c
 .SH "Detailed Description"
 .PP 
-Epeg JPEG Thumbnailer library. 
+Epeg JPEG Thumbnailer library\&. 
 
-These routines are used for the Epeg library.
+These routines are used for the Epeg library\&. 
 .SH "Function Documentation"
 .PP 
-.SS "void epeg_close (Epeg_Image * im)"
+.SS "void epeg_close (Epeg_Image *im)"
+
 .PP
-Close an image handle. \fBParameters:\fP
+Close an image handle\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image.
+\fIim\fP A handle to an opened Epeg image\&.
 .RE
 .PP
-This closes an opened image handle and frees all memory associated with it. It does not free encoded data generated by \fBepeg_memory_output_set()\fP followed by \fBepeg_encode()\fP nor does it guarantee to free any data recieved by \fBepeg_pixels_get()\fP. Once an image handle is closed consider it invalid. 
-.SS "const char* epeg_comment_get (Epeg_Image * im)"
+This closes an opened image handle and frees all memory associated with it\&. It does not free encoded data generated by \fBepeg_memory_output_set()\fP followed by \fBepeg_encode()\fP nor does it guarantee to free any data recieved by \fBepeg_pixels_get()\fP\&. Once an image handle is closed consider it invalid\&. 
 .PP
-Get the image comment field as a string. \fBParameters:\fP
+Referenced by epeg_file_open(), and epeg_memory_open()\&.
+.SS "void epeg_colorspace_get (Epeg_Image *im, int *space)"
+
+.PP
+Return the original JPEG pixel color space\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
+.br
+\fIspace\fP A pointer to the color space value to be filled in\&.
+.RE
+.PP
+Returns the image color space\&. 
+.SS "const char* epeg_comment_get (Epeg_Image *im)"
+
+.PP
+Get the image comment field as a string\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIim\fP A handle to an opened Epeg image\&. 
 .RE
 .PP
 \fBReturns:\fP
 .RS 4
-A pointer to the loaded image comments.
+A pointer to the loaded image comments\&.
 .RE
 .PP
-This function returns the comment field as a string (NUL byte terminated) of the loaded image \fCim\fP, if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only. 
-.SS "void epeg_comment_set (Epeg_Image * im, const char * comment)"
+This function returns the comment field as a string (NUL byte terminated) of the loaded image \fCim\fP, if there is a comment, or NULL if no comment is saved with the image\&. Consider the string returned to be read-only\&. 
+.SS "void epeg_comment_set (Epeg_Image *im, const char *comment)"
+
 .PP
-Set the comment field of the image for saving. \fBParameters:\fP
+Set the comment field of the image for saving\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIcomment\fP The comment to set.
+\fIcomment\fP The comment to set\&.
 .RE
 .PP
-Set the comment for the image file for when it gets saved. This is a NUL byte terminated C string. If \fCcomment\fP is NULL the output file will have no comment field.
+Set the comment for the image file for when it gets saved\&. This is a NUL byte terminated C string\&. If \fCcomment\fP is NULL the output file will have no comment field\&.
 .PP
-The default comment will be any comment loaded from the input file. 
-.SS "void epeg_decode_colorspace_set (Epeg_Image * im, Epeg_Colorspace colorspace)"
+The default comment will be any comment loaded from the input file\&. 
+.SS "void epeg_decode_colorspace_set (Epeg_Image *im, Epeg_Colorspacecolorspace)"
+
 .PP
-Set the colorspace in which to decode the image. \fBParameters:\fP
+Set the colorspace in which to decode the image\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIcolorspace\fP The colorspace to decode the image in.
+\fIcolorspace\fP The colorspace to decode the image in\&.
 .RE
 .PP
-This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save. 
-.SS "void epeg_decode_size_set (Epeg_Image * im, int w, int h)"
+This sets the colorspace to decode the image in\&. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save\&. 
+.SS "void epeg_decode_size_set (Epeg_Image *im, intw, inth)"
+
 .PP
-Set the size of the image to decode in pixels. \fBParameters:\fP
+Set the size of the image to decode in pixels\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIw\fP The width of the image to decode at, in pixels. 
+\fIw\fP The width of the image to decode at, in pixels\&. 
 .br
-\fIh\fP The height of the image to decode at, in pixels.
+\fIh\fP The height of the image to decode at, in pixels\&.
 .RE
 .PP
-Sets the size at which to deocode the JPEG image, giving an optimised load that only decodes the pixels needed. 
-.SS "void epeg_encode (Epeg_Image * im)"
+Sets the size at which to deocode the JPEG image, giving an optimised load that only decodes the pixels needed\&. 
+.SS "int epeg_encode (Epeg_Image *im)"
+
 .PP
-This saved the image to its specified destination. \fBParameters:\fP
+This saves the image to its specified destination\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image.
+\fIim\fP A handle to an opened Epeg image\&.
 .RE
 .PP
-This saves the image \fCim\fP to its destination specified by \fBepeg_file_output_set()\fP or \fBepeg_memory_output_set()\fP. The image will be encoded at the deoded pixel size, using the quality, comment and thumbnail comment settings set on the image. 
-.SS "Epeg_Image* epeg_file_open (const char * file)"
+This saves the image \fCim\fP to its destination specified by \fBepeg_file_output_set()\fP or \fBepeg_memory_output_set()\fP\&. The image will be encoded at the deoded pixel size, using the quality, comment and thumbnail comment settings set on the image\&. 
+.SS "Epeg_Image* epeg_file_open (const char *file)"
+
 .PP
-Open a JPEG image by filename. \fBParameters:\fP
+Open a JPEG image by filename\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIfile\fP The file path to open. 
+\fIfile\fP The file path to open\&. 
 .RE
 .PP
 \fBReturns:\fP
 .RS 4
-A handle to the opened JPEG file, with the header decoded.
+A handle to the opened JPEG file, with the header decoded\&.
 .RE
 .PP
-This function opens the file indicated by the \fCfile\fP parameter, and attempts to decode it as a jpeg file. If this failes, NULL is returned. Otherwise a valid handle to an open JPEG file is returned that can be used by other Epeg calls.
+This function opens the file indicated by the \fCfile\fP parameter, and attempts to decode it as a jpeg file\&. If this failes, NULL is returned\&. Otherwise a valid handle to an open JPEG file is returned that can be used by other Epeg calls\&.
 .PP
-The \fCfile\fP must be a pointer to a valid C string, NUL (0 byte) terminated thats is a relative or absolute file path. If not results are not determined.
+The \fCfile\fP must be a pointer to a valid C string, NUL (0 byte) terminated thats is a relative or absolute file path\&. If not results are not determined\&.
 .PP
 See also: \fBepeg_memory_open()\fP, \fBepeg_close()\fP 
-.SS "void epeg_file_output_set (Epeg_Image * im, const char * file)"
 .PP
-Set the output file path for the image when saved. \fBParameters:\fP
+References epeg_close()\&.
+.SS "void epeg_file_output_set (Epeg_Image *im, const char *file)"
+
+.PP
+Set the output file path for the image when saved\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIfile\fP The path to the output file.
+\fIfile\fP The path to the output file\&.
 .RE
 .PP
-This sets the output file path name (either a full or relative path name) to where the file will be written when saved. \fCfile\fP must be a NUL terminated C string conatining the path to the file to be saved to. If it is NULL, the image will not be saved to a file when calling \fBepeg_encode()\fP. 
-.SS "Epeg_Image* epeg_memory_open (unsigned char * data, int size)"
+This sets the output file path name (either a full or relative path name) to where the file will be written when saved\&. \fCfile\fP must be a NUL terminated C string conatining the path to the file to be saved to\&. If it is NULL, the image will not be saved to a file when calling \fBepeg_encode()\fP\&. 
+.SS "Epeg_Image* epeg_memory_open (unsigned char *data, intsize)"
+
 .PP
-Open a JPEG image stored in memory. \fBParameters:\fP
+Open a JPEG image stored in memory\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIdata\fP A pointer to the memory containing the JPEG data. 
+\fIdata\fP A pointer to the memory containing the JPEG data\&. 
 .br
-\fIsize\fP The size of the memory segment containing the JPEG. 
+\fIsize\fP The size of the memory segment containing the JPEG\&. 
 .RE
 .PP
 \fBReturns:\fP
 .RS 4
-A handle to the opened JPEG, with the header decoded.
+A handle to the opened JPEG, with the header decoded\&.
 .RE
 .PP
-This function opens a JPEG file that is stored in memory pointed to by \fCdata\fP, and that is \fCsize\fP bytes in size. If successful a valid handle is returned, or on failure NULL is returned.
+This function opens a JPEG file that is stored in memory pointed to by \fCdata\fP, and that is \fCsize\fP bytes in size\&. If successful a valid handle is returned, or on failure NULL is returned\&.
 .PP
 See also: \fBepeg_file_open()\fP, \fBepeg_close()\fP 
-.SS "void epeg_memory_output_set (Epeg_Image * im, unsigned char ** data, int * size)"
 .PP
-Set the output file to be a block of allocated memory. \fBParameters:\fP
+References epeg_close()\&.
+.SS "void epeg_memory_output_set (Epeg_Image *im, unsigned char **data, int *size)"
+
+.PP
+Set the output file to be a block of allocated memory\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIdata\fP A pointer to a pointer to a memory block. 
+\fIdata\fP A pointer to a pointer to a memory block\&. 
 .br
-\fIsize\fP A pointer to a counter of the size of the memory block.
+\fIsize\fP A pointer to a counter of the size of the memory block\&.
 .RE
 .PP
-This sets the output encoding of the image when saved to be allocated memory. After \fBepeg_close()\fP is called the pointer pointed to by \fCdata\fP and the integer pointed to by \fCsize\fP will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size. 
-.SS "void epeg_pixels_free (Epeg_Image * im, const void * data)"
+This sets the output encoding of the image when saved to be allocated memory\&. After \fBepeg_close()\fP is called the pointer pointed to by \fCdata\fP and the integer pointed to by \fCsize\fP will contain the pointer to the memory block and its size in bytes, respecitvely\&. The memory block can be freed with the free() function call\&. If the save fails the pointer to the memory block will be unaffected, as will the size\&. 
+.SS "void epeg_pixels_free (Epeg_Image *im, const void *data)"
+
 .PP
-Free requested pixel block from an image. \fBParameters:\fP
+Free requested pixel block from an image\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIdata\fP The pointer to the image pixels.
+\fIdata\fP The pointer to the image pixels\&.
 .RE
 .PP
-This frees the data for a block of pixels requested from image \fCim\fP. \fCdata\fP must be a valid (non NULL) pointer to a pixel block taken from the image \fCim\fP by \fBepeg_pixels_get()\fP and mustbe called before the image is closed by \fBepeg_close()\fP. 
-.SS "const void* epeg_pixels_get (Epeg_Image * im, int x, int y, int w, int h)"
+This frees the data for a block of pixels requested from image \fCim\fP\&. \fCdata\fP must be a valid (non NULL) pointer to a pixel block taken from the image \fCim\fP by \fBepeg_pixels_get()\fP and mustbe called before the image is closed by \fBepeg_close()\fP\&. 
+.SS "const void* epeg_pixels_get (Epeg_Image *im, intx, inty, intw, inth)"
+
 .PP
-Get a segment of decoded pixels from an image. \fBParameters:\fP
+Get a segment of decoded pixels from an image\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIx\fP Rectangle X. 
+\fIx\fP Rectangle X\&. 
 .br
-\fIy\fP Rectangle Y. 
+\fIy\fP Rectangle Y\&. 
 .br
-\fIw\fP Rectangle width. 
+\fIw\fP Rectangle width\&. 
 .br
-\fIh\fP Rectangle height. 
+\fIh\fP Rectangle height\&. 
 .RE
 .PP
 \fBReturns:\fP
 .RS 4
-Pointer to the top left of the requested pixel block.
+Pointer to the top left of the requested pixel block\&.
 .RE
 .PP
-Return image pixels in the decoded format from the specified location rectangle bounded with the box \fCx\fP, \fCy\fP \fCw\fP X \fCy\fP. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row. You must free the pixel block using \fBepeg_pixels_free()\fP before you close the image handle, and assume the pixels to be read-only memory.
+Return image pixels in the decoded format from the specified location rectangle bounded with the box \fCx\fP, \fCy\fP \fCw\fP X \fCy\fP\&. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row\&. You must free the pixel block using \fBepeg_pixels_free()\fP before you close the image handle, and assume the pixels to be read-only memory\&.
 .PP
-On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded. 
-.SS "void epeg_quality_set (Epeg_Image * im, int quality)"
+On success the pointer is returned, on failure, NULL is returned\&. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded\&. 
+.SS "const void* epeg_pixels_get_as_RGB8 (Epeg_Image *im, intx, inty, intw, inth)"
+
 .PP
-Set the encoding quality of the saved image. \fBParameters:\fP
+Get a segment of decoded pixels from an image\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIquality\fP The quality of encoding from 0 to 100.
+\fIx\fP Rectangle X\&. 
+.br
+\fIy\fP Rectangle Y\&. 
+.br
+\fIw\fP Rectangle width\&. 
+.br
+\fIh\fP Rectangle height\&. 
 .RE
 .PP
-Set the quality of the output encoded image. Values from 0 to 100 inclusive are valid, with 100 being the maximum quality, and 0 being the minimum. If the quality is set equal to or above 90%, the output U and V color planes are encoded at 1:1 with the Y plane.
-.PP
-The default quality is 75. 
-.SS "void epeg_size_get (Epeg_Image * im, int * w, int * h)"
-.PP
-Return the original JPEG pixel size. \fBParameters:\fP
+\fBReturns:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
-.br
-\fIw\fP A pointer to the width value in pixels to be filled in. 
-.br
-\fIh\fP A pointer to the height value in pixels to be filled in.
+Pointer to the top left of the requested pixel block\&.
 .RE
 .PP
-Returns the image size in pixels. 
-.SS "void epeg_thumbnail_comments_enable (Epeg_Image * im, int onoff)"
+Return image pixels in the decoded format from the specified location rectangle bounded with the box \fCx\fP, \fCy\fP \fCw\fP X \fCy\fP\&. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row\&. You must free the pixel block using \fBepeg_pixels_free()\fP before you close the image handle, and assume the pixels to be read-only memory\&.
 .PP
-Enable thumbnail comments in saved image. \fBParameters:\fP
+On success the pointer is returned, on failure, NULL is returned\&. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded\&. 
+.SS "void epeg_quality_set (Epeg_Image *im, intquality)"
+
+.PP
+Set the encoding quality of the saved image\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIonoff\fP A boolean on and off enabling flag.
+\fIquality\fP The quality of encoding from 0 to 100\&.
 .RE
 .PP
-if \fConoff\fP is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0. 
-.SS "void epeg_thumbnail_comments_get (Epeg_Image * im, Epeg_Thumbnail_Info * info)"
+Set the quality of the output encoded image\&. Values from 0 to 100 inclusive are valid, with 100 being the maximum quality, and 0 being the minimum\&. If the quality is set equal to or above 90%, the output U and V color planes are encoded at 1:1 with the Y plane\&.
 .PP
-Get thumbnail comments of loaded image. \fBParameters:\fP
+The default quality is 75\&. 
+.SS "void epeg_size_get (Epeg_Image *im, int *w, int *h)"
+
+.PP
+Return the original JPEG pixel size\&. 
+.PP
+\fBParameters:\fP
 .RS 4
-\fIim\fP A handle to an opened Epeg image. 
+\fIim\fP A handle to an opened Epeg image\&. 
 .br
-\fIinfo\fP Pointer to a thumbnail info struct to be filled in.
+\fIw\fP A pointer to the width value in pixels to be filled in\&. 
+.br
+\fIh\fP A pointer to the height value in pixels to be filled in\&.
 .RE
 .PP
-This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the \fCinfo\fP struct on return. 
+Returns the image size in pixels\&. 
+.SS "void epeg_thumbnail_comments_enable (Epeg_Image *im, intonoff)"
+
+.PP
+Enable thumbnail comments in saved image\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIim\fP A handle to an opened Epeg image\&. 
+.br
+\fIonoff\fP A boolean on and off enabling flag\&.
+.RE
+.PP
+if \fConoff\fP is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not\&. The default is 0\&. 
+.SS "void epeg_thumbnail_comments_get (Epeg_Image *im, Epeg_Thumbnail_Info *info)"
+
+.PP
+Get thumbnail comments of loaded image\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIim\fP A handle to an opened Epeg image\&. 
+.br
+\fIinfo\fP Pointer to a thumbnail info struct to be filled in\&.
+.RE
+.PP
+This function retrieves thumbnail comments written by Epeg to any saved JPEG files\&. If no thumbnail comments were saved, the fields will be 0 in the \fCinfo\fP struct on return\&. 
+.SS "int epeg_trim (Epeg_Image *im)"
+
+.PP
+FIXME: Document this\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIim\fP A handle to an opened Epeg image\&.
+.RE
+.PP
+FIXME: Document this\&. 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Epeg from the source code.
+Generated automatically by Doxygen for Epeg from the source code\&.
