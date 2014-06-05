@@ -30,7 +30,11 @@ AC_FUNC_REALLOC
 AC_CHECK_FUNCS([strchr strdup])
 
 AC_CONFIG_FILES([Makefile
+                 doc/Makefile
+                 doc/doxylatex/Makefile
                  doc/latex/Makefile
+                 doc/perlmod/Makefile
+                 doc/texinfo/Makefile
                  src/Makefile
                  src/bin/Makefile
                  src/lib/Makefile])

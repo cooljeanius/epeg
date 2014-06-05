@@ -36,3 +36,4 @@ doc/latex/*.toc
 *.out
 *(Autosaved)*
 epeg-*.*.*/*
+*.trs

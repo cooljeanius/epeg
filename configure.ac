@@ -3,9 +3,10 @@ dnl# Process this file with autoconf to produce a configure script.
 
 # get rid of that stupid cache mechanism:
 if test -e config.cache; then
-	rm -f config.cache
+  rm -f config.cache
 fi
 
+# misc. initializion things:
 AC_PREREQ([2.69])
 AC_INIT([epeg],[0.9.0],[raster@rasterman.com])
 AC_CONFIG_SRCDIR([epeg.c.in])
@@ -16,19 +17,20 @@ AC_CANONICAL_TARGET
 AC_OBJEXT
 AC_EXEEXT
 AC_USE_SYSTEM_EXTENSIONS
-AM_INIT_AUTOMAKE([gnits])
+AM_INIT_AUTOMAKE([1.4 gnits])
 AM_SANITY_CHECK
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS([config.h])
-
 AC_SEARCH_LIBS([strerror],[cposix]) dnl# used to be AC\_ISC\_POSIX
+
+# Checks for programs.
 if test "x${CC}" = "x"; then
-	test -z "${CC}"
-	AC_PROG_CC
+  test -z "${CC}"
+  AC_PROG_CC
 else
-	test ! -z "${CC}" && export CC
-	AC_SUBST([CC])
-	AC_PROG_GCC_TRADITIONAL
+  test ! -z "${CC}" && export CC
+  AC_SUBST([CC])
+  AC_PROG_GCC_TRADITIONAL
 fi
 AC_PROG_CC_C_O
 AC_PROG_CPP
@@ -36,18 +38,22 @@ AC_PROG_CXX
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MKDIR_P
-LT_INIT([shared])
+LT_INIT([shared win32-dll dlopen])
+AC_DEFUN([AC_REQUIRE_RANLIB],[
+  AC_REQUIRE([AC_PROG_RANLIB])
+])
 if test "x${RANLIB}" = "x"; then
-	test -z "${RANLIB}"
-	AC_PROG_RANLIB
+  test -z "${RANLIB}"
+  AC_REQUIRE_RANLIB
 else
-	test ! -z "${RANLIB}" && export RANLIB
-	AC_SUBST([RANLIB])
+  test ! -z "${RANLIB}" && export RANLIB
+  AC_SUBST([RANLIB])
 fi
 AC_DEFUN([AC_REQUIRE_GREPS],[
   AC_REQUIRE([AC_PROG_GREP])
   AC_REQUIRE([AC_PROG_EGREP])
   AC_REQUIRE([AC_PROG_FGREP])
+  AC_SUBST([EGREP])
 ])
 AC_REQUIRE_GREPS
 AC_PATH_PROG([CJPEG],[cjpeg])
@@ -55,6 +61,14 @@ AC_PATH_PROG([DJPEG],[djpeg])
 AC_PATH_PROG([JPEGTRAN],[jpegtran])
 AC_PATH_PROG([RDJPGCOM],[rdjpgcom])
 AC_PATH_PROG([WRJPGCOM],[wrjpgcom])
+
+# documentation tools:
+AM_MISSING_PROG([DVIPS_PROG],[dvips])
+AM_MISSING_PROG([HIUTIL],[hiutil])
+AM_MISSING_PROG([LATEX],[latex])
+AM_MISSING_PROG([MAKEINDEX],[makeindex])
+AM_MISSING_PROG([PS2PDF],[ps2pdf])
+AM_MISSING_PROG([PSNUP],[psnup])
 
 # Checks for libraries.
 LT_LIB_M

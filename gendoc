@@ -1,5 +1,8 @@
 #!/bin/sh
-cp ./epeg.c.in ./epeg.c
+
+set -ex
+
+cp -v ./epeg.c.in ./epeg.c
 if test "x${ALSO_CHECK_HEADERS}" = "xYES"; then
   for I in `find ./src/lib -name "Epeg.h" -print`; do
     cat ${I} >> ./epeg.c
@@ -9,21 +12,25 @@ for J in `find ./src/lib -name "*.c" -print`; do
   cat ${J} >> ./epeg.c
 done
 if test -x `which doxygen`; then
-  rm -rf ./doc/def || rmdir ./doc/def
-  rm -rf ./doc/docbook || rmdir ./doc/docbook
-  rm -rf ./doc/doxylatex || rmdir ./doc/doxylatex
+  rm -rfv ./doc/def || rmdir ./doc/def
+  rm -rfv ./doc/docbook || rmdir ./doc/docbook
+  rm -rfv ./doc/doxylatex || rmdir ./doc/doxylatex
   # skip removing html output dir because non-doxygentaed files also get put
   # into it
   # also skip regular latex dir because it has non-doxygenated files
-  rm -rf ./doc/man || rmdir ./doc/man
-  rm -rf ./doc/perlmod || rmdir ./doc/perlmod
-  rm -rf ./doc/rtf || rmdir ./doc/rtf
-  rm -rf ./doc/xml || rmdir ./doc/xml
+  rm -rfv ./doc/man || rmdir ./doc/man
+  rm -rfv ./doc/perlmod || rmdir ./doc/perlmod
+  rm -rfv ./doc/rtf || rmdir ./doc/rtf
+  rm -rfv ./doc/xml || rmdir ./doc/xml
   doxygen
-  cp doc/img/*.png doc/html/
+  cp -v doc/img/*.png doc/html/
 else
   echo "doxygen is needed to generate documentation." >&2
   exit 1
 fi
 
-exit 0
+if test -d doc; then
+  find doc -name .DS_Store -delete
+fi
+
+echo "done with $0" && exit 0

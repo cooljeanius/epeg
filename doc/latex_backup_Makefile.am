@@ -15,18 +15,22 @@ refman.pdf: refman.ps
 	ps2pdf refman.ps refman.pdf
 
 refman.dvi: clean refman.tex doxygen.sty
+	if [ "x$(srcdir)" != "x." ]; then \
+	  cp -v $(srcdir)/refman.tex .; \
+	  cp -v $(srcdir)/doxygen.sty .; \
+	fi
 	@echo "Running latex..."
-	latex refman.tex
+	latex refman.tex || latex $(srcdir)/refman.tex
 	@echo "Running makeindex..."
 	makeindex refman.idx
 	@echo "Rerunning latex...."
-	latex refman.tex
+	latex refman.tex || latex $(srcdir)/refman.tex
 	latex_count=5 ; \
-	while egrep -s 'Rerun (LaTeX|to get cross-references right)' refman.log && [ $$latex_count -gt 0 ] ;\
+	while $(EGREP) -s 'Rerun (LaTeX|to get cross-references right)' refman.log && [ $${latex_count} -gt 0 ];\
 	    do \
-	      echo "Rerunning latex...." ;\
-	      latex refman.tex ;\
-	      latex_count=`expr $$latex_count - 1` ;\
+	      echo "Rerunning latex....";\
+	      latex refman.tex || latex $(srcdir)/refman.tex;\
+	      latex_count=`expr $${latex_count} - 1` ;\
 	    done
 
 refman_2on1.ps: refman.ps
@@ -36,9 +40,9 @@ refman_2on1.pdf: refman_2on1.ps
 	ps2pdf refman_2on1.ps refman_2on1.pdf
 
 clean-local:
-	rm -f *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
+	rm -fv *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
 
 Makefile.am: ../Makefile ../latex_backup_Makefile.am
-	$(MAKE) -C .. latex/Makefile.am || cp ../latex_backup_Makefile.am Makefile.am
+	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am Makefile.am
 
-EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex
+EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex ../latex_backup_Makefile.am

@@ -15,7 +15,7 @@ install-data-local:
 	if test -d $(srcdir)/data; then \
 	  $(mkinstalldirs) $(DESTDIR)$(pkgdatadir)/data; \
 	  for d in $(srcdir)/data/*; do \
-	    cp -pR $$d $(DESTDIR)$(pkgdatadir)/data; \
+	    cp -pRv $${d} $(DESTDIR)$(pkgdatadir)/data; \
           done \
 	fi
 
@@ -27,20 +27,27 @@ dist-hook: ./gendoc
 	if test -d data; then \
 	  mkdir $(distdir)/data; \
 	  for file in data/*; do \
-	    cp -pR $$file $(distdir)/data; \
+	    cp -pRv $${file} $(distdir)/data; \
 	  done \
 	fi
 							  
 
 bin_SCRIPTS = epeg-config
 
+check_SCRIPTS = test_epeg-config
+
+TESTS = test_epeg-config
+
 EXTRA_DIST = README AUTHORS COPYING COPYING-PLAIN epeg.spec epeg.c.in gendoc Doxyfile epeg_docs.tar.gz
 
-DISTCLEANFILES = *~ .DS_Store autoscan.log
+DISTCLEANFILES = *~ .DS_Store doc/.DS_Store autoscan.log
+
+## (MAINTAINERCLEANFILES is already set above)
 
 configure.scan:
-	autoscan || touch configure.scan
+	autoscan 2>&1 || touch $@
 
 distclean-local:
-	rm -f @PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
-	rm -rf autom4te.cache || rmdir autom4te.cache
+	rm -fv @PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
+	rm -rfv autom4te.cache || rmdir autom4te.cache
+	(test -w @PACKAGE_TARNAME@-@PACKAGE_VERSION@ && (rm -rf @PACKAGE_TARNAME@-@PACKAGE_VERSION@ || rmdir @PACKAGE_TARNAME@-@PACKAGE_VERSION@)) || stat @PACKAGE_TARNAME@-*.*.* || echo "it can be difficult to distclean the results of distcheck"

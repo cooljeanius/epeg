@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -ex
+
+if test -x ./epeg-config; then
+  ./epeg-config 2>&1 || test -e ./epeg-config
+  ./epeg-config --prefix
+  ./epeg-config --version
+  ./epeg-config --libs
+  ./epeg-config --cflags
+fi
+
+echo "done with $0" && exit 0

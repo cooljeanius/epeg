@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="epeg_8c" kind="file">
     <compoundname>epeg.c</compoundname>
     <includes local="no">stdio.h</includes>
@@ -1107,9 +1107,9 @@ This closes an opened image handle and frees all memory associated with it. It d
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_epeg_fatal_error_handler<sp/>(j_common_ptr<sp/>cinfo);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN(__x,__y)<sp/>((__x)<sp/>&lt;<sp/>(__y)<sp/>?<sp/>(__x)<sp/>:<sp/>(__y))</highlight></codeline>
-<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX(__x,__y)<sp/>((__x)<sp/>&gt;<sp/>(__y)<sp/>?<sp/>(__x)<sp/>:<sp/>(__y))</highlight></codeline>
-<codeline lineno="100"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN(__x,__y)<sp/>((__x)<sp/>&lt;<sp/>(__y)<sp/>?<sp/>(__x)<sp/>:<sp/>(__y))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX(__x,__y)<sp/>((__x)<sp/>&gt;<sp/>(__y)<sp/>?<sp/>(__x)<sp/>:<sp/>(__y))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal">Epeg_Image<sp/>*</highlight></codeline>
 <codeline lineno="118" refid="epeg_8c_1ac046eceb33af487e670a6b18d15ccae7" refkind="member"><highlight class="normal"><ref refid="epeg_8c_1ac046eceb33af487e670a6b18d15ccae7" kindref="member">epeg_file_open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file)</highlight></codeline>
 <codeline lineno="119"><highlight class="normal">{</highlight></codeline>
@@ -2027,28 +2027,28 @@ This closes an opened image handle and frees all memory associated with it. It d
 <codeline lineno="1231"><highlight class="normal">FILE<sp/>*</highlight></codeline>
 <codeline lineno="1232"><highlight class="normal">_epeg_memfile_read_open(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
 <codeline lineno="1233"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1234"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_FMEMOPEN</highlight></codeline>
-<codeline lineno="1235"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(FILE<sp/>*)fmemopen(data,<sp/>size,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1236"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
-<codeline lineno="1237"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/>FILE<sp/>*f;</highlight></codeline>
+<codeline lineno="1234"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_FMEMOPEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1235"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(FILE<sp/>*)fmemopen(data,<sp/>size,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1237"><highlight class="normal"><sp/><sp/><sp/>FILE<sp/>*f;</highlight></codeline>
 <codeline lineno="1238"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1239"><highlight class="normal"><sp/><sp/><sp/>f<sp/>=<sp/>tmpfile();</highlight></codeline>
 <codeline lineno="1240"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!f)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
 <codeline lineno="1241"><highlight class="normal"><sp/><sp/><sp/>fwrite(data,<sp/>size,<sp/>1,<sp/>f);</highlight></codeline>
 <codeline lineno="1242"><highlight class="normal"><sp/><sp/><sp/>rewind(f);</highlight></codeline>
 <codeline lineno="1243"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f;</highlight></codeline>
-<codeline lineno="1244"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="1245"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1244"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1245"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1246"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1248"><highlight class="normal">_epeg_memfile_read_close(FILE<sp/>*f)</highlight></codeline>
 <codeline lineno="1249"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1250"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_FMEMOPEN</highlight></codeline>
-<codeline lineno="1251"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/>fclose(f);</highlight></codeline>
-<codeline lineno="1252"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
-<codeline lineno="1253"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/>fclose(f);</highlight></codeline>
-<codeline lineno="1254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1255"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1250"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_FMEMOPEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1251"><highlight class="normal"><sp/><sp/><sp/>fclose(f);</highlight></codeline>
+<codeline lineno="1252"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1253"><highlight class="normal"><sp/><sp/><sp/>fclose(f);</highlight></codeline>
+<codeline lineno="1254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1255"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1256"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1257"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1258"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_Eet_Memfile_Write_Info<sp/>Eet_Memfile_Write_Info;</highlight></codeline>
@@ -2066,10 +2066,10 @@ This closes an opened image handle and frees all memory associated with it. It d
 <codeline lineno="1270"><highlight class="normal">FILE<sp/>*</highlight></codeline>
 <codeline lineno="1271"><highlight class="normal">_epeg_memfile_write_open(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size)</highlight></codeline>
 <codeline lineno="1272"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1273"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_OPEN_MEMSTREAM</highlight></codeline>
-<codeline lineno="1274"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>open_memstream((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**)data,<sp/>size);</highlight></codeline>
-<codeline lineno="1275"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1276"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/>FILE<sp/>*f;</highlight></codeline>
+<codeline lineno="1273"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_OPEN_MEMSTREAM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1274"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>open_memstream((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**)data,<sp/>size);</highlight></codeline>
+<codeline lineno="1275"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/>FILE<sp/>*f;</highlight></codeline>
 <codeline lineno="1277"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1278"><highlight class="normal"><sp/><sp/><sp/>_epeg_memfile_info_num++;</highlight></codeline>
 <codeline lineno="1279"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_epeg_memfile_info_num<sp/>&gt;<sp/>_epeg_memfile_info_alloc_num)</highlight></codeline>
@@ -2098,16 +2098,16 @@ This closes an opened image handle and frees all memory associated with it. It d
 <codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/>_epeg_memfile_info[_epeg_memfile_info_num<sp/>-<sp/>1].data<sp/>=<sp/>data;</highlight></codeline>
 <codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/>_epeg_memfile_info[_epeg_memfile_info_num<sp/>-<sp/>1].size<sp/>=<sp/>size;</highlight></codeline>
 <codeline lineno="1304"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f;</highlight></codeline>
-<codeline lineno="1305"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="1306"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1305"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1306"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1307"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1308"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1309"><highlight class="normal">_epeg_memfile_write_close(FILE<sp/>*f)</highlight></codeline>
 <codeline lineno="1310"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="1311"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_OPEN_MEMSTREAM</highlight></codeline>
-<codeline lineno="1312"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/>fclose(f);<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1313"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
-<codeline lineno="1314"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="1311"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_OPEN_MEMSTREAM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1312"><highlight class="normal"><sp/><sp/><sp/>fclose(f);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1313"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1314"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
 <codeline lineno="1315"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1316"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_epeg_memfile_info_num;<sp/>i++)</highlight></codeline>
 <codeline lineno="1317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -2134,8 +2134,8 @@ This closes an opened image handle and frees all memory associated with it. It d
 <codeline lineno="1338"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1340"><highlight class="normal"><sp/><sp/><sp/>fclose(f);</highlight></codeline>
-<codeline lineno="1341"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="1342"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1341"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1342"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/Users/ericgallager/epeg/epeg.c"/>
   </compounddef>

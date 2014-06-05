@@ -200,6 +200,7 @@ ACLOCAL = @ACLOCAL@
 AMTAR = @AMTAR@
 AM_DEFAULT_VERBOSITY = @AM_DEFAULT_VERBOSITY@
 AR = @AR@
+AS = @AS@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
@@ -221,6 +222,7 @@ DJPEG = @DJPEG@
 DLLTOOL = @DLLTOOL@
 DSYMUTIL = @DSYMUTIL@
 DUMPBIN = @DUMPBIN@
+DVIPS_PROG = @DVIPS_PROG@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -232,16 +234,16 @@ GD_CFLAGS = @GD_CFLAGS@
 GD_LDFLAGS = @GD_LDFLAGS@
 GD_LIBS = @GD_LIBS@
 GREP = @GREP@
+HIUTIL = @HIUTIL@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 JPEGTRAN = @JPEGTRAN@
+LATEX = @LATEX@
 LD = @LD@
-LDFLAGS = -L/usr/local/lib \
-		       -L@prefix@/lib
-
+LDFLAGS = @LDFLAGS@
 LIBM = @LIBM@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
@@ -250,6 +252,7 @@ LIPO = @LIPO@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
 MAINT = @MAINT@
+MAKEINDEX = @MAKEINDEX@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
 MKDIR_P = @MKDIR_P@
@@ -267,6 +270,8 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PS2PDF = @PS2PDF@
+PSNUP = @PSNUP@
 RANLIB = @RANLIB@
 RDJPGCOM = @RDJPGCOM@
 SED = @SED@
@@ -334,20 +339,23 @@ target_vendor = @target_vendor@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-AUTOMAKE_OPTIONS = 1.4 foreign
+AUTOMAKE_OPTIONS = 1.4 gnits
+DISTCLEANFILES = .DS_Store
 
 # A list of all the files in the current directory which can be regenerated
 MAINTAINERCLEANFILES = Makefile.in
-AM_CPPFLAGS = -I/usr/local/include \
-		       -I$(includedir) \
+AM_LDFLAGS = -L@prefix@/lib
+MY_AM_BAD_LDFLAGS_HARDCODED = -L/usr/local/lib
+AM_CPPFLAGS = -I$(includedir) \
 		       @my_includes@
 
+MY_AM_BAD_CPPFLAGS_HARDCODED = -I/usr/local/include
 lib_LTLIBRARIES = libepeg.la
 include_HEADERS = Epeg.h
 libepeg_la_SOURCES = \
-epeg_main.c \
-epeg_memfile.c \
-epeg_private.h
+	epeg_main.c \
+	epeg_memfile.c \
+	epeg_private.h
 
 libepeg_la_LIBADD = $(LDFLAGS) @my_libs@
 libepeg_la_DEPENDENCIES = $(top_builddir)/config.h
@@ -365,9 +373,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign src/lib/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnits src/lib/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign src/lib/Makefile
+	  $(AUTOMAKE) --gnits src/lib/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -597,6 +605,7 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"

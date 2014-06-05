@@ -2431,7 +2431,7 @@ $doxydocs=
   pages => [
     {
       name => 'todo',
-      title => 'Todo List',
+      title4 => 'Todo List',
       detailed => {
         doc => [
           {
@@ -2468,7 +2468,7 @@ $doxydocs=
     },
     {
       name => 'index',
-      title => 'Epeg Library Documentation',
+      title4 => 'Epeg Library Documentation',
       detailed => {
         doc => [
           {

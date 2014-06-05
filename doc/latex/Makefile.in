@@ -117,6 +117,7 @@ ACLOCAL = @ACLOCAL@
 AMTAR = @AMTAR@
 AM_DEFAULT_VERBOSITY = @AM_DEFAULT_VERBOSITY@
 AR = @AR@
+AS = @AS@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
@@ -138,6 +139,7 @@ DJPEG = @DJPEG@
 DLLTOOL = @DLLTOOL@
 DSYMUTIL = @DSYMUTIL@
 DUMPBIN = @DUMPBIN@
+DVIPS_PROG = @DVIPS_PROG@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -149,12 +151,14 @@ GD_CFLAGS = @GD_CFLAGS@
 GD_LDFLAGS = @GD_LDFLAGS@
 GD_LIBS = @GD_LIBS@
 GREP = @GREP@
+HIUTIL = @HIUTIL@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 JPEGTRAN = @JPEGTRAN@
+LATEX = @LATEX@
 LD = @LD@
 LDFLAGS = @LDFLAGS@
 LIBM = @LIBM@
@@ -165,6 +169,7 @@ LIPO = @LIPO@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
 MAINT = @MAINT@
+MAKEINDEX = @MAKEINDEX@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
 MKDIR_P = @MKDIR_P@
@@ -182,6 +187,8 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PS2PDF = @PS2PDF@
+PSNUP = @PSNUP@
 RANLIB = @RANLIB@
 RDJPGCOM = @RDJPGCOM@
 SED = @SED@
@@ -249,7 +256,7 @@ target_vendor = @target_vendor@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex
+EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex ../latex_backup_Makefile.am
 all: all-am
 
 .SUFFIXES:
@@ -457,18 +464,22 @@ refman.pdf: refman.ps
 	ps2pdf refman.ps refman.pdf
 
 refman.dvi: clean refman.tex doxygen.sty
+	if [ "x$(srcdir)" != "x." ]; then \
+	  cp -v $(srcdir)/refman.tex .; \
+	  cp -v $(srcdir)/doxygen.sty .; \
+	fi
 	@echo "Running latex..."
-	latex refman.tex
+	latex refman.tex || latex $(srcdir)/refman.tex
 	@echo "Running makeindex..."
 	makeindex refman.idx
 	@echo "Rerunning latex...."
-	latex refman.tex
+	latex refman.tex || latex $(srcdir)/refman.tex
 	latex_count=5 ; \
-	while egrep -s 'Rerun (LaTeX|to get cross-references right)' refman.log && [ $$latex_count -gt 0 ] ;\
+	while $(EGREP) -s 'Rerun (LaTeX|to get cross-references right)' refman.log && [ $${latex_count} -gt 0 ];\
 	    do \
-	      echo "Rerunning latex...." ;\
-	      latex refman.tex ;\
-	      latex_count=`expr $$latex_count - 1` ;\
+	      echo "Rerunning latex....";\
+	      latex refman.tex || latex $(srcdir)/refman.tex;\
+	      latex_count=`expr $${latex_count} - 1` ;\
 	    done
 
 refman_2on1.ps: refman.ps
@@ -478,10 +489,10 @@ refman_2on1.pdf: refman_2on1.ps
 	ps2pdf refman_2on1.ps refman_2on1.pdf
 
 clean-local:
-	rm -f *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
+	rm -fv *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
 
 Makefile.am: ../Makefile ../latex_backup_Makefile.am
-	$(MAKE) -C .. latex/Makefile.am || cp ../latex_backup_Makefile.am Makefile.am
+	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am Makefile.am
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
