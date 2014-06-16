@@ -42,6 +42,7 @@ epeg-*.*.*/*
 *.trs
 epeg-test
 epeg_test
+*.tmp
 
 # May seem like a regular source file, but actually generated:
 epeg.c

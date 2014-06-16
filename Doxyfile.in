@@ -32,13 +32,13 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = epeg
+PROJECT_NAME           = @PACKAGE_NAME@
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 0.9.0
+PROJECT_NUMBER         = @PACKAGE_VERSION@
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -1170,7 +1170,7 @@ GENERATE_DOCSET        = NO
 # The default value is: Doxygen generated docs.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_FEEDNAME        = "Doxygenated docs for epeg"
+DOCSET_FEEDNAME        = "Doxygenated docs for @PACKAGE_NAME@"
 
 # This tag specifies a string that should uniquely identify the documentation
 # set bundle. This should be a reverse domain-name style string, e.g.
@@ -1178,7 +1178,7 @@ DOCSET_FEEDNAME        = "Doxygenated docs for epeg"
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_BUNDLE_ID       = org.enlightenment.epeg
+DOCSET_BUNDLE_ID       = org.enlightenment.@PACKAGE_NAME@
 
 # The DOCSET_PUBLISHER_ID tag specifies a string that should uniquely identify
 # the documentation publisher. This should be a reverse domain-name style
@@ -1277,7 +1277,7 @@ QCH_FILE               =
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_QHP is set to YES.
 
-QHP_NAMESPACE          = org.enlightenment.epeg
+QHP_NAMESPACE          = org.enlightenment.@PACKAGE_NAME@
 
 # The QHP_VIRTUAL_FOLDER tag specifies the namespace to use when generating Qt
 # Help Project output. For more information please see Qt Help Project / Virtual
@@ -1336,7 +1336,7 @@ GENERATE_ECLIPSEHELP   = NO
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_ECLIPSEHELP is set to YES.
 
-ECLIPSE_DOC_ID         = org.enlightenment.epeg
+ECLIPSE_DOC_ID         = org.enlightenment.@PACKAGE_NAME@
 
 # If you want full control over the layout of the generated HTML pages it might
 # be necessary to disable the index and replace it with your own. The
@@ -2012,7 +2012,7 @@ EXTERNAL_PAGES         = YES
 # interpreter (i.e. the result of 'which perl').
 # The default file (with absolute path) is: /usr/bin/perl.
 
-PERL_PATH              = /opt/local/bin/perl
+PERL_PATH              = @PERL_BIN@
 
 #---------------------------------------------------------------------------
 # Configuration options related to the dot tool
@@ -2034,14 +2034,14 @@ CLASS_DIAGRAMS         = YES
 # the mscgen tool resides. If left empty the tool is assumed to be found in the
 # default search path.
 
-MSCGEN_PATH            = /opt/local/bin/mscgen
+MSCGEN_PATH            = @MSCGEN_BIN@
 
 # You can include diagrams made with dia in doxygen documentation. Doxygen will
 # then run dia to produce the diagram and insert it in the documentation. The
 # DIA_PATH tag allows you to specify the directory where the dia binary resides.
 # If left empty dia is assumed to be found in the default search path.
 
-DIA_PATH               = /opt/local/bin/dia
+DIA_PATH               = @DIA_BIN@
 
 # If set to YES, the inheritance and collaboration graphs will hide inheritance
 # and usage relations if the target is undocumented or is not a class.
@@ -2056,7 +2056,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: NO.
 
-HAVE_DOT               = YES
+HAVE_DOT               = @HAVE_DOT@
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is allowed
 # to run in parallel. When set to 0 doxygen will base this on the number of
@@ -2228,7 +2228,7 @@ INTERACTIVE_SVG        = NO
 # found. If left blank, it is assumed the dot tool can be found in the path.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_PATH               = /opt/local/bin/dot
+DOT_PATH               = @DOT_BIN@
 
 # The DOTFILE_DIRS tag can be used to specify one or more directories that
 # contain dot files that are included in the documentation (see the \dotfile

@@ -32,18 +32,18 @@ Using the library is very easy; look at this example\+:
         printf(\textcolor{stringliteral}{"Usage: %s input.jpg thumb.jpg\(\backslash\)n"}, argv[0]);
         exit(0);
    \}
-   im = epeg_file_open(argv[1]);
+   im = \hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\_file\_open}(argv[1]);
    \textcolor{keywordflow}{if} (!im) \{
         printf(\textcolor{stringliteral}{"Cannot open %s\(\backslash\)n"}, argv[1]);
         exit(-1);
    \}
    
-   epeg_decode_size_set(im, 128, 96);
-   epeg_quality_set(im, 75);
-   epeg_thumbnail_comments_enable(im, 1);
-   epeg_file_output_set(im, argv[2]);
-   epeg_encode(im);
-   epeg_close(im);
+   \hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\_decode\_size\_set}(im, 128, 96);
+   \hyperlink{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}{epeg\_quality\_set}(im, 75);
+   \hyperlink{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{epeg\_thumbnail\_comments\_enable}(im, 1);
+   \hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\_file\_output\_set}(im, argv[2]);
+   \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\_encode}(im);
+   \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\_close}(im);
    
    \textcolor{keywordflow}{return} 0;
 \}

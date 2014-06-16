@@ -12,3 +12,12 @@
 *.blg
 *.bbl
 refman.pdf
+doxylatex/*.pdf
+doxylatex/*.md5
+html/*.map
+html/*.md5
+html/epeg_*_*.png
+rtf/*.md5
+rtf/epeg_*_*.png
+html/graph_legend.html
+html/graph_legend.png

@@ -35,7 +35,7 @@ html/html.helpindex: ../gendoc ../Makefile ../Doxyfile
 	if test -d html; then \
 	  (hiutil -C html -f $@ -ag 2>&1 || touch $@); \
 	else \
-	  ($(MKDIR_P) html && touch $@) || (echo "no html to index"); \
+	  ($(MKDIR_P) -v html && touch $@) || (echo "no html to index"); \
 	fi
 
 ../gendoc: ../Makefile $(dist_doc_DATA)

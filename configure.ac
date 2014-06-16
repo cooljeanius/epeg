@@ -81,6 +81,19 @@ AM_MISSING_PROG([LATEX],[latex])dnl
 AM_MISSING_PROG([MAKEINDEX],[makeindex])dnl
 AM_MISSING_PROG([PS2PDF],[ps2pdf])dnl
 AM_MISSING_PROG([PSNUP],[psnup])dnl
+AC_PATH_PROGS([PERL_BIN],[perl perl5 perl5.16 perl5.12])dnl
+AC_PATH_PROG([MSCGEN_BIN],[mscgen])dnl
+AC_PATH_PROG([DIA_BIN],[dia])dnl
+AC_PATH_PROG([DOT_BIN],[dot])dnl
+
+if test -n "${DOT_BIN}"; then
+  export HAVE_DOT="YES"
+elif test -z "${DOT_BIN}"; then
+  export HAVE_DOT="NO"
+else
+  export HAVE_DOT=""
+fi
+AC_SUBST([HAVE_DOT])dnl
 
 # Checks for libraries.
 AC_CHECK_LIB([c],[fprintf])dnl
@@ -268,6 +281,7 @@ AC_SUBST([my_includes])dnl
 AC_SUBST([my_libs])dnl
 
 AC_CONFIG_FILES([
+Doxyfile
 Makefile
 doc/Makefile
 doc/latex/Makefile
