@@ -140,6 +140,55 @@
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </simplesect>
         <simplesect>
             <title>Defines</title>
@@ -147,6 +196,55 @@
                 <itemizedlist>
                     <listitem>
                             <para>#define <link linkend="epeg_8c_1a359255b849555840ffd0860f74b1370b">MIN</link> ((__x) &lt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
                     </listitem>
                 </itemizedlist>
             </para>
