@@ -57,3 +57,8 @@ epeg.c
 *.build
 Xcode/build/*
 !Xcode/*.ico
+
+# Now a generated file:
+Doxyfile
+# ...and to be consistent:
+Doxyfile.bak
