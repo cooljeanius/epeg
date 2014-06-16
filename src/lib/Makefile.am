@@ -2,11 +2,12 @@
 
 AUTOMAKE_OPTIONS     = 1.4 gnits
 
-DISTCLEANFILES       = .DS_Store
+DISTCLEANFILES       = .DS_Store *~
 
 # A list of all the files in the current directory which can be regenerated
 MAINTAINERCLEANFILES = Makefile.in
 
+AM_CFLAGS	     = -Wall -Wimplicit -Wno-unused
 AM_LDFLAGS	     = -L@prefix@/lib
 MY_AM_BAD_LDFLAGS_HARDCODED = -L/usr/local/lib
 AM_CPPFLAGS	     = -I$(includedir) \

@@ -45,12 +45,12 @@ E : P : E : G
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac046eceb33af487e670a6b18d15ccae7"><td class="memItemLeft" align="right" valign="top">Epeg_Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#ac046eceb33af487e670a6b18d15ccae7">epeg_file_open</a> (const char *file)</td></tr>
-<tr class="memdesc:ac046eceb33af487e670a6b18d15ccae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG image by filename.  <a href="#ac046eceb33af487e670a6b18d15ccae7">More...</a><br /></td></tr>
-<tr class="separator:ac046eceb33af487e670a6b18d15ccae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9df9756f2e34e67701e7d88bcb43fd16"><td class="memItemLeft" align="right" valign="top">Epeg_Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a9df9756f2e34e67701e7d88bcb43fd16">epeg_memory_open</a> (unsigned char *data, int size)</td></tr>
-<tr class="memdesc:a9df9756f2e34e67701e7d88bcb43fd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG image stored in memory.  <a href="#a9df9756f2e34e67701e7d88bcb43fd16">More...</a><br /></td></tr>
-<tr class="separator:a9df9756f2e34e67701e7d88bcb43fd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8295f48501747f18cbb74e4eb1c55836"><td class="memItemLeft" align="right" valign="top">Epeg_Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a8295f48501747f18cbb74e4eb1c55836">epeg_file_open</a> (const char *file)</td></tr>
+<tr class="memdesc:a8295f48501747f18cbb74e4eb1c55836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG image by filename.  <a href="#a8295f48501747f18cbb74e4eb1c55836">More...</a><br /></td></tr>
+<tr class="separator:a8295f48501747f18cbb74e4eb1c55836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d449402ab7ad9de9febd63b858a2dc"><td class="memItemLeft" align="right" valign="top">Epeg_Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open</a> (unsigned char *data, int size)</td></tr>
+<tr class="memdesc:a55d449402ab7ad9de9febd63b858a2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG image stored in memory.  <a href="#a55d449402ab7ad9de9febd63b858a2dc">More...</a><br /></td></tr>
+<tr class="separator:a55d449402ab7ad9de9febd63b858a2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8680bdbf470d1a634618e5308ce147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a3b8680bdbf470d1a634618e5308ce147">epeg_size_get</a> (Epeg_Image *im, int *w, int *h)</td></tr>
 <tr class="memdesc:a3b8680bdbf470d1a634618e5308ce147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the original JPEG pixel size.  <a href="#a3b8680bdbf470d1a634618e5308ce147">More...</a><br /></td></tr>
 <tr class="separator:a3b8680bdbf470d1a634618e5308ce147"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -60,21 +60,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a800dc04316740427b1f4366d973ff4e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</a> (Epeg_Image *im, int w, int h)</td></tr>
 <tr class="memdesc:a800dc04316740427b1f4366d973ff4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the image to decode in pixels.  <a href="#a800dc04316740427b1f4366d973ff4e4">More...</a><br /></td></tr>
 <tr class="separator:a800dc04316740427b1f4366d973ff4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab840f7b7ea8c21938a5210dee06e9dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set</a> (Epeg_Image *im, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:ab840f7b7ea8c21938a5210dee06e9dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bounds of the image to decode in pixels.  <a href="#ab840f7b7ea8c21938a5210dee06e9dda">More...</a><br /></td></tr>
+<tr class="separator:ab840f7b7ea8c21938a5210dee06e9dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe41e06c6667542ad4685730538e03f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set</a> (Epeg_Image *im, Epeg_Colorspace colorspace)</td></tr>
 <tr class="memdesc:afe41e06c6667542ad4685730538e03f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the colorspace in which to decode the image.  <a href="#afe41e06c6667542ad4685730538e03f7">More...</a><br /></td></tr>
 <tr class="separator:afe41e06c6667542ad4685730538e03f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e359181a6a48bd84708828364bf094"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#aa3e359181a6a48bd84708828364bf094">epeg_pixels_get</a> (Epeg_Image *im, int x, int y, int w, int h)</td></tr>
-<tr class="memdesc:aa3e359181a6a48bd84708828364bf094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a segment of decoded pixels from an image.  <a href="#aa3e359181a6a48bd84708828364bf094">More...</a><br /></td></tr>
-<tr class="separator:aa3e359181a6a48bd84708828364bf094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dee06509f945c8e56efe30975e77806"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a2dee06509f945c8e56efe30975e77806">epeg_pixels_get_as_RGB8</a> (Epeg_Image *im, int x, int y, int w, int h)</td></tr>
-<tr class="memdesc:a2dee06509f945c8e56efe30975e77806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a segment of decoded pixels from an image.  <a href="#a2dee06509f945c8e56efe30975e77806">More...</a><br /></td></tr>
-<tr class="separator:a2dee06509f945c8e56efe30975e77806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf990fda661066b46bbf470830288c78"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#acf990fda661066b46bbf470830288c78">epeg_pixels_get</a> (Epeg_Image *im, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:acf990fda661066b46bbf470830288c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a segment of decoded pixels from an image.  <a href="#acf990fda661066b46bbf470830288c78">More...</a><br /></td></tr>
+<tr class="separator:acf990fda661066b46bbf470830288c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d79775e08f47098507ac265581bf63"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#ac1d79775e08f47098507ac265581bf63">epeg_pixels_get_as_RGB8</a> (Epeg_Image *im, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:ac1d79775e08f47098507ac265581bf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a segment of decoded pixels from an image.  <a href="#ac1d79775e08f47098507ac265581bf63">More...</a><br /></td></tr>
+<tr class="separator:ac1d79775e08f47098507ac265581bf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9efc5d877afebda99aba8d5c2bbb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free</a> (Epeg_Image *im, const void *data)</td></tr>
 <tr class="memdesc:adf9efc5d877afebda99aba8d5c2bbb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free requested pixel block from an image.  <a href="#adf9efc5d877afebda99aba8d5c2bbb0f">More...</a><br /></td></tr>
 <tr class="separator:adf9efc5d877afebda99aba8d5c2bbb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4aea6482399797f2f4ada02e9962b7f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#ab4aea6482399797f2f4ada02e9962b7f">epeg_comment_get</a> (Epeg_Image *im)</td></tr>
-<tr class="memdesc:ab4aea6482399797f2f4ada02e9962b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the image comment field as a string.  <a href="#ab4aea6482399797f2f4ada02e9962b7f">More...</a><br /></td></tr>
-<tr class="separator:ab4aea6482399797f2f4ada02e9962b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6013949f1cf3b4b5fc7f086fdaabaa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#acf6013949f1cf3b4b5fc7f086fdaabaa">epeg_comment_get</a> (Epeg_Image *im)</td></tr>
+<tr class="memdesc:acf6013949f1cf3b4b5fc7f086fdaabaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the image comment field as a string.  <a href="#acf6013949f1cf3b4b5fc7f086fdaabaa">More...</a><br /></td></tr>
+<tr class="separator:acf6013949f1cf3b4b5fc7f086fdaabaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e230b7b3bb05b8a470c80c45100c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get</a> (Epeg_Image *im, Epeg_Thumbnail_Info *info)</td></tr>
 <tr class="memdesc:a28e230b7b3bb05b8a470c80c45100c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thumbnail comments of loaded image.  <a href="#a28e230b7b3bb05b8a470c80c45100c52">More...</a><br /></td></tr>
 <tr class="separator:a28e230b7b3bb05b8a470c80c45100c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,7 +100,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a12a018084510ebdc0e627f56305fea79"><td class="mdescLeft">&#160;</td><td class="mdescRight">This saves the image to its specified destination.  <a href="#a12a018084510ebdc0e627f56305fea79">More...</a><br /></td></tr>
 <tr class="separator:a12a018084510ebdc0e627f56305fea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327dab144744ba5f1892643d627e6df0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a327dab144744ba5f1892643d627e6df0">epeg_trim</a> (Epeg_Image *im)</td></tr>
-<tr class="memdesc:a327dab144744ba5f1892643d627e6df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME: Document this.  <a href="#a327dab144744ba5f1892643d627e6df0">More...</a><br /></td></tr>
+<tr class="memdesc:a327dab144744ba5f1892643d627e6df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME: Document this with a short, sentence-long description of <a class="el" href="epeg_8c.html#a327dab144744ba5f1892643d627e6df0" title="FIXME: Document this with a short, sentence-long description of epeg_trim() ">epeg_trim()</a>  <a href="#a327dab144744ba5f1892643d627e6df0">More...</a><br /></td></tr>
 <tr class="separator:a327dab144744ba5f1892643d627e6df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8faf0f0fab47ac97b86ee7e00e1bee7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</a> (Epeg_Image *im)</td></tr>
 <tr class="memdesc:a8faf0f0fab47ac97b86ee7e00e1bee7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close an image handle.  <a href="#a8faf0f0fab47ac97b86ee7e00e1bee7c">More...</a><br /></td></tr>
@@ -124,13 +127,15 @@ Functions</h2></td></tr>
 <p>Close an image handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image.</td></tr>
+    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This closes an opened image handle and frees all memory associated with it. It does not free encoded data generated by <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a> followed by <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a> nor does it guarantee to free any data recieved by <a class="el" href="epeg_8c.html#aa3e359181a6a48bd84708828364bf094" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get()</a>. Once an image handle is closed consider it invalid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This closes an opened image handle and frees all memory associated with it. It does NOT free encoded data generated by <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a> followed by <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a>, nor does it guarantee to free any data received by <a class="el" href="epeg_8c.html#acf990fda661066b46bbf470830288c78" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get()</a>. Once an image handle is closed, consider it invalid.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a8295f48501747f18cbb74e4eb1c55836" title="Open a JPEG image by filename. ">epeg_file_open()</a>, <a class="el" href="epeg_8c.html#a55d449402ab7ad9de9febd63b858a2dc" title="Open a JPEG image stored in memory. ">epeg_memory_open()</a> </p>
 
-<p>Referenced by <a class="el" href="epeg_8c.html#ac046eceb33af487e670a6b18d15ccae7">epeg_file_open()</a>, and <a class="el" href="epeg_8c.html#a9df9756f2e34e67701e7d88bcb43fd16">epeg_memory_open()</a>.</p>
+<p>Referenced by <a class="el" href="epeg_8c.html#a8295f48501747f18cbb74e4eb1c55836">epeg_file_open()</a>, and <a class="el" href="epeg_8c.html#a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open()</a>.</p>
 
 </div>
 </div>
@@ -162,20 +167,22 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">space</td><td>A pointer to the color space value to be filled in.</td></tr>
+    <tr><td class="paramname">space</td><td>A pointer to the color space value to be filled in. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Returns the image color space. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>Returns the image color space (not yet though).</p>
+<p>See also: <a class="el" href="epeg_8c.html#a3b8680bdbf470d1a634618e5308ce147" title="Return the original JPEG pixel size. ">epeg_size_get()</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="ab4aea6482399797f2f4ada02e9962b7f"></a>
+<a class="anchor" id="acf6013949f1cf3b4b5fc7f086fdaabaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* epeg_comment_get </td>
+          <td class="memname">const char * epeg_comment_get </td>
           <td>(</td>
           <td class="paramtype">Epeg_Image *&#160;</td>
           <td class="paramname"><em>im</em></td><td>)</td>
@@ -192,7 +199,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the loaded image comments.</dd></dl>
-<p>This function returns the comment field as a string (NUL byte terminated) of the loaded image <code>im</code>, if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only. </p>
+<p>This function returns the comment field as a string (NUL byte terminated) of the loaded image <code>im</code>, if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a28e230b7b3bb05b8a470c80c45100c52" title="Get thumbnail comments of loaded image. ">epeg_thumbnail_comments_get()</a> </p>
 
 </div>
 </div>
@@ -224,12 +232,73 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">comment</td><td>The comment to set.</td></tr>
+    <tr><td class="paramname">comment</td><td>The comment to set. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
 <p>Set the comment for the image file for when it gets saved. This is a NUL byte terminated C string. If <code>comment</code> is NULL the output file will have no comment field.</p>
-<p>The default comment will be any comment loaded from the input file. </p>
+<p>The default comment will be any comment loaded from the input file.</p>
+<p>See also: <a class="el" href="epeg_8c.html#acf6013949f1cf3b4b5fc7f086fdaabaa" title="Get the image comment field as a string. ">epeg_comment_get()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="ab840f7b7ea8c21938a5210dee06e9dda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void epeg_decode_bounds_set </td>
+          <td>(</td>
+          <td class="paramtype">Epeg_Image *&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the bounds of the image to decode in pixels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
+    <tr><td class="paramname">x</td><td>Boundary X </td></tr>
+    <tr><td class="paramname">y</td><td>Boundary Y </td></tr>
+    <tr><td class="paramname">w</td><td>Boundary W </td></tr>
+    <tr><td class="paramname">h</td><td>Boundary H </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>Sets the bounds inside which to decode the JPEG image, giving an optimized load that only decodes the bounded pixels. (???)</p>
+<p>See also: <a class="el" href="epeg_8c.html#a800dc04316740427b1f4366d973ff4e4" title="Set the size of the image to decode in pixels. ">epeg_decode_size_set()</a>, <a class="el" href="epeg_8c.html#afe41e06c6667542ad4685730538e03f7" title="Set the colorspace in which to decode the image. ">epeg_decode_colorspace_set()</a> </p>
 
 </div>
 </div>
@@ -261,11 +330,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">colorspace</td><td>The colorspace to decode the image in.</td></tr>
+    <tr><td class="paramname">colorspace</td><td>The colorspace to decode the image in. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a800dc04316740427b1f4366d973ff4e4" title="Set the size of the image to decode in pixels. ">epeg_decode_size_set()</a>, <a class="el" href="epeg_8c.html#ab840f7b7ea8c21938a5210dee06e9dda" title="Set the bounds of the image to decode in pixels. ">epeg_decode_bounds_set()</a> </p>
 
 </div>
 </div>
@@ -304,11 +375,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
     <tr><td class="paramname">w</td><td>The width of the image to decode at, in pixels. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the image to decode at, in pixels.</td></tr>
+    <tr><td class="paramname">h</td><td>The height of the image to decode at, in pixels. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Sets the size at which to deocode the JPEG image, giving an optimised load that only decodes the pixels needed. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>Sets the size at which to decode the JPEG image, giving an optimized load that only decodes the pixels needed.</p>
+<p>See also: <a class="el" href="epeg_8c.html#ab840f7b7ea8c21938a5210dee06e9dda" title="Set the bounds of the image to decode in pixels. ">epeg_decode_bounds_set()</a>, <a class="el" href="epeg_8c.html#afe41e06c6667542ad4685730538e03f7" title="Set the colorspace in which to decode the image. ">epeg_decode_colorspace_set()</a> </p>
 
 </div>
 </div>
@@ -329,20 +402,22 @@ Functions</h2></td></tr>
 <p>This saves the image to its specified destination. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image.</td></tr>
+    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This saves the image <code>im</code> to its destination specified by <a class="el" href="epeg_8c.html#a4aa4c7bbf3edf1f24603d3b4dad684b4" title="Set the output file path for the image when saved. ">epeg_file_output_set()</a> or <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a>. The image will be encoded at the deoded pixel size, using the quality, comment and thumbnail comment settings set on the image. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if something happened, otherwise 0.</dd></dl>
+<p>This saves the image <code>im</code> to its destination specified by <a class="el" href="epeg_8c.html#a4aa4c7bbf3edf1f24603d3b4dad684b4" title="Set the output file path for the image when saved. ">epeg_file_output_set()</a> or <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a>. The image will be encoded at the decoded pixel size, using the quality, comment, and thumbnail comment settings set on the image.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a4aa4c7bbf3edf1f24603d3b4dad684b4" title="Set the output file path for the image when saved. ">epeg_file_output_set()</a>, <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="ac046eceb33af487e670a6b18d15ccae7"></a>
+<a class="anchor" id="a8295f48501747f18cbb74e4eb1c55836"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Epeg_Image* epeg_file_open </td>
+          <td class="memname">Epeg_Image * epeg_file_open </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
@@ -361,7 +436,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A handle to the opened JPEG file, with the header decoded.</dd></dl>
 <p>This function opens the file indicated by the <code>file</code> parameter, and attempts to decode it as a jpeg file. If this failes, NULL is returned. Otherwise a valid handle to an open JPEG file is returned that can be used by other Epeg calls.</p>
 <p>The <code>file</code> must be a pointer to a valid C string, NUL (0 byte) terminated thats is a relative or absolute file path. If not results are not determined.</p>
-<p>See also: <a class="el" href="epeg_8c.html#a9df9756f2e34e67701e7d88bcb43fd16" title="Open a JPEG image stored in memory. ">epeg_memory_open()</a>, <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> </p>
+<p>See also: <a class="el" href="epeg_8c.html#a55d449402ab7ad9de9febd63b858a2dc" title="Open a JPEG image stored in memory. ">epeg_memory_open()</a>, <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> </p>
 
 <p>References <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</a>.</p>
 
@@ -395,20 +470,22 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">file</td><td>The path to the output file.</td></tr>
+    <tr><td class="paramname">file</td><td>The path to the output file. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This sets the output file path name (either a full or relative path name) to where the file will be written when saved. <code>file</code> must be a NUL terminated C string conatining the path to the file to be saved to. If it is NULL, the image will not be saved to a file when calling <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This sets the output file path name (either a full or relative path name) to where the file will be written when saved. <code>file</code> must be a NUL terminated C string containing the path to the file to be saved to. If it is NULL, then the image will not be saved to a file when calling <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a>.</p>
+<p>See also: <a class="el" href="epeg_8c.html#ae0e91c160074e6d96b7e366fb0eb6ec8" title="Set the output file to be a block of allocated memory. ">epeg_memory_output_set()</a>, <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="a9df9756f2e34e67701e7d88bcb43fd16"></a>
+<a class="anchor" id="a55d449402ab7ad9de9febd63b858a2dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Epeg_Image* epeg_memory_open </td>
+          <td class="memname">Epeg_Image * epeg_memory_open </td>
           <td>(</td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -437,7 +514,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A handle to the opened JPEG, with the header decoded.</dd></dl>
 <p>This function opens a JPEG file that is stored in memory pointed to by <code>data</code>, and that is <code>size</code> bytes in size. If successful a valid handle is returned, or on failure NULL is returned.</p>
-<p>See also: <a class="el" href="epeg_8c.html#ac046eceb33af487e670a6b18d15ccae7" title="Open a JPEG image by filename. ">epeg_file_open()</a>, <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> </p>
+<p>See also: <a class="el" href="epeg_8c.html#a8295f48501747f18cbb74e4eb1c55836" title="Open a JPEG image by filename. ">epeg_file_open()</a>, <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> </p>
 
 <p>References <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</a>.</p>
 
@@ -478,11 +555,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
     <tr><td class="paramname">data</td><td>A pointer to a pointer to a memory block. </td></tr>
-    <tr><td class="paramname">size</td><td>A pointer to a counter of the size of the memory block.</td></tr>
+    <tr><td class="paramname">size</td><td>A pointer to a counter of the size of the memory block. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This sets the output encoding of the image when saved to be allocated memory. After <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> is called the pointer pointed to by <code>data</code> and the integer pointed to by <code>size</code> will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This sets the output encoding of the image when saved to be allocated memory. After <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a> is called the pointer pointed to by <code>data</code> and the integer pointed to by <code>size</code> will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a4aa4c7bbf3edf1f24603d3b4dad684b4" title="Set the output file path for the image when saved. ">epeg_file_output_set()</a>, <a class="el" href="epeg_8c.html#a12a018084510ebdc0e627f56305fea79" title="This saves the image to its specified destination. ">epeg_encode()</a> </p>
 
 </div>
 </div>
@@ -513,21 +592,22 @@ Functions</h2></td></tr>
 <p>Free requested pixel block from an image. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">data</td><td>The pointer to the image pixels.</td></tr>
+    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image (unused). </td></tr>
+    <tr><td class="paramname">data</td><td>The pointer to the image pixels. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This frees the data for a block of pixels requested from image <code>im</code>. <code>data</code> must be a valid (non NULL) pointer to a pixel block taken from the image <code>im</code> by <a class="el" href="epeg_8c.html#aa3e359181a6a48bd84708828364bf094" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get()</a> and mustbe called before the image is closed by <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This frees the data for a block of pixels requested from image <code>im</code>. <code>data</code> must be a valid (non NULL) pointer to a pixel block taken from the image <code>im</code> by <a class="el" href="epeg_8c.html#acf990fda661066b46bbf470830288c78" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get()</a> and must be called before the image is closed by <a class="el" href="epeg_8c.html#a8faf0f0fab47ac97b86ee7e00e1bee7c" title="Close an image handle. ">epeg_close()</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="aa3e359181a6a48bd84708828364bf094"></a>
+<a class="anchor" id="acf990fda661066b46bbf470830288c78"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const void* epeg_pixels_get </td>
+          <td class="memname">const void * epeg_pixels_get </td>
           <td>(</td>
           <td class="paramtype">Epeg_Image *&#160;</td>
           <td class="paramname"><em>im</em>, </td>
@@ -576,17 +656,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the top left of the requested pixel block.</dd></dl>
-<p>Return image pixels in the decoded format from the specified location rectangle bounded with the box <code>x</code>, <code>y</code> <code>w</code> X <code>y</code>. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row. You must free the pixel block using <a class="el" href="epeg_8c.html#adf9efc5d877afebda99aba8d5c2bbb0f" title="Free requested pixel block from an image. ">epeg_pixels_free()</a> before you close the image handle, and assume the pixels to be read-only memory.</p>
-<p>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded. </p>
+<p>Return image pixels in the decoded format from the specified location rectangle bounded with the box <code>x</code>, <code>y</code> <code>w</code> X <code>y</code>. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using <a class="el" href="epeg_8c.html#adf9efc5d877afebda99aba8d5c2bbb0f" title="Free requested pixel block from an image. ">epeg_pixels_free()</a> before you close the image handle, and assume the pixels to be read-only memory.</p>
+<p>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.</p>
+<p>See also: <a class="el" href="epeg_8c.html#ac1d79775e08f47098507ac265581bf63" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get_as_RGB8()</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="a2dee06509f945c8e56efe30975e77806"></a>
+<a class="anchor" id="ac1d79775e08f47098507ac265581bf63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const void* epeg_pixels_get_as_RGB8 </td>
+          <td class="memname">const void * epeg_pixels_get_as_RGB8 </td>
           <td>(</td>
           <td class="paramtype">Epeg_Image *&#160;</td>
           <td class="paramname"><em>im</em>, </td>
@@ -635,8 +716,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the top left of the requested pixel block.</dd></dl>
-<p>Return image pixels in the decoded format from the specified location rectangle bounded with the box <code>x</code>, <code>y</code> <code>w</code> X <code>y</code>. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row. You must free the pixel block using <a class="el" href="epeg_8c.html#adf9efc5d877afebda99aba8d5c2bbb0f" title="Free requested pixel block from an image. ">epeg_pixels_free()</a> before you close the image handle, and assume the pixels to be read-only memory.</p>
-<p>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded. </p>
+<p>Return image pixels in the decoded format from the specified location rectangle bounded with the box <code>x</code>, <code>y</code> <code>w</code> X <code>y</code>. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using <a class="el" href="epeg_8c.html#adf9efc5d877afebda99aba8d5c2bbb0f" title="Free requested pixel block from an image. ">epeg_pixels_free()</a> before you close the image handle, and assume the pixels to be read-only memory.</p>
+<p>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.</p>
+<p>See also: <a class="el" href="epeg_8c.html#acf990fda661066b46bbf470830288c78" title="Get a segment of decoded pixels from an image. ">epeg_pixels_get()</a> </p>
 
 </div>
 </div>
@@ -668,12 +750,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">quality</td><td>The quality of encoding from 0 to 100.</td></tr>
+    <tr><td class="paramname">quality</td><td>The quality of encoding from 0 to 100. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
 <p>Set the quality of the output encoded image. Values from 0 to 100 inclusive are valid, with 100 being the maximum quality, and 0 being the minimum. If the quality is set equal to or above 90%, the output U and V color planes are encoded at 1:1 with the Y plane.</p>
-<p>The default quality is 75. </p>
+<p>The default quality is 75.</p>
+<p>See also: <a class="el" href="epeg_8c.html#ab96605b1c21ec8d791df705a5117233c" title="Set the comment field of the image for saving. ">epeg_comment_set()</a> </p>
 
 </div>
 </div>
@@ -712,11 +796,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
     <tr><td class="paramname">w</td><td>A pointer to the width value in pixels to be filled in. </td></tr>
-    <tr><td class="paramname">h</td><td>A pointer to the height value in pixels to be filled in.</td></tr>
+    <tr><td class="paramname">h</td><td>A pointer to the height value in pixels to be filled in. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Returns the image size in pixels. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>Returns the image size in pixels (well not really).</p>
+<p>See also: <a class="el" href="epeg_8c.html#a290a722dddc53761d213524ce0e89284" title="Return the original JPEG pixel color space. ">epeg_colorspace_get()</a> </p>
 
 </div>
 </div>
@@ -748,11 +834,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">onoff</td><td>A boolean on and off enabling flag.</td></tr>
+    <tr><td class="paramname">onoff</td><td>A boolean on and off enabling flag. </td></tr>
   </table>
   </dd>
 </dl>
-<p>if <code>onoff</code> is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>if <code>onoff</code> is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0.</p>
+<p>See also: <a class="el" href="epeg_8c.html#a28e230b7b3bb05b8a470c80c45100c52" title="Get thumbnail comments of loaded image. ">epeg_thumbnail_comments_get()</a> </p>
 
 </div>
 </div>
@@ -784,11 +872,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
-    <tr><td class="paramname">info</td><td>Pointer to a thumbnail info struct to be filled in.</td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to a thumbnail info struct to be filled in. </td></tr>
   </table>
   </dd>
 </dl>
-<p>This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the <code>info</code> struct on return. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<p>This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the <code>info</code> struct on return.</p>
+<p>See also: <a class="el" href="epeg_8c.html#acf6013949f1cf3b4b5fc7f086fdaabaa" title="Get the image comment field as a string. ">epeg_comment_get()</a>, <a class="el" href="epeg_8c.html#a5cfe689f77dbe7b120317a195585ee51" title="Enable thumbnail comments in saved image. ">epeg_thumbnail_comments_enable()</a> </p>
 
 </div>
 </div>
@@ -806,14 +896,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>FIXME: Document this. </p>
+<p>FIXME: Document this with a short, sentence-long description of <a class="el" href="epeg_8c.html#a327dab144744ba5f1892643d627e6df0" title="FIXME: Document this with a short, sentence-long description of epeg_trim() ">epeg_trim()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image.</td></tr>
+    <tr><td class="paramname">im</td><td>A handle to an opened Epeg image. </td></tr>
   </table>
   </dd>
 </dl>
-<p>FIXME: Document this. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if something happened, otherwise 0.</dd></dl>
+<p>FIXME: Document this with a longer, paragraph-long description. </p>
 
 </div>
 </div>

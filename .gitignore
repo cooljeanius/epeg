@@ -1,3 +1,6 @@
+# Default cleanliness state is 'distclean', so the files that we gitignore
+# should correspond to that.
+
 *DS_Store*
 *.*o
 *.cache
@@ -6,7 +9,7 @@
 *.status
 */.deps/*.*o
 */*/.deps/*.*o
-stamp-h*
+stamp-*
 libtool
 */CVS
 */*/CVS
@@ -37,3 +40,19 @@ doc/latex/*.toc
 *(Autosaved)*
 epeg-*.*.*/*
 *.trs
+epeg-test
+epeg_test
+
+# May seem like a regular source file, but actually generated:
+epeg.c
+
+# Xcode stuff:
+*.pbxbtree
+*.pbxuser
+*.perspectivev3
+*.pbxsymbols
+*.pbxstrings
+*.pbxindex
+*.build
+Xcode/build/*
+!Xcode/*.ico

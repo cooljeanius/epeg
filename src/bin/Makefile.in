@@ -513,6 +513,9 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 DISTCLEANFILES = .DS_Store
+
+# A list of all the files in the current directory which can be regenerated
+MAINTAINERCLEANFILES = Makefile.in
 AM_LDFLAGS = \
 	-L@prefix@/lib
 
@@ -532,6 +535,7 @@ epeg_LDADD = \
 	$(top_builddir)/src/lib/libepeg.la
 
 epeg_DEPENDENCIES = $(top_builddir)/src/lib/libepeg.la
+EXTRA_DIST = test_epeg
 check_SCRIPTS = test_epeg
 TESTS = test_epeg
 all: all-am
@@ -961,6 +965,7 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
+	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
 clean: clean-am
 
 clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am

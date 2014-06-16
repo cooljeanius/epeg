@@ -20,33 +20,37 @@ while test $# -gt 0; do
 
   case $1 in
     --prefix=*)
-      prefix=$optarg
-      if test $exec_prefix_set = no ; then
-        exec_prefix=$optarg
+      prefix=${optarg}
+      if test "x${exec_prefix_set}" = "xno"; then
+        exec_prefix=${optarg}
       fi
       ;;
     --prefix)
       echo $prefix
       ;;
     --exec-prefix=*)
-      exec_prefix=$optarg
+      exec_prefix=${optarg}
       exec_prefix_set=yes
       ;;
     --exec-prefix)
-      echo $exec_prefix
+      echo "${exec_prefix}"
       ;;
     --version)
-      echo @VERSION@
+      echo "@VERSION@"
       ;;
     --cflags)
-      if test @includedir@ != /usr/include ; then
+      if test "x@includedir@" != "x/usr/include"; then
         includes=-I@includedir@
       fi
-      echo $includes
+      echo "${includes}"
       ;;
     --libs)
       libdirs=-L@libdir@
-      echo $libdirs -lepeg @my_libs@
+      echo "${libdirs} -lepeg @my_libs@"
+      ;;
+    --help)
+      echo "${usage}"
+      exit 0
       ;;
     *)
       echo "${usage}" 1>&2

@@ -3,9 +3,9 @@
   <compounddef id="struct__Eet__Memfile__Write__Info" kind="struct" prot="public">
     <compoundname>_Eet_Memfile_Write_Info</compoundname>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1a62550407aee49e65c782941b16f469d8" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1a0f62596d2fc6595937f0e7adbe89dbd2" prot="public" static="no" mutable="no">
         <type>FILE *</type>
-        <definition>FILE* _Eet_Memfile_Write_Info::f</definition>
+        <definition>FILE * _Eet_Memfile_Write_Info::f</definition>
         <argsstring></argsstring>
         <name>f</name>
         <briefdescription>
@@ -14,11 +14,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/ericgallager/epeg/epeg.c" line="1261" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1261" bodyend="-1"/>
+        <location file="/Users/ericgallager/epeg/epeg.c" line="1502" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1502" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1a347d9ef9d415ccada2a96c6807e87fbe" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1abf0892bfbbaa732f012da62fc82353a7" prot="public" static="no" mutable="no">
         <type>void **</type>
-        <definition>void** _Eet_Memfile_Write_Info::data</definition>
+        <definition>void ** _Eet_Memfile_Write_Info::data</definition>
         <argsstring></argsstring>
         <name>data</name>
         <briefdescription>
@@ -27,11 +27,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/ericgallager/epeg/epeg.c" line="1262" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1262" bodyend="-1"/>
+        <location file="/Users/ericgallager/epeg/epeg.c" line="1503" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1503" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1a2a1f9bbefbec9be2dea51ca566511957" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct__Eet__Memfile__Write__Info_1aa3ee5e6d48eefa617c2b849938cd88fa" prot="public" static="no" mutable="no">
         <type>size_t *</type>
-        <definition>size_t* _Eet_Memfile_Write_Info::size</definition>
+        <definition>size_t * _Eet_Memfile_Write_Info::size</definition>
         <argsstring></argsstring>
         <name>size</name>
         <briefdescription>
@@ -40,18 +40,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/ericgallager/epeg/epeg.c" line="1263" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1263" bodyend="-1"/>
+        <location file="/Users/ericgallager/epeg/epeg.c" line="1504" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1504" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/ericgallager/epeg/epeg.c" line="1260" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1259" bodyend="1264"/>
+    <location file="/Users/ericgallager/epeg/epeg.c" line="1501" column="1" bodyfile="/Users/ericgallager/epeg/epeg.c" bodystart="1500" bodyend="1505"/>
     <listofallmembers>
-      <member refid="struct__Eet__Memfile__Write__Info_1a347d9ef9d415ccada2a96c6807e87fbe" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>data</name></member>
-      <member refid="struct__Eet__Memfile__Write__Info_1a62550407aee49e65c782941b16f469d8" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>f</name></member>
-      <member refid="struct__Eet__Memfile__Write__Info_1a2a1f9bbefbec9be2dea51ca566511957" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>size</name></member>
+      <member refid="struct__Eet__Memfile__Write__Info_1abf0892bfbbaa732f012da62fc82353a7" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>data</name></member>
+      <member refid="struct__Eet__Memfile__Write__Info_1a0f62596d2fc6595937f0e7adbe89dbd2" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>f</name></member>
+      <member refid="struct__Eet__Memfile__Write__Info_1aa3ee5e6d48eefa617c2b849938cd88fa" prot="public" virt="non-virtual"><scope>_Eet_Memfile_Write_Info</scope><name>size</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

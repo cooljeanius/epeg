@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5ECF84D1940DDDF00B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8491940DDDF00B3D949 /* epeg_main.c */; };
+		A5ECF84E1940DDDF00B3D949 /* epeg_memfile.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF84A1940DDDF00B3D949 /* epeg_memfile.c */; };
+		A5ECF84F1940DDDF00B3D949 /* epeg_private.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF84B1940DDDF00B3D949 /* epeg_private.h */; };
+		A5ECF8501940DDDF00B3D949 /* Epeg.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF84C1940DDDF00B3D949 /* Epeg.h */; };
+		A5ECF8681940DE3100B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8661940DE3100B3D949 /* epeg_main.c */; };
+		A5ECF8721940DE6500B3D949 /* epeg_test.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8711940DE6500B3D949 /* epeg_test.c */; };
+		A5ECF8761940E24100B3D949 /* epeg_main.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF8671940DE3100B3D949 /* epeg_main.h */; };
+		A5ECF9B419414DB600B3D949 /* libepeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libepeg.dylib */; };
+		A5ECF9F21941520900B3D949 /* libepeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libepeg.dylib */; };
+		A5ECF9FE194152DA00B3D949 /* test_epeg-config in Resources */ = {isa = PBXBuildFile; fileRef = A5ECF9FD194152DA00B3D949 /* test_epeg-config */; };
+		A5ECFA00194152F200B3D949 /* test_epeg in Resources */ = {isa = PBXBuildFile; fileRef = A5ECF9FF194152F200B3D949 /* test_epeg */; };
+		A5ECFA941942104200B3D949 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = A5ECFA931942104200B3D949 /* AUTHORS */; };
+		A5ECFA961942104B00B3D949 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = A5ECFA951942104B00B3D949 /* COPYING */; };
+		A5ECFA981942105000B3D949 /* COPYING-PLAIN in Resources */ = {isa = PBXBuildFile; fileRef = A5ECFA971942105000B3D949 /* COPYING-PLAIN */; };
+		A5ECFAE0194240AE00B3D949 /* epeg.icns in Resources */ = {isa = PBXBuildFile; fileRef = A5ECFADF194240AE00B3D949 /* epeg.icns */; };
+		A5ECFAE2194240B700B3D949 /* epeg.ico in Resources */ = {isa = PBXBuildFile; fileRef = A5ECFAE1194240B700B3D949 /* epeg.ico */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5ECF86A1940DE3900B3D949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = epeg;
+		};
+		A5ECF86C1940DE3D00B3D949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = epeg;
+		};
+		A5ECFA17194154D800B3D949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5ECF8541940DDED00B3D949;
+			remoteInfo = "epeg-bin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5ECF8491940DDDF00B3D949 /* epeg_main.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.c; name = epeg_main.c; path = ../src/lib/epeg_main.c; sourceTree = SOURCE_ROOT; tabWidth = 3; usesTabs = 0; };
+		A5ECF84A1940DDDF00B3D949 /* epeg_memfile.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.c; name = epeg_memfile.c; path = ../src/lib/epeg_memfile.c; sourceTree = SOURCE_ROOT; tabWidth = 3; usesTabs = 0; };
+		A5ECF84B1940DDDF00B3D949 /* epeg_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = epeg_private.h; path = ../src/lib/epeg_private.h; sourceTree = SOURCE_ROOT; };
+		A5ECF84C1940DDDF00B3D949 /* Epeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Epeg.h; path = ../src/lib/Epeg.h; sourceTree = SOURCE_ROOT; };
+		A5ECF8551940DDED00B3D949 /* epeg-bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "epeg-bin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5ECF85F1940DE1300B3D949 /* epeg_test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = epeg_test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5ECF8601940DE1300B3D949 /* epeg_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "epeg_test-Info.plist"; sourceTree = "<group>"; };
+		A5ECF8661940DE3100B3D949 /* epeg_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = epeg_main.c; path = ../src/bin/epeg_main.c; sourceTree = SOURCE_ROOT; };
+		A5ECF8671940DE3100B3D949 /* epeg_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = epeg_main.h; path = ../src/bin/epeg_main.h; sourceTree = SOURCE_ROOT; };
+		A5ECF8711940DE6500B3D949 /* epeg_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = epeg_test.c; path = ../epeg_test.c; sourceTree = SOURCE_ROOT; };
+		A5ECF9FD194152DA00B3D949 /* test_epeg-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "test_epeg-config"; path = "../test_epeg-config"; sourceTree = SOURCE_ROOT; };
+		A5ECF9FF194152F200B3D949 /* test_epeg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = test_epeg; path = ../src/bin/test_epeg; sourceTree = SOURCE_ROOT; };
+		A5ECFA601941F7C700B3D949 /* epeg.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = epeg.xcconfig; sourceTree = "<group>"; };
+		A5ECFA931942104200B3D949 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AUTHORS; path = ../AUTHORS; sourceTree = SOURCE_ROOT; };
+		A5ECFA951942104B00B3D949 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYING; path = ../COPYING; sourceTree = SOURCE_ROOT; };
+		A5ECFA971942105000B3D949 /* COPYING-PLAIN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "COPYING-PLAIN"; path = "../COPYING-PLAIN"; sourceTree = SOURCE_ROOT; };
+		A5ECFADA1942212400B3D949 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog; path = ../ChangeLog; sourceTree = SOURCE_ROOT; };
+		A5ECFADB1942213300B3D949 /* gendoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = gendoc; path = ../gendoc; sourceTree = SOURCE_ROOT; };
+		A5ECFADC1942216100B3D949 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = INSTALL; path = ../INSTALL; sourceTree = SOURCE_ROOT; };
+		A5ECFADD1942216900B3D949 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NEWS; path = ../NEWS; sourceTree = SOURCE_ROOT; };
+		A5ECFADE1942217400B3D949 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../README; sourceTree = SOURCE_ROOT; };
+		A5ECFADF194240AE00B3D949 /* epeg.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = epeg.icns; sourceTree = "<group>"; };
+		A5ECFAE1194240B700B3D949 /* epeg.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = epeg.ico; sourceTree = "<group>"; };
+		A5ECFAFD1942415000B3D949 /* epeg.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = epeg.css; path = ../doc/epeg.css; sourceTree = SOURCE_ROOT; };
+		A5ECFAFE1942415000B3D949 /* foot.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = foot.html; path = ../doc/foot.html; sourceTree = SOURCE_ROOT; };
+		A5ECFAFF1942415000B3D949 /* head.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = head.html; path = ../doc/head.html; sourceTree = SOURCE_ROOT; };
+		A5ECFB03194241E500B3D949 /* doxygen.sty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.sty; sourceTree = "<group>"; };
+		A5ECFB04194241E500B3D949 /* epeg_8c.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = epeg_8c.tex; sourceTree = "<group>"; };
+		A5ECFB05194241E500B3D949 /* files.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = files.tex; sourceTree = "<group>"; };
+		A5ECFB06194241E500B3D949 /* index.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.tex; sourceTree = "<group>"; };
+		A5ECFB08194241E500B3D949 /* pages.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pages.tex; sourceTree = "<group>"; };
+		A5ECFB09194241E500B3D949 /* refman.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = refman.tex; sourceTree = "<group>"; };
+		A5ECFB0A194241E500B3D949 /* todo.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.tex; sourceTree = "<group>"; };
+		A5ECFB0C1942437B00B3D949 /* epeg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = epeg.png; sourceTree = "<group>"; };
+		A5ECFB0D1942437B00B3D949 /* epeg_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = epeg_big.png; sourceTree = "<group>"; };
+		A5ECFB0E1942437B00B3D949 /* epeg_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = epeg_mini.png; sourceTree = "<group>"; };
+		A5ECFB0F1942437B00B3D949 /* epeg_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = epeg_small.png; sourceTree = "<group>"; };
+		A5ECFB101942437B00B3D949 /* hilite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hilite.png; sourceTree = "<group>"; };
+		A5ECFB131942438F00B3D949 /* epeg.texi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = epeg.texi; sourceTree = "<group>"; };
+		A5ECFB401943412A00B3D949 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Doxyfile; path = ../Doxyfile; sourceTree = SOURCE_ROOT; wrapsLines = 1; };
+		D2AAC0630554660B00DB518D /* libepeg.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libepeg.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5ECF8531940DDED00B3D949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF9B419414DB600B3D949 /* libepeg.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5ECF85C1940DE1300B3D949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF9F21941520900B3D949 /* libepeg.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* epeg */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFAD8194220A300B3D949 /* Documentation */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				A5ECF8601940DE1300B3D949 /* epeg_test-Info.plist */,
+			);
+			name = epeg;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECF8651940DE2000B3D949 /* bin */,
+				A5ECF8641940DE1800B3D949 /* lib */,
+				A5ECF8701940DE4C00B3D949 /* test */,
+				A5ECFA601941F7C700B3D949 /* epeg.xcconfig */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libepeg.dylib */,
+				A5ECF8551940DDED00B3D949 /* epeg-bin */,
+				A5ECF85F1940DE1300B3D949 /* epeg_test.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5ECF8641940DE1800B3D949 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECF8491940DDDF00B3D949 /* epeg_main.c */,
+				A5ECF84A1940DDDF00B3D949 /* epeg_memfile.c */,
+				A5ECF84B1940DDDF00B3D949 /* epeg_private.h */,
+				A5ECF84C1940DDDF00B3D949 /* Epeg.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		A5ECF8651940DE2000B3D949 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECF8661940DE3100B3D949 /* epeg_main.c */,
+				A5ECF8671940DE3100B3D949 /* epeg_main.h */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		A5ECF8701940DE4C00B3D949 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFA931942104200B3D949 /* AUTHORS */,
+				A5ECFA951942104B00B3D949 /* COPYING */,
+				A5ECFA971942105000B3D949 /* COPYING-PLAIN */,
+				A5ECFADF194240AE00B3D949 /* epeg.icns */,
+				A5ECFAE1194240B700B3D949 /* epeg.ico */,
+				A5ECF8711940DE6500B3D949 /* epeg_test.c */,
+				A5ECF9FF194152F200B3D949 /* test_epeg */,
+				A5ECF9FD194152DA00B3D949 /* test_epeg-config */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		A5ECFAD8194220A300B3D949 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFAF71942413400B3D949 /* doc */,
+				A5ECFADA1942212400B3D949 /* ChangeLog */,
+				A5ECFB401943412A00B3D949 /* Doxyfile */,
+				A5ECFADB1942213300B3D949 /* gendoc */,
+				A5ECFADC1942216100B3D949 /* INSTALL */,
+				A5ECFADD1942216900B3D949 /* NEWS */,
+				A5ECFADE1942217400B3D949 /* README */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		A5ECFAF71942413400B3D949 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFAFD1942415000B3D949 /* epeg.css */,
+				A5ECFAFE1942415000B3D949 /* foot.html */,
+				A5ECFAFF1942415000B3D949 /* head.html */,
+				A5ECFB0B1942437B00B3D949 /* img */,
+				A5ECFB02194241E500B3D949 /* latex */,
+				A5ECFB111942438F00B3D949 /* texinfo */,
+			);
+			name = doc;
+			sourceTree = "<group>";
+		};
+		A5ECFB02194241E500B3D949 /* latex */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFB03194241E500B3D949 /* doxygen.sty */,
+				A5ECFB04194241E500B3D949 /* epeg_8c.tex */,
+				A5ECFB05194241E500B3D949 /* files.tex */,
+				A5ECFB06194241E500B3D949 /* index.tex */,
+				A5ECFB08194241E500B3D949 /* pages.tex */,
+				A5ECFB09194241E500B3D949 /* refman.tex */,
+				A5ECFB0A194241E500B3D949 /* todo.tex */,
+			);
+			name = latex;
+			path = ../doc/latex;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5ECFB0B1942437B00B3D949 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFB0C1942437B00B3D949 /* epeg.png */,
+				A5ECFB0D1942437B00B3D949 /* epeg_big.png */,
+				A5ECFB0E1942437B00B3D949 /* epeg_mini.png */,
+				A5ECFB0F1942437B00B3D949 /* epeg_small.png */,
+				A5ECFB101942437B00B3D949 /* hilite.png */,
+			);
+			name = img;
+			path = ../doc/img;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5ECFB111942438F00B3D949 /* texinfo */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECFB131942438F00B3D949 /* epeg.texi */,
+			);
+			name = texinfo;
+			path = ../doc/texinfo;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5ECF8841940E24B00B3D949 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF8761940E24100B3D949 /* epeg_main.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF84F1940DDDF00B3D949 /* epeg_private.h in Headers */,
+				A5ECF8501940DDDF00B3D949 /* Epeg.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5ECF8541940DDED00B3D949 /* epeg-bin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5ECF8591940DE0C00B3D949 /* Build configuration list for PBXNativeTarget "epeg-bin" */;
+			buildPhases = (
+				A5ECF8841940E24B00B3D949 /* Headers */,
+				A5ECF8521940DDED00B3D949 /* Sources */,
+				A5ECF8531940DDED00B3D949 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5ECF86B1940DE3900B3D949 /* PBXTargetDependency */,
+			);
+			name = "epeg-bin";
+			productName = "epeg-bin";
+			productReference = A5ECF8551940DDED00B3D949 /* epeg-bin */;
+			productType = "com.apple.product-type.tool";
+		};
+		A5ECF85E1940DE1300B3D949 /* epeg_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5ECF8631940DE1400B3D949 /* Build configuration list for PBXNativeTarget "epeg_test" */;
+			buildPhases = (
+				A5ECF85A1940DE1300B3D949 /* Resources */,
+				A5ECF85B1940DE1300B3D949 /* Sources */,
+				A5ECF85C1940DE1300B3D949 /* Frameworks */,
+				A5ECF85D1940DE1300B3D949 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5ECF86D1940DE3D00B3D949 /* PBXTargetDependency */,
+				A5ECFA18194154D800B3D949 /* PBXTargetDependency */,
+			);
+			name = epeg_test;
+			productName = epeg_test;
+			productReference = A5ECF85F1940DE1300B3D949 /* epeg_test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC0620554660B00DB518D /* epeg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "epeg" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+				A5ECF9D6194150CC00B3D949 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epeg;
+			productName = epeg;
+			productReference = D2AAC0630554660B00DB518D /* libepeg.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "epeg" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* epeg */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* epeg */,
+				A5ECF8541940DDED00B3D949 /* epeg-bin */,
+				A5ECF85E1940DE1300B3D949 /* epeg_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5ECF85A1940DE1300B3D949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF9FE194152DA00B3D949 /* test_epeg-config in Resources */,
+				A5ECFA00194152F200B3D949 /* test_epeg in Resources */,
+				A5ECFA941942104200B3D949 /* AUTHORS in Resources */,
+				A5ECFA961942104B00B3D949 /* COPYING in Resources */,
+				A5ECFA981942105000B3D949 /* COPYING-PLAIN in Resources */,
+				A5ECFAE0194240AE00B3D949 /* epeg.icns in Resources */,
+				A5ECFAE2194240B700B3D949 /* epeg.ico in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5ECF85D1940DE1300B3D949 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A5ECF9D6194150CC00B3D949 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\ncd ${CONFIGURATION_BUILD_DIR}\n\nstat ${EXECUTABLE_PATH}\n\nln -svf ${EXECUTABLE_PATH} ${EXECUTABLE_NAME}\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5ECF8521940DDED00B3D949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF8681940DE3100B3D949 /* epeg_main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5ECF85B1940DE1300B3D949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF8721940DE6500B3D949 /* epeg_test.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ECF84D1940DDDF00B3D949 /* epeg_main.c in Sources */,
+				A5ECF84E1940DDDF00B3D949 /* epeg_memfile.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5ECF86B1940DE3900B3D949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* epeg */;
+			targetProxy = A5ECF86A1940DE3900B3D949 /* PBXContainerItemProxy */;
+		};
+		A5ECF86D1940DE3D00B3D949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* epeg */;
+			targetProxy = A5ECF86C1940DE3D00B3D949 /* PBXContainerItemProxy */;
+		};
+		A5ECFA18194154D800B3D949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5ECF8541940DDED00B3D949 /* epeg-bin */;
+			targetProxy = A5ECFA17194154D800B3D949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 10;
+				DYLIB_CURRENT_VERSION = 10.0;
+				EXECUTABLE_PATH = "$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).0.$(EXECUTABLE_EXTENSION)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PIC,
+					HAVE_CONFIG_H,
+				);
+				GCC_WARN_PEDANTIC = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					..,
+					"$(PUBLIC_HEADERS_FOLDER_PATH)",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				OTHER_CFLAGS = "-ggdb";
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-undefined",
+					dynamic_lookup,
+					"-ljpeg",
+					"-lc",
+				);
+				PRODUCT_NAME = epeg;
+				STRIP_STYLE = "non-global";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wimplicit",
+					"-Wunused-macros",
+					"-Wundef",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wswitch-default",
+					"-Wswitch-enum",
+					"-Wdeclaration-after-statement",
+					"-Wwrite-strings",
+					"-Waggregate-return",
+					"-Wstrict-prototypes",
+					"-Wold-style-definition",
+					"-Wmissing-declarations",
+					"-Wpacked",
+					"-Wredundant-decls",
+					"-Wnested-externs",
+					"-Wunreachable-code",
+					"-Winline",
+					"-Winvalid-pch",
+					"-Wc++-compat",
+				);
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 10;
+				DYLIB_CURRENT_VERSION = 10.0;
+				EXECUTABLE_PATH = "$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).0.$(EXECUTABLE_EXTENSION)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../..,
+					"$(PUBLIC_HEADERS_FOLDER_PATH)",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-fstrict-overflow",
+					"-fstack-protector",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-ljpeg",
+					"-lc",
+				);
+				PRODUCT_NAME = epeg;
+				SEPARATE_STRIP = YES;
+				STRIP_STYLE = debugging;
+				WARNING_CFLAGS = (
+					"-Wformat-security",
+					"-Winit-self",
+					"-Wstrict-aliasing=2",
+					"-Wdisabled-optimization",
+					"-Wstack-protector",
+					"-Wstrict-overflow=5",
+					"-Wvolatile-register-var",
+				);
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=macosx10.3]" = ppc;
+				"ARCHS[sdk=macosx10.4]" = (
+					ppc,
+					i386,
+				);
+				"ARCHS[sdk=macosx10.5]" = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
+				"ARCHS[sdk=macosx10.6]" = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"GCC_ALTIVEC_EXTENSIONS[arch=ppc64]" = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=i386]" = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.5][arch=i386]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.5][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.6][arch=i386]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.6][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.5][arch=i386]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.5][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.6][arch=i386]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.6][arch=x86_64]" = YES;
+				"GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS[arch=i386]" = YES;
+				"GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS[arch=x86_64]" = YES;
+				"GCC_MODEL_PPC64[arch=ppc64]" = YES;
+				"GCC_MODEL_TUNING[arch=ppc64]" = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				LD_GENERATE_MAP_FILE = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				"SDKROOT[arch=i386]" = macosx10.6;
+				"SDKROOT[arch=ppc64]" = macosx10.5;
+				"SDKROOT[arch=ppc]" = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.6;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=macosx10.3]" = ppc;
+				"ARCHS[sdk=macosx10.4]" = (
+					ppc,
+					i386,
+				);
+				"ARCHS[sdk=macosx10.5]" = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
+				"ARCHS[sdk=macosx10.6]" = "$(ARCHS_STANDARD_32_64_BIT)";
+				"GCC_ALTIVEC_EXTENSIONS[arch=ppc64]" = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=i386]" = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.5][arch=i386]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.5][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.6][arch=i386]" = YES;
+				"GCC_ENABLE_SSE41_EXTENSIONS[sdk=macosx10.6][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.5][arch=i386]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.5][arch=x86_64]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.6][arch=i386]" = YES;
+				"GCC_ENABLE_SSE42_EXTENSIONS[sdk=macosx10.6][arch=x86_64]" = YES;
+				"GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS[arch=i386]" = YES;
+				"GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS[arch=x86_64]" = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				"GCC_MODEL_PPC64[arch=ppc64]" = YES;
+				"GCC_MODEL_TUNING[arch=ppc64]" = G5;
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				LD_GENERATE_MAP_FILE = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				"SDKROOT[arch=i386]" = macosx10.6;
+				"SDKROOT[arch=ppc64]" = macosx10.5;
+				"SDKROOT[arch=ppc]" = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.6;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A5ECF8571940DDEE00B3D949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					..,
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-ggdb";
+				PREBINDING = NO;
+				PRODUCT_NAME = "epeg-bin";
+				STRIP_STYLE = "non-global";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wimplicit",
+					"-Wunused-macros",
+					"-Wundef",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wswitch-default",
+					"-Wswitch-enum",
+					"-Wdeclaration-after-statement",
+					"-Wwrite-strings",
+					"-Waggregate-return",
+					"-Wstrict-prototypes",
+					"-Wold-style-definition",
+					"-Wmissing-declarations",
+					"-Wpacked",
+					"-Wredundant-decls",
+					"-Wnested-externs",
+					"-Wunreachable-code",
+					"-Winline",
+					"-Winvalid-pch",
+					"-Wc++-compat",
+				);
+			};
+			name = Debug;
+		};
+		A5ECF8581940DDEE00B3D949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					..,
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = (
+					"-fstrict-overflow",
+					"-fstack-protector",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "epeg-bin";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = debugging;
+				WARNING_CFLAGS = (
+					"-Wformat-security",
+					"-Winit-self",
+					"-Wstrict-aliasing=2",
+					"-Wdisabled-optimization",
+					"-Wstack-protector",
+					"-Wstrict-overflow=5",
+					"-Wvolatile-register-var",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A5ECF8611940DE1400B3D949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = "epeg_test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					..,
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				OTHER_CFLAGS = "-ggdb";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+					"-read_only_relocs",
+					suppress,
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = epeg_test;
+				SDKROOT = macosx10.6;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wimplicit",
+					"-Wunused-macros",
+					"-Wundef",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wswitch-default",
+					"-Wswitch-enum",
+					"-Wdeclaration-after-statement",
+					"-Wwrite-strings",
+					"-Waggregate-return",
+					"-Wstrict-prototypes",
+					"-Wold-style-definition",
+					"-Wmissing-declarations",
+					"-Wpacked",
+					"-Wredundant-decls",
+					"-Wnested-externs",
+					"-Wunreachable-code",
+					"-Winline",
+					"-Winvalid-pch",
+					"-Wc++-compat",
+				);
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5ECF8621940DE1400B3D949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "epeg_test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					..,
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				OTHER_CFLAGS = (
+					"-fstrict-overflow",
+					"-fstack-protector",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = epeg_test;
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				WARNING_CFLAGS = (
+					"-Wformat-security",
+					"-Winit-self",
+					"-Wstrict-aliasing=2",
+					"-Wdisabled-optimization",
+					"-Wstack-protector",
+					"-Wstrict-overflow=5",
+					"-Wvolatile-register-var",
+				);
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "epeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "epeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5ECF8591940DE0C00B3D949 /* Build configuration list for PBXNativeTarget "epeg-bin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5ECF8571940DDEE00B3D949 /* Debug */,
+				A5ECF8581940DDEE00B3D949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5ECF8631940DE1400B3D949 /* Build configuration list for PBXNativeTarget "epeg_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5ECF8611940DE1400B3D949 /* Debug */,
+				A5ECF8621940DE1400B3D949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -256,6 +256,9 @@ target_vendor = @target_vendor@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+
+# A list of all the files in the current directory which can be regenerated
+MAINTAINERCLEANFILES = Makefile.in
 EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex ../latex_backup_Makefile.am
 all: all-am
 
@@ -367,6 +370,7 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
+	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
 clean: clean-am
 
 clean-am: clean-generic clean-libtool clean-local mostlyclean-am
@@ -447,15 +451,21 @@ uninstall-am:
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am pdf-local \
 	ps ps-am ps-local tags-am uninstall uninstall-am
 
-all: refman.dvi Makefile Makefile.am
+
+all: @MAINT@ refman.dvi Makefile Makefile.am
+.PHONY: all
 
 ps-local: refman.ps
+.PHONY: ps-local
 
 pdf-local: refman.pdf
+.PHONY: pdf-local
 
 ps_2on1: refman_2on1.ps
+.PHONY: ps_2on1
 
 pdf_2on1: refman_2on1.pdf
+.PHONY: pdf_2on1
 
 refman.ps: refman.dvi
 	dvips -o refman.ps refman.dvi
@@ -463,7 +473,7 @@ refman.ps: refman.dvi
 refman.pdf: refman.ps
 	ps2pdf refman.ps refman.pdf
 
-refman.dvi: clean refman.tex doxygen.sty
+refman.dvi: refman.tex doxygen.sty @MAINT@ clean-local
 	if [ "x$(srcdir)" != "x." ]; then \
 	  cp -v $(srcdir)/refman.tex .; \
 	  cp -v $(srcdir)/doxygen.sty .; \
@@ -490,9 +500,11 @@ refman_2on1.pdf: refman_2on1.ps
 
 clean-local:
 	rm -fv *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
+.PHONY: clean-local
 
 Makefile.am: ../Makefile ../latex_backup_Makefile.am
-	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am Makefile.am
+	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am $@
+	if test -e $@; then touch $@; fi
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

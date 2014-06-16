@@ -1,12 +1,24 @@
-all: refman.dvi Makefile Makefile.am
+## automake Makefile for handmade latex rules
+## backed up one directory above where it is actually used, just in case
+## the gendoc script deletes it
+
+# A list of all the files in the current directory which can be regenerated
+MAINTAINERCLEANFILES = Makefile.in
+
+all: @MAINT@ refman.dvi Makefile Makefile.am
+.PHONY: all
 
 ps-local: refman.ps
+.PHONY: ps-local
 
 pdf-local: refman.pdf
+.PHONY: pdf-local
 
 ps_2on1: refman_2on1.ps
+.PHONY: ps_2on1
 
 pdf_2on1: refman_2on1.pdf
+.PHONY: pdf_2on1
 
 refman.ps: refman.dvi
 	dvips -o refman.ps refman.dvi
@@ -14,7 +26,7 @@ refman.ps: refman.dvi
 refman.pdf: refman.ps
 	ps2pdf refman.ps refman.pdf
 
-refman.dvi: clean refman.tex doxygen.sty
+refman.dvi: refman.tex doxygen.sty @MAINT@ clean-local
 	if [ "x$(srcdir)" != "x." ]; then \
 	  cp -v $(srcdir)/refman.tex .; \
 	  cp -v $(srcdir)/doxygen.sty .; \
@@ -41,8 +53,10 @@ refman_2on1.pdf: refman_2on1.ps
 
 clean-local:
 	rm -fv *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
+.PHONY: clean-local
 
 Makefile.am: ../Makefile ../latex_backup_Makefile.am
-	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am Makefile.am
+	$(MAKE) -C .. latex/Makefile.am || cp -v ../latex_backup_Makefile.am $@
+	if test -e $@; then touch $@; fi
 
 EXTRA_DIST = doxygen.sty epeg_8c.tex files.tex index.tex pages.tex refman.tex todo.tex ../latex_backup_Makefile.am

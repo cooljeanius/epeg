@@ -2,6 +2,9 @@
 
 DISTCLEANFILES = .DS_Store
 
+# A list of all the files in the current directory which can be regenerated
+MAINTAINERCLEANFILES = Makefile.in
+
 AM_LDFLAGS = \
 	-L@prefix@/lib
 
@@ -25,6 +28,8 @@ epeg_LDADD = \
 	$(top_builddir)/src/lib/libepeg.la
 
 epeg_DEPENDENCIES = $(top_builddir)/src/lib/libepeg.la
+
+EXTRA_DIST = test_epeg
 
 check_SCRIPTS = test_epeg
 

@@ -14,6 +14,7 @@
 
 @SET_MAKE@
 
+
 VPATH = @srcdir@
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
@@ -79,17 +80,18 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
+check_PROGRAMS = epeg_test$(EXEEXT)
 subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog THANKS \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) \
 	$(srcdir)/config.h.in $(top_srcdir)/build-aux/mkinstalldirs \
-	$(srcdir)/epeg-config.in $(top_srcdir)/build-aux/test-driver \
-	COPYING build-aux/compile build-aux/config.guess \
-	build-aux/config.sub build-aux/depcomp build-aux/install-sh \
-	build-aux/mdate-sh build-aux/missing build-aux/mkinstalldirs \
-	build-aux/texinfo.tex build-aux/ltmain.sh \
-	$(top_srcdir)/build-aux/compile \
+	$(srcdir)/epeg-config.in $(top_srcdir)/build-aux/depcomp \
+	$(top_srcdir)/build-aux/test-driver COPYING build-aux/compile \
+	build-aux/config.guess build-aux/config.sub build-aux/depcomp \
+	build-aux/install-sh build-aux/mdate-sh build-aux/missing \
+	build-aux/mkinstalldirs build-aux/texinfo.tex \
+	build-aux/ltmain.sh $(top_srcdir)/build-aux/compile \
 	$(top_srcdir)/build-aux/config.guess \
 	$(top_srcdir)/build-aux/config.sub \
 	$(top_srcdir)/build-aux/install-sh \
@@ -108,6 +110,16 @@ mkinstalldirs = $(SHELL) $(top_srcdir)/build-aux/mkinstalldirs
 CONFIG_HEADER = config.h
 CONFIG_CLEAN_FILES = epeg-config
 CONFIG_CLEAN_VPATH_FILES =
+am_epeg_test_OBJECTS = epeg_test-epeg_test.$(OBJEXT)
+epeg_test_OBJECTS = $(am_epeg_test_OBJECTS)
+epeg_test_LDADD = $(LDADD)
+AM_V_lt = $(am__v_lt_@AM_V@)
+am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
+am__v_lt_0 = --silent
+am__v_lt_1 = 
+epeg_test_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(epeg_test_CFLAGS) \
+	$(CFLAGS) $(epeg_test_LDFLAGS) $(LDFLAGS) -o $@
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
     $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
@@ -136,7 +148,7 @@ am__uninstall_files_from_dir = { \
          $(am__cd) "$$dir" && rm -f $$files; }; \
   }
 am__installdirs = "$(DESTDIR)$(bindir)"
-SCRIPTS = $(bin_SCRIPTS)
+SCRIPTS = $(bin_SCRIPTS) $(noinst_SCRIPTS)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -149,8 +161,30 @@ AM_V_at = $(am__v_at_@AM_V@)
 am__v_at_ = $(am__v_at_@AM_DEFAULT_V@)
 am__v_at_0 = @
 am__v_at_1 = 
-SOURCES =
-DIST_SOURCES =
+DEFAULT_INCLUDES = -I.@am__isrc@
+depcomp = $(SHELL) $(top_srcdir)/build-aux/depcomp
+am__depfiles_maybe = depfiles
+am__mv = mv -f
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) \
+	$(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) \
+	$(AM_CFLAGS) $(CFLAGS)
+AM_V_CC = $(am__v_CC_@AM_V@)
+am__v_CC_ = $(am__v_CC_@AM_DEFAULT_V@)
+am__v_CC_0 = @echo "  CC      " $@;
+am__v_CC_1 = 
+CCLD = $(CC)
+LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+am__v_CCLD_0 = @echo "  CCLD    " $@;
+am__v_CCLD_1 = 
+SOURCES = $(epeg_test_SOURCES)
+DIST_SOURCES = $(epeg_test_SOURCES)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -164,6 +198,7 @@ am__can_run_installinfo = \
     n|no|NO) false;; \
     *) (install-info --version) >/dev/null 2>&1;; \
   esac
+DATA = $(nodist_noinst_DATA)
 RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
   distclean-recursive maintainer-clean-recursive
 am__recursive_targets = \
@@ -563,16 +598,25 @@ MAINTAINERCLEANFILES = Makefile.in aclocal.m4 config.guess \
 		       stamp-h.in epeg_docs.tar epeg_docs.tar.gz epeg.c \
 		       configure.scan
 
+BUILT_SOURCES = epeg.c
 bin_SCRIPTS = epeg-config
+noinst_SCRIPTS = gendoc
 check_SCRIPTS = test_epeg-config
+epeg_test_SOURCES = epeg_test.c
+epeg_test_DEPENDENCIES = epeg-config
+epeg_test_CFLAGS = `epeg-config --cflags`
+epeg_test_LDFLAGS = `epeg-config --libs`
 TESTS = test_epeg-config
-EXTRA_DIST = README AUTHORS COPYING COPYING-PLAIN epeg.spec epeg.c.in gendoc Doxyfile epeg_docs.tar.gz
-DISTCLEANFILES = *~ .DS_Store doc/.DS_Store autoscan.log
-all: config.h
+EXTRA_DIST = README AUTHORS COPYING COPYING-PLAIN epeg.spec epeg.c.in gendoc Doxyfile epeg_docs.tar.gz test_epeg-config doc/html/html.helpindex
+DISTCLEANFILES = *~ .DS_Store doc/.DS_Store m4/.DS_Store autoscan.log \
+		 stamp-gendoc @MAINTAINER_MODE_TRUE@ epeg.c
+
+nodist_noinst_DATA = @MAINTAINER_MODE_TRUE@ configure.scan
+all: $(BUILT_SOURCES) config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
 .SUFFIXES:
-.SUFFIXES: .log .test .test$(EXEEXT) .trs
+.SUFFIXES: .c .lo .log .o .obj .test .test$(EXEEXT) .trs
 am--refresh: Makefile
 	@:
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
@@ -624,6 +668,19 @@ distclean-hdr:
 	-rm -f config.h stamp-h1
 epeg-config: $(top_builddir)/config.status $(srcdir)/epeg-config.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
+
+clean-checkPROGRAMS:
+	@list='$(check_PROGRAMS)'; test -n "$$list" || exit 0; \
+	echo " rm -f" $$list; \
+	rm -f $$list || exit $$?; \
+	test -n "$(EXEEXT)" || exit 0; \
+	list=`for p in $$list; do echo "$$p"; done | sed 's/$(EXEEXT)$$//'`; \
+	echo " rm -f" $$list; \
+	rm -f $$list
+
+epeg_test$(EXEEXT): $(epeg_test_OBJECTS) $(epeg_test_DEPENDENCIES) $(EXTRA_epeg_test_DEPENDENCIES) 
+	@rm -f epeg_test$(EXEEXT)
+	$(AM_V_CCLD)$(epeg_test_LINK) $(epeg_test_OBJECTS) $(epeg_test_LDADD) $(LIBS)
 install-binSCRIPTS: $(bin_SCRIPTS)
 	@$(NORMAL_INSTALL)
 	@list='$(bin_SCRIPTS)'; test -n "$(bindir)" || list=; \
@@ -674,6 +731,49 @@ installcheck-binSCRIPTS: $(bin_SCRIPTS)
 	    else echo "$$f does not support $$opt" 1>&2; bad=1; fi; \
 	  done; \
 	done; rm -f c$${pid}_.???; exit $$bad
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT)
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/epeg_test-epeg_test.Po@am__quote@
+
+.c.o:
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(COMPILE) -c -o $@ $<
+
+.c.obj:
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(COMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+
+.c.lo:
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(LTCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LTCOMPILE) -c -o $@ $<
+
+epeg_test-epeg_test.o: epeg_test.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epeg_test_CFLAGS) $(CFLAGS) -MT epeg_test-epeg_test.o -MD -MP -MF $(DEPDIR)/epeg_test-epeg_test.Tpo -c -o epeg_test-epeg_test.o `test -f 'epeg_test.c' || echo '$(srcdir)/'`epeg_test.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epeg_test-epeg_test.Tpo $(DEPDIR)/epeg_test-epeg_test.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epeg_test.c' object='epeg_test-epeg_test.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epeg_test_CFLAGS) $(CFLAGS) -c -o epeg_test-epeg_test.o `test -f 'epeg_test.c' || echo '$(srcdir)/'`epeg_test.c
+
+epeg_test-epeg_test.obj: epeg_test.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epeg_test_CFLAGS) $(CFLAGS) -MT epeg_test-epeg_test.obj -MD -MP -MF $(DEPDIR)/epeg_test-epeg_test.Tpo -c -o epeg_test-epeg_test.obj `if test -f 'epeg_test.c'; then $(CYGPATH_W) 'epeg_test.c'; else $(CYGPATH_W) '$(srcdir)/epeg_test.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/epeg_test-epeg_test.Tpo $(DEPDIR)/epeg_test-epeg_test.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='epeg_test.c' object='epeg_test-epeg_test.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(epeg_test_CFLAGS) $(CFLAGS) -c -o epeg_test-epeg_test.obj `if test -f 'epeg_test.c'; then $(CYGPATH_W) 'epeg_test.c'; else $(CYGPATH_W) '$(srcdir)/epeg_test.c'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -920,7 +1020,7 @@ check-TESTS:
 	log_list=`echo $$log_list`; trs_list=`echo $$trs_list`; \
 	$(MAKE) $(AM_MAKEFLAGS) $(TEST_SUITE_LOG) TEST_LOGS="$$log_list"; \
 	exit $$?;
-recheck: all $(check_SCRIPTS)
+recheck: all $(check_PROGRAMS) $(check_SCRIPTS)
 	@test -z "$(TEST_SUITE_LOG)" || rm -f $(TEST_SUITE_LOG)
 	@set +e; $(am__set_TESTS_bases); \
 	bases=`for i in $$bases; do echo $$i; done \
@@ -1151,16 +1251,18 @@ distcleancheck: distclean
 	       $(distcleancheck_listfiles) ; \
 	       exit 1; } >&2
 check-am: all-am
-	$(MAKE) $(AM_MAKEFLAGS) $(check_SCRIPTS)
+	$(MAKE) $(AM_MAKEFLAGS) $(check_PROGRAMS) $(check_SCRIPTS)
 	$(MAKE) $(AM_MAKEFLAGS) check-TESTS
-check: check-recursive
-all-am: Makefile $(SCRIPTS) config.h
+check: $(BUILT_SOURCES)
+	$(MAKE) $(AM_MAKEFLAGS) check-recursive
+all-am: Makefile $(SCRIPTS) $(DATA) config.h
 installdirs: installdirs-recursive
 installdirs-am:
 	for dir in "$(DESTDIR)$(bindir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
-install: install-recursive
+install: $(BUILT_SOURCES)
+	$(MAKE) $(AM_MAKEFLAGS) install-recursive
 install-exec: install-exec-recursive
 install-data: install-data-recursive
 uninstall: uninstall-recursive
@@ -1194,16 +1296,19 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
+	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
 	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
 clean: clean-recursive
 
-clean-am: clean-generic clean-libtool mostlyclean-am
+clean-am: clean-checkPROGRAMS clean-generic clean-libtool \
+	mostlyclean-am
 
 distclean: distclean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
+	-rm -rf ./$(DEPDIR)
 	-rm -f Makefile
-distclean-am: clean-am distclean-generic distclean-hdr \
-	distclean-libtool distclean-local distclean-tags
+distclean-am: clean-am distclean-compile distclean-generic \
+	distclean-hdr distclean-libtool distclean-local distclean-tags
 
 dvi: dvi-recursive
 
@@ -1248,12 +1353,14 @@ installcheck-am: installcheck-binSCRIPTS
 maintainer-clean: maintainer-clean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf $(top_srcdir)/autom4te.cache
+	-rm -rf ./$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
 mostlyclean: mostlyclean-recursive
 
-mostlyclean-am: mostlyclean-generic mostlyclean-libtool
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
 
 pdf: pdf-recursive
 
@@ -1265,14 +1372,16 @@ ps-am:
 
 uninstall-am: uninstall-binSCRIPTS
 
-.MAKE: $(am__recursive_targets) all check-am install-am install-strip
+.MAKE: $(am__recursive_targets) all check check-am install install-am \
+	install-strip
 
 .PHONY: $(am__recursive_targets) CTAGS GTAGS TAGS all all-am \
-	am--refresh check check-TESTS check-am clean clean-cscope \
-	clean-generic clean-libtool cscope cscopelist-am ctags \
-	ctags-am dist dist-all dist-bzip2 dist-gzip dist-hook \
-	dist-lzip dist-shar dist-tarZ dist-xz dist-zip distcheck \
-	distclean distclean-generic distclean-hdr distclean-libtool \
+	am--refresh check check-TESTS check-am clean \
+	clean-checkPROGRAMS clean-cscope clean-generic clean-libtool \
+	cscope cscopelist-am ctags ctags-am dist dist-all dist-bzip2 \
+	dist-gzip dist-hook dist-lzip dist-shar dist-tarZ dist-xz \
+	dist-zip distcheck distclean distclean-compile \
+	distclean-generic distclean-hdr distclean-libtool \
 	distclean-local distclean-tags distcleancheck distdir \
 	distuninstallcheck dvi dvi-am html html-am info info-am \
 	install install-am install-binSCRIPTS install-data \
@@ -1282,9 +1391,10 @@ uninstall-am: uninstall-binSCRIPTS
 	install-pdf-am install-ps install-ps-am install-strip \
 	installcheck installcheck-am installcheck-binSCRIPTS \
 	installdirs installdirs-am maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-generic \
-	mostlyclean-libtool pdf pdf-am ps ps-am recheck tags tags-am \
-	uninstall uninstall-am uninstall-binSCRIPTS
+	maintainer-clean-generic mostlyclean mostlyclean-compile \
+	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
+	recheck tags tags-am uninstall uninstall-am \
+	uninstall-binSCRIPTS
 
 
 install-data-local:
@@ -1296,7 +1406,7 @@ install-data-local:
           done \
 	fi
 
-dist-hook: ./gendoc
+dist-hook: stamp-gendoc Doxyfile
 	./gendoc; \
 	tar cvf epeg_docs.tar doc; \
 	rm -f epeg_docs.tar.gz; \
@@ -1308,13 +1418,60 @@ dist-hook: ./gendoc
 	  done \
 	fi
 
+just-gendoc: stamp-gendoc Doxyfile
+	./gendoc 2>&1
+.PHONY: just-gendoc
+
+epeg.c: stamp-gendoc epeg.c.in
+	if test "x$(srcdir)" != "x."; then \
+	  if test ! -e epeg.c.in -a -e $(srcdir)/epeg.c.in; then \
+	    cp -v $(srcdir)/epeg.c.in .; \
+	  else \
+	    echo "not copying epeg.c.in here"; \
+	  fi; \
+	else \
+	  echo "no special treatment for epeg.c.in in non-vpath builds"; \
+	fi
+	GENDOC_SHOULD_EXIT_EARLY=1 ./gendoc 2>&1
+
+stamp-gendoc: $(srcdir)/gendoc $(srcdir)/Doxyfile
+	@rm -f $@
+	if test "x$(srcdir)" != "x."; then \
+	  if test ! -e ./gendoc; then \
+	    if test -x $(srcdir)/gendoc; then \
+	      cp -v $(srcdir)/gendoc .; \
+	    elif test -f $(srcdir)/gendoc; then \
+	      cp -v $(srcdir)/gendoc . && chmod +x ./gendoc; \
+	    else \
+	      echo "cannot copy gendoc from '$(srcdir)' to here" >&2; \
+	      false; \
+	    fi; \
+	  else \
+	    echo "./gendoc already present"; \
+	  fi; \
+	  if test ! -e ./Doxyfile; then \
+	    if test -f $(srcdir)/Doxyfile; then \
+	      cp -v $(srcdir)/Doxyfile .; \
+	    else \
+	      echo "cannot copy Doxyfile from '$(srcdir)' to here" >&2; \
+	      false; \
+	    fi; \
+	  else \
+	    echo "./Doxyfile already present"; \
+	  fi; \
+	else \
+	  echo "nothing to do for '$@' in non-vpath builds"; \
+	fi
+	touch $@
+
 configure.scan:
 	autoscan 2>&1 || touch $@
 
 distclean-local:
 	rm -fv @PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
 	rm -rfv autom4te.cache || rmdir autom4te.cache
-	(test -w @PACKAGE_TARNAME@-@PACKAGE_VERSION@ && (rm -rf @PACKAGE_TARNAME@-@PACKAGE_VERSION@ || rmdir @PACKAGE_TARNAME@-@PACKAGE_VERSION@)) || stat @PACKAGE_TARNAME@-*.*.* || echo "it can be difficult to distclean the results of distcheck"
+	(test -w @PACKAGE_TARNAME@-@PACKAGE_VERSION@ && (rm -rfv @PACKAGE_TARNAME@-@PACKAGE_VERSION@ || rmdir @PACKAGE_TARNAME@-@PACKAGE_VERSION@)) || stat @PACKAGE_TARNAME@-*.*.* || echo "it can be difficult to distclean the results of distcheck"
+	find . -name .DS_Store -delete 2>&1
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

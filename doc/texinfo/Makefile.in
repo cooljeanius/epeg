@@ -144,6 +144,7 @@ PDFS = epeg.pdf
 PSS = epeg.ps
 HTMLS = epeg.html
 TEXINFOS = epeg.texi
+TEXI2DVI = texi2dvi
 TEXI2PDF = $(TEXI2DVI) --pdf --batch
 MAKEINFOHTML = $(MAKEINFO) --html
 AM_MAKEINFOHTMLFLAGS = $(AM_MAKEINFOFLAGS)
@@ -328,7 +329,11 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 info_TEXINFOS = epeg.texi
 epeg_TEXINFOS = version.texi
-TEXI2DVI = texi2dvi --verbose --batch -I . -I ../latex 2>&1
+AM_TEXI2DVI = texi2dvi --verbose --batch -I . -I ../latex 2>&1
+DISTCLEANFILES = stamp-vti
+
+# A list of all the files in the current directory which can be regenerated
+MAINTAINERCLEANFILES = Makefile.in @MAINTAINER_MODE_TRUE@ version.texi
 all: all-am
 
 .SUFFIXES:
@@ -602,10 +607,12 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
+	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
 clean: clean-am
 
 clean-am: clean-aminfo clean-generic clean-libtool mostlyclean-am

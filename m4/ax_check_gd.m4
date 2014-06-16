@@ -33,17 +33,18 @@
 #   and this notice are preserved. This file is offered as-is, without any
 #   warranty.
 
-#serial 9
+#serial 10
 
 AC_DEFUN([AX_CHECK_GD],[
     AC_ARG_WITH([gd],
         [AS_HELP_STRING([--with-gd(=DIR)],
                         [use the gd library (in DIR)])],[],
-        [with_gd=yes])
+        [with_gd=yes])dnl
 
     if test "x${with_gd}" != "xno"; then
         AC_PATH_PROG([GDLIB_CONFIG],[gdlib-config],[],
-                     [${with_gd}/bin:${PATH}])
+                     [${with_gd}/bin:${PATH}])dnl
+
         if test -n "${GDLIB_CONFIG}"; then
             GD_CFLAGS=`${GDLIB_CONFIG} --cflags`
             GD_LDFLAGS=`${GDLIB_CONFIG} --ldflags`
@@ -51,7 +52,7 @@ AC_DEFUN([AX_CHECK_GD],[
         elif test -d "${with_gd}"; then
             GD_CFLAGS="-I${with_gd}/include"
             GD_LDFLAGS="-L${with_gd}/lib"
-            AC_CHECK_LIB([z],[inflateReset],[GD_LIBS="-lz"])
+            AC_CHECK_LIB([z],[inflateReset],[GD_LIBS="-lz"])dnl
             AC_CHECK_LIB([png],[png_check_sig],
                          [GD_LIBS="-lpng ${GD_LIBS}"],[],
                          [${GD_LIBS}])
@@ -60,25 +61,25 @@ AC_DEFUN([AX_CHECK_GD],[
         save_CFLAGS="${CFLAGS}"
         CFLAGS="${GD_CFLAGS} ${CFLAGS}"
         save_LDFLAGS="${LDFLAGS}"
-        LDFLAGS="${GD_LDFLAGS} $LDFLAGS"
+        LDFLAGS="${GD_LDFLAGS} ${LDFLAGS}"
 
         AC_CHECK_LIB([gd],[gdImageCreate],[
             AC_DEFINE([HAVE_GD],[1],
-                      [Define to 1 if you have the gd library.])
+                      [Define to 1 if you have the gd library.])dnl
             AC_CHECK_LIB([gd],[gdImageGif],[
                 AC_DEFINE([HAVE_GD_GIF],[1],
                           [Define to 1 if GD supports gif.])],
-                [],["${GD_LIBS}"])
+                [],["${GD_LIBS}"])dnl
             AC_CHECK_LIB([gd],[gdImageJpeg],[
                 AC_DEFINE([HAVE_GD_JPEG],[1],
                           [Define to 1 if GD supports jpeg.])],
-                [],["${GD_LIBS}"])
+                [],["${GD_LIBS}"])dnl
             AC_CHECK_LIB([gd],[gdImagePng],[
                 AC_DEFINE([HAVE_GD_PNG],[1],
                           [Define to 1 if GD supports png.])],
                 [],["${GD_LIBS}"])
             GD_LIBS="-lgd ${GD_LIBS}"
-        ],[with_gd=no],[${GD_LIBS}])
+        ],[with_gd=no],[${GD_LIBS}])dnl
 
         CFLAGS="${save_CFLAGS}"
         LDFLAGS="${save_LDFLAGS}"
@@ -90,9 +91,9 @@ AC_DEFUN([AX_CHECK_GD],[
         GD_LIBS="";
     fi
 
-    AC_SUBST([GD_CFLAGS])
-    AC_SUBST([GD_LDFLAGS])
-    AC_SUBST([GD_LIBS])
+    AC_SUBST([GD_CFLAGS])dnl
+    AC_SUBST([GD_LDFLAGS])dnl
+    AC_SUBST([GD_LIBS])dnl
 ])
 
 dnl# EOF
