@@ -20,50 +20,49 @@
 
 <para>An IMMENSELY FAST JPEG thumbnailer library API.</para>
 
-<para>Why write this? It&apos;s a convenience library API to using libjpeg to load JPEG images destined to be turned into thumbnails of the original, saving information with these thumbnails, retreiving it and managing to load the image ready for scaling with the minimum of fuss and CPU overhead.</para>
+<para>Why write this? It is a convenience library API to using libjpeg to load JPEG images destined to be turned into thumbnails of the original, saving information with these thumbnails, retreiving it and managing to load the image ready for scaling with the minimum of fuss and CPU overhead.</para>
 
-<para>This means it&apos;s insanely fast at loading large JPEG images and scaling them down to tiny thumbnails. It&apos;s speedup will be proportional to the size difference between the source image and the output thumbnail size as a count of their pixels.</para>
+<para>This means that it is insanely fast at loading large JPEG images and scaling them down to tiny thumbnails. The speedup that it provides will be proportional to the size difference between the source image and the output thumbnail size as a count of their pixels.</para>
 
-<para>It makes use of libjpeg features of being able to load an image by only decoding the DCT coefficients needed to reconstruct an image of the size desired. This gives a massive speedup. If you do not try and access the pixels in a format other than YUV (or GRAY8 if the source is grascale) then it also avoids colorspace conversions as well.</para>
+<para>It makes use of libjpeg features of being able to load an image by only decoding the DCT coefficients needed to reconstruct an image of the size desired. This gives a massive speedup. If you do NOT try to access the pixels in a format other than YUV (or GRAY8 if the source is grascale), then it also avoids colorspace conversions as well.</para>
 
-<para>Using the library is very easy, look at this example:</para>
+<para>Using the library is very easy; look at this example:</para>
 
-<para><programlisting><emphasis>#include&#32;&quot;Epeg.h&quot;</emphasis>
+<para><programlisting><emphasis>#include&#32;&lt;stdio.h&gt;</emphasis>&#32;<emphasis>/*&#32;for&#32;printf()&#32;*/</emphasis>
+<emphasis>#include&#32;&lt;stdlib.h&gt;</emphasis>&#32;<emphasis>/*&#32;for&#32;exit()&#32;*/</emphasis>
+<emphasis>#include&#32;&quot;Epeg.h&quot;</emphasis>
 
-<emphasis>int</emphasis>
-main(<emphasis>int</emphasis>&#32;argc,&#32;<emphasis>char</emphasis>&#32;**argv)
+<emphasis>int</emphasis>&#32;main(<emphasis>int</emphasis>&#32;argc,&#32;<emphasis>char</emphasis>&#32;**argv)
 {
 &#32;&#32;&#32;Epeg_Image&#32;*im;
 
-&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(argc&#32;!=&#32;3)
-&#32;&#32;&#32;&#32;&#32;{
+&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(argc&#32;!=&#32;3)&#32;{
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis>&quot;Usage:&#32;%s&#32;input.jpg&#32;thumb.jpg\n&quot;</emphasis>,&#32;argv[0]);
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit(0);
-&#32;&#32;&#32;&#32;&#32;}
-&#32;&#32;&#32;im&#32;=&#32;<link linkend="epeg_8c_1ac046eceb33af487e670a6b18d15ccae7">epeg_file_open</link>(argv[1]);
-&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(!im)
-&#32;&#32;&#32;&#32;&#32;{
+&#32;&#32;&#32;}
+&#32;&#32;&#32;im&#32;=&#32;<link linkend="epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open</link>(argv[1]);
+&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(!im)&#32;{
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis>&quot;Cannot&#32;open&#32;%s\n&quot;</emphasis>,&#32;argv[1]);
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit(-1);
-&#32;&#32;&#32;&#32;&#32;}
+&#32;&#32;&#32;}
 &#32;&#32;&#32;
-&#32;&#32;&#32;<link linkend="epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(im,&#32;128,&#32;96);
-&#32;&#32;&#32;<link linkend="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(im,&#32;75);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link>&#32;(im,&#32;1);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(im,&#32;argv[2]);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(im);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(im);
+&#32;&#32;&#32;<link linkend="epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link>(im,&#32;128,&#32;96);
+&#32;&#32;&#32;<link linkend="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link>(im,&#32;75);
+&#32;&#32;&#32;<link linkend="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link>(im,&#32;1);
+&#32;&#32;&#32;<link linkend="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link>(im,&#32;argv[2]);
+&#32;&#32;&#32;<link linkend="epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link>(im);
+&#32;&#32;&#32;<link linkend="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link>(im);
 &#32;&#32;&#32;
 &#32;&#32;&#32;<emphasis>return</emphasis>&#32;0;
 }
 </programlisting></para>
 
-<para>You can compile this program with as small a line as:</para>
+<para>This program exists as epeg_test.c so that you can compile this program with as small a line as:</para>
 
 <para><programlisting><literallayout>gcc epeg_test.c -o epeg_test `epeg-config --cflags --libs`
 </literallayout></programlisting></para>
 
-<para>It is a very simple library that just makes life easier when tyring to generate lots of thumbnails for large JPEG images as quickly as possible. Your milage may vary, but it should save you lots of time and effort in using libjpeg in general.</para>
+<para>It is a very simple library that just makes life easier when trying to generate lots of thumbnails for large JPEG images as quickly as possible. Your milage may vary, but it should save you lots of time and effort in using libjpeg in general.</para>
 
 <para><para><link linkend="todo_1_todo000001">Todo</link> 
 <para>Check all input parameters for sanity. </para>

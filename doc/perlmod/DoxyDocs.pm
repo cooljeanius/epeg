@@ -119,6 +119,330 @@ $doxydocs=
               }
             ],
             initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
           }
         ]
       },
@@ -359,7 +683,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'epeg_8c_1a9df9756f2e34e67701e7d88bcb43fd16',
+                  link => 'epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc',
                   content => 'epeg_memory_open()'
                 },
                 {
@@ -491,7 +815,7 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'epeg_8c_1ac046eceb33af487e670a6b18d15ccae7',
+                  link => 'epeg_8c_1a8295f48501747f18cbb74e4eb1c55836',
                   content => 'epeg_file_open()'
                 },
                 {
@@ -581,14 +905,38 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'A pointer to the height value in pixels to be filled in.'
+                        content => 'A pointer to the height value in pixels to be filled in. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'Returns the image size in pixels. '
+                  content => 'Returns the image size in pixels (well not really).'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a290a722dddc53761d213524ce0e89284',
+                  content => 'epeg_colorspace_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -652,14 +1000,38 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'A pointer to the color space value to be filled in.'
+                        content => 'A pointer to the color space value to be filled in. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'Returns the image color space. '
+                  content => 'Returns the image color space (not yet though).'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a3b8680bdbf470d1a634618e5308ce147',
+                  content => 'epeg_size_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -735,14 +1107,47 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The height of the image to decode at, in pixels.'
+                        content => 'The height of the image to decode at, in pixels. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'Sets the size at which to deocode the JPEG image, giving an optimised load that only decodes the pixels needed. '
+                  content => 'Sets the size at which to decode the JPEG image, giving an optimized load that only decodes the pixels needed.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda',
+                  content => 'epeg_decode_bounds_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1afe41e06c6667542ad4685730538e03f7',
+                  content => 'epeg_decode_colorspace_set()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -770,8 +1175,134 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
-            detailed => {},
+            brief => {
+              doc => [
+                {
+                  type => 'text',
+                  content => 'Set the bounds of the image to decode in pixels. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                params => [
+                  {
+                    parameters => [
+                      {
+                        name => 'im'
+                      }
+                    ],
+                    doc => [
+                      {
+                        type => 'text',
+                        content => 'A handle to an opened Epeg image. '
+                      }
+                    ]
+                  },
+                  {
+                    parameters => [
+                      {
+                        name => 'x'
+                      }
+                    ],
+                    doc => [
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'Boundary X '
+                      }
+                    ]
+                  },
+                  {
+                    parameters => [
+                      {
+                        name => 'y'
+                      }
+                    ],
+                    doc => [
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'Boundary Y '
+                      }
+                    ]
+                  },
+                  {
+                    parameters => [
+                      {
+                        name => 'w'
+                      }
+                    ],
+                    doc => [
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'Boundary W '
+                      }
+                    ]
+                  },
+                  {
+                    parameters => [
+                      {
+                        name => 'h'
+                      }
+                    ],
+                    doc => [
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'Boundary H '
+                      }
+                    ]
+                  }
+                ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
+                  type => 'text',
+                  content => 'Sets the bounds inside which to decode the JPEG image, giving an optimized load that only decodes the bounded pixels. (???)'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a800dc04316740427b1f4366d973ff4e4',
+                  content => 'epeg_decode_size_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1afe41e06c6667542ad4685730538e03f7',
+                  content => 'epeg_decode_colorspace_set()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
+                }
+              ]
+            },
             type => 'void',
             const => 'no',
             volatile => 'no',
@@ -840,14 +1371,47 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The colorspace to decode the image in.'
+                        content => 'The colorspace to decode the image in. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save. '
+                  content => 'This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a800dc04316740427b1f4366d973ff4e4',
+                  content => 'epeg_decode_size_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda',
+                  content => 'epeg_decode_bounds_set()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1042,7 +1606,7 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => '. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row. You must free the pixel block using '
+                  content => '. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using '
                 },
                 {
                   type => 'url',
@@ -1058,7 +1622,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => 'On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded. '
+                  content => 'On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ac1d79775e08f47098507ac265581bf63',
+                  content => 'epeg_pixels_get_as_RGB8()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1265,7 +1845,7 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => '. The pixel block is packed with no row padding, and it organsied from top-left to bottom right, row by row. You must free the pixel block using '
+                  content => '. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using '
                 },
                 {
                   type => 'url',
@@ -1281,7 +1861,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => 'On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed or the image data cannot be decoded. '
+                  content => 'On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1acf990fda661066b46bbf470830288c78',
+                  content => 'epeg_pixels_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1337,7 +1933,7 @@ $doxydocs=
                     doc => [
                       {
                         type => 'text',
-                        content => 'A handle to an opened Epeg image. '
+                        content => 'A handle to an opened Epeg image (unused). '
                       }
                     ]
                   },
@@ -1353,11 +1949,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The pointer to the image pixels.'
+                        content => 'The pointer to the image pixels. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'This frees the data for a block of pixels requested from image '
@@ -1418,12 +2022,12 @@ $doxydocs=
                 },
                 {
                   type => 'url',
-                  link => 'epeg_8c_1aa3e359181a6a48bd84708828364bf094',
+                  link => 'epeg_8c_1acf990fda661066b46bbf470830288c78',
                   content => 'epeg_pixels_get()'
                 },
                 {
                   type => 'text',
-                  content => ' and mustbe called before the image is closed by '
+                  content => ' and must be called before the image is closed by '
                 },
                 {
                   type => 'url',
@@ -1509,7 +2113,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ', if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only. '
+                  content => ', if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52',
+                  content => 'epeg_thumbnail_comments_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1565,11 +2185,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'Pointer to a thumbnail info struct to be filled in.'
+                        content => 'Pointer to a thumbnail info struct to be filled in. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the '
@@ -1590,7 +2218,32 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ' struct on return. '
+                  content => ' struct on return.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa',
+                  content => 'epeg_comment_get()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a5cfe689f77dbe7b120317a195585ee51',
+                  content => 'epeg_thumbnail_comments_enable()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1650,11 +2303,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The comment to set.'
+                        content => 'The comment to set. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'Set the comment for the image file for when it gets saved. This is a NUL byte terminated C string. If '
@@ -1682,7 +2343,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => 'The default comment will be any comment loaded from the input file. '
+                  content => 'The default comment will be any comment loaded from the input file.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa',
+                  content => 'epeg_comment_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1742,11 +2419,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The quality of encoding from 0 to 100.'
+                        content => 'The quality of encoding from 0 to 100. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'Set the quality of the output encoded image. Values from 0 to 100 inclusive are valid, with 100 being the maximum quality, and 0 being the minimum. If the quality is set equal to or above 90%, the output U and V color planes are encoded at 1:1 with the Y plane.'
@@ -1756,7 +2441,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => 'The default quality is 75. '
+                  content => 'The default quality is 75.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ab96605b1c21ec8d791df705a5117233c',
+                  content => 'epeg_comment_set()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1816,11 +2517,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'A boolean on and off enabling flag.'
+                        content => 'A boolean on and off enabling flag. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'if '
@@ -1841,7 +2550,23 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ' is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0. '
+                  content => ' is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52',
+                  content => 'epeg_thumbnail_comments_get()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -1901,11 +2626,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'The path to the output file.'
+                        content => 'The path to the output file. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'This sets the output file path name (either a full or relative path name) to where the file will be written when saved. '
@@ -1926,7 +2659,7 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ' must be a NUL terminated C string conatining the path to the file to be saved to. If it is NULL, the image will not be saved to a file when calling '
+                  content => ' must be a NUL terminated C string containing the path to the file to be saved to. If it is NULL, then the image will not be saved to a file when calling '
                 },
                 {
                   type => 'url',
@@ -1935,7 +2668,32 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => '. '
+                  content => '.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8',
+                  content => 'epeg_memory_output_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a12a018084510ebdc0e627f56305fea79',
+                  content => 'epeg_encode()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -2011,11 +2769,19 @@ $doxydocs=
                       },
                       {
                         type => 'text',
-                        content => 'A pointer to a counter of the size of the memory block.'
+                        content => 'A pointer to a counter of the size of the memory block. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'This sets the output encoding of the image when saved to be allocated memory. After '
@@ -2063,7 +2829,32 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ' will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size. '
+                  content => ' will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4',
+                  content => 'epeg_file_output_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a12a018084510ebdc0e627f56305fea79',
+                  content => 'epeg_encode()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -2111,11 +2902,19 @@ $doxydocs=
                     doc => [
                       {
                         type => 'text',
-                        content => 'A handle to an opened Epeg image.'
+                        content => 'A handle to an opened Epeg image. '
                       }
                     ]
                   }
                 ],
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '1 if something happened, otherwise 0.'
+                    }
+                  ]
+                },
                 {
                   type => 'text',
                   content => 'This saves the image '
@@ -2154,7 +2953,32 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => '. The image will be encoded at the deoded pixel size, using the quality, comment and thumbnail comment settings set on the image. '
+                  content => '. The image will be encoded at the decoded pixel size, using the quality, comment, and thumbnail comment settings set on the image.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4',
+                  content => 'epeg_file_output_set()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8',
+                  content => 'epeg_memory_output_set()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -2178,7 +3002,16 @@ $doxydocs=
               doc => [
                 {
                   type => 'text',
-                  content => 'FIXME: Document this. '
+                  content => 'FIXME: Document this with a short, sentence-long description of '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a327dab144744ba5f1892643d627e6df0',
+                  content => 'epeg_trim()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -2194,14 +3027,22 @@ $doxydocs=
                     doc => [
                       {
                         type => 'text',
-                        content => 'A handle to an opened Epeg image.'
+                        content => 'A handle to an opened Epeg image. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '1 if something happened, otherwise 0.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'FIXME: Document this. '
+                  content => 'FIXME: Document this with a longer, paragraph-long description. '
                 }
               ]
             },
@@ -2241,14 +3082,22 @@ $doxydocs=
                     doc => [
                       {
                         type => 'text',
-                        content => 'A handle to an opened Epeg image.'
+                        content => 'A handle to an opened Epeg image. '
                       }
                     ]
                   }
                 ],
                 {
+                  return => [
+                    {
+                      type => 'text',
+                      content => 'Nothing.'
+                    }
+                  ]
+                },
+                {
                   type => 'text',
-                  content => 'This closes an opened image handle and frees all memory associated with it. It does not free encoded data generated by '
+                  content => 'This closes an opened image handle and frees all memory associated with it. It does NOT free encoded data generated by '
                 },
                 {
                   type => 'url',
@@ -2266,16 +3115,41 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => ' nor does it guarantee to free any data recieved by '
+                  content => ', nor does it guarantee to free any data received by '
                 },
                 {
                   type => 'url',
-                  link => 'epeg_8c_1aa3e359181a6a48bd84708828364bf094',
+                  link => 'epeg_8c_1acf990fda661066b46bbf470830288c78',
                   content => 'epeg_pixels_get()'
                 },
                 {
                   type => 'text',
-                  content => '. Once an image handle is closed consider it invalid. '
+                  content => '. Once an image handle is closed, consider it invalid.'
+                },
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'See also: '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a8295f48501747f18cbb74e4eb1c55836',
+                  content => 'epeg_file_open()'
+                },
+                {
+                  type => 'text',
+                  content => ', '
+                },
+                {
+                  type => 'url',
+                  link => 'epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc',
+                  content => 'epeg_memory_open()'
+                },
+                {
+                  type => 'text',
+                  content => ' '
                 }
               ]
             },
@@ -2519,28 +3393,28 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => 'Why write this? It\'s a convenience library API to using libjpeg to load JPEG images destined to be turned into thumbnails of the original, saving information with these thumbnails, retreiving it and managing to load the image ready for scaling with the minimum of fuss and CPU overhead.'
+                content => 'Why write this? It is a convenience library API to using libjpeg to load JPEG images destined to be turned into thumbnails of the original, saving information with these thumbnails, retreiving it and managing to load the image ready for scaling with the minimum of fuss and CPU overhead.'
               },
               {
                 type => 'parbreak'
               },
               {
                 type => 'text',
-                content => 'This means it\'s insanely fast at loading large JPEG images and scaling them down to tiny thumbnails. It\'s speedup will be proportional to the size difference between the source image and the output thumbnail size as a count of their pixels.'
+                content => 'This means that it is insanely fast at loading large JPEG images and scaling them down to tiny thumbnails. The speedup that it provides will be proportional to the size difference between the source image and the output thumbnail size as a count of their pixels.'
               },
               {
                 type => 'parbreak'
               },
               {
                 type => 'text',
-                content => 'It makes use of libjpeg features of being able to load an image by only decoding the DCT coefficients needed to reconstruct an image of the size desired. This gives a massive speedup. If you do not try and access the pixels in a format other than YUV (or GRAY8 if the source is grascale) then it also avoids colorspace conversions as well.'
+                content => 'It makes use of libjpeg features of being able to load an image by only decoding the DCT coefficients needed to reconstruct an image of the size desired. This gives a massive speedup. If you do NOT try to access the pixels in a format other than YUV (or GRAY8 if the source is grascale), then it also avoids colorspace conversions as well.'
               },
               {
                 type => 'parbreak'
               },
               {
                 type => 'text',
-                content => 'Using the library is very easy, look at this example:'
+                content => 'Using the library is very easy; look at this example:'
               },
               {
                 type => 'parbreak'
@@ -2550,7 +3424,7 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => 'You can compile this program with as small a line as:'
+                content => 'This program exists as epeg_test.c so that you can compile this program with as small a line as:'
               },
               {
                 type => 'parbreak'
@@ -2565,7 +3439,7 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => 'It is a very simple library that just makes life easier when tyring to generate lots of thumbnails for large JPEG images as quickly as possible. Your milage may vary, but it should save you lots of time and effort in using libjpeg in general.'
+                content => 'It is a very simple library that just makes life easier when trying to generate lots of thumbnails for large JPEG images as quickly as possible. Your milage may vary, but it should save you lots of time and effort in using libjpeg in general.'
               },
               {
                 type => 'parbreak'
