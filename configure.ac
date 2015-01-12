@@ -17,6 +17,7 @@ AC_INIT([epeg],[0.9.0],[raster@rasterman.com])dnl
 AC_CONFIG_SRCDIR([epeg.c.in])dnl
 AC_CONFIG_AUX_DIR([build-aux])dnl
 AC_REQUIRE_AUX_FILE([mkinstalldirs])dnl
+AC_REQUIRE_AUX_FILE([depcomp])dnl
 AC_CONFIG_MACRO_DIR([m4])dnl
 AC_CANONICAL_TARGET
 AC_OBJEXT
@@ -51,6 +52,8 @@ AC_DEFUN([AM_LT_PREREQS],[
 ])dnl
 AM_LT_PREREQS([])dnl
 LT_INIT([shared win32-dll dlopen])dnl
+LT_LANG([C])dnl
+LT_PREREQ([2.4.2])dnl
 AC_DEFUN([AC_REQUIRE_RANLIB],[
   AC_REQUIRE([AC_PROG_RANLIB])dnl
 ])dnl

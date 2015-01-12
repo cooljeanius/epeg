@@ -987,7 +987,8 @@ static Epeg_Image *_epeg_open_header(Epeg_Image *im)
 /* static internal private-only function; unnecessary to document: */
 static int _epeg_decode(Epeg_Image *im)
 {
-   int scale, scalew, scaleh, y;
+   int scale, scalew, scaleh;
+   JDIMENSION y;
 
    if (im->pixels) {
       return 1;
@@ -1064,9 +1065,9 @@ static int _epeg_decode(Epeg_Image *im)
 
    jpeg_start_decompress(&(im->in.jinfo));
 
-   for ((y = 0); (y < im->in.jinfo.output_height); y++) {
+   for ((y = 0U); (y < im->in.jinfo.output_height); y++) {
 	   im->lines[y] = (im->pixels +
-                      ((unsigned int)(y * im->in.jinfo.output_components) * im->in.jinfo.output_width));
+                      ((y * im->in.jinfo.output_components) * im->in.jinfo.output_width));
    }
 
    while (im->in.jinfo.output_scanline < im->in.jinfo.output_height) {
@@ -1119,7 +1120,7 @@ static int _epeg_scale(Epeg_Image *im)
 /* static internal private-only function; unnecessary to document: */
 static int _epeg_decode_for_trim(Epeg_Image *im)
 {
-   int y;
+   JDIMENSION y;
 
    if (im->pixels) {
       return 1;
@@ -1181,9 +1182,9 @@ static int _epeg_decode_for_trim(Epeg_Image *im)
 
    jpeg_start_decompress(&(im->in.jinfo));
 
-   for ((y = 0); (y < im->in.jinfo.output_height); y++) {
+   for ((y = 0U); (y < im->in.jinfo.output_height); y++) {
       im->lines[y] = (im->pixels +
-                      ((unsigned int)(y * im->in.jinfo.output_components) * im->in.jinfo.output_width));
+                      ((y * im->in.jinfo.output_components) * im->in.jinfo.output_width));
    }
 
    while (im->in.jinfo.output_scanline < im->in.jinfo.output_height) {

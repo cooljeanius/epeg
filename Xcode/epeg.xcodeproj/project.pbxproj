@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5ECF84D1940DDDF00B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8491940DDDF00B3D949 /* epeg_main.c */; };
+		A5ECF84D1940DDDF00B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8491940DDDF00B3D949 /* epeg_main.c */; settings = {COMPILER_FLAGS = "-Wno-sign-compare"; }; };
 		A5ECF84E1940DDDF00B3D949 /* epeg_memfile.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF84A1940DDDF00B3D949 /* epeg_memfile.c */; };
 		A5ECF84F1940DDDF00B3D949 /* epeg_private.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF84B1940DDDF00B3D949 /* epeg_private.h */; };
 		A5ECF8501940DDDF00B3D949 /* Epeg.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF84C1940DDDF00B3D949 /* Epeg.h */; };
-		A5ECF8681940DE3100B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8661940DE3100B3D949 /* epeg_main.c */; };
+		A5ECF8681940DE3100B3D949 /* epeg_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8661940DE3100B3D949 /* epeg_main.c */; settings = {COMPILER_FLAGS = "-Wno-sign-compare"; }; };
 		A5ECF8721940DE6500B3D949 /* epeg_test.c in Sources */ = {isa = PBXBuildFile; fileRef = A5ECF8711940DE6500B3D949 /* epeg_test.c */; };
 		A5ECF8761940E24100B3D949 /* epeg_main.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ECF8671940DE3100B3D949 /* epeg_main.h */; };
 		A5ECF9B419414DB600B3D949 /* libepeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libepeg.dylib */; };
@@ -463,8 +463,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					PIC,
 					HAVE_CONFIG_H,
+					"_FORTIFY_SOURCE=2",
 				);
 				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
 				HEADER_SEARCH_PATHS = (
 					.,
 					..,
@@ -518,6 +520,7 @@
 				EXECUTABLE_PATH = "$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).0.$(EXECUTABLE_EXTENSION)";
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					.,
@@ -584,6 +587,7 @@
 				"GCC_MODEL_PPC64[arch=ppc64]" = YES;
 				"GCC_MODEL_TUNING[arch=ppc64]" = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "_FORTIFY_SOURCE=2";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
@@ -612,7 +616,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
 				LD_GENERATE_MAP_FILE = YES;
+				OTHER_CFLAGS = (
+					"-ggdb",
+					"-ftrapv",
+				);
 				PREBINDING = NO;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				"SDKROOT[arch=i386]" = macosx10.6;
@@ -621,6 +630,34 @@
 				"SDKROOT[arch=x86_64]" = macosx10.6;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wpointer-arith",
+					"-Wcast-align",
+					"-Wcast-qual",
+					"-Wwrite-strings",
+					"-Wimplicit",
+					"-Wformat=2",
+					"-Wundef",
+					"-Wunused-macros",
+					"-Wextra-tokens",
+					"-Wdeclaration-after-statement",
+					"-Wstrict-prototypes",
+					"-Wold-style-definition",
+					"-Wfloat-equal",
+					"-Wc++-compat",
+					"-Waggregate-return",
+					"-Wvolatile-register-var",
+					"-Winline",
+					"-Winvalid-pch",
+					"-Wnested-externs",
+					"-Wmissing-declarations",
+					"-Wmissing-include-dirs",
+					"-Wmissing-noreturn",
+					"-Woverlength-strings",
+					"-Wswitch-default",
+				);
 			};
 			name = Debug;
 		};
@@ -639,6 +676,8 @@
 					x86_64,
 				);
 				"ARCHS[sdk=macosx10.6]" = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				"GCC_ALTIVEC_EXTENSIONS[arch=ppc64]" = YES;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -668,6 +707,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
 				LD_GENERATE_MAP_FILE = YES;
+				OTHER_CFLAGS = (
+					"-fstrict-overflow",
+					"-fstack-protector",
+				);
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -675,8 +718,20 @@
 				"SDKROOT[arch=ppc64]" = macosx10.5;
 				"SDKROOT[arch=ppc]" = macosx10.5;
 				"SDKROOT[arch=x86_64]" = macosx10.6;
+				SEPARATE_STRIP = YES;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wdisabled-optimization",
+					"-Wformat",
+					"-Wformat-security",
+					"-Winit-self",
+					"-Wstrict-aliasing",
+					"-Wstrict-overflow",
+					"-Wstrict-prototypes",
+					"-Wvolatile-register-var",
+					"-Wstack-protector",
+				);
 			};
 			name = Release;
 		};
@@ -685,7 +740,11 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"_FORTIFY_SOURCE=2",
+				);
+				GCC_WARN_SIGN_COMPARE = NO;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					.,
@@ -693,7 +752,10 @@
 					"$(CONFIGURATION_BUILD_DIR)",
 				);
 				MACH_O_TYPE = mh_execute;
-				OTHER_CFLAGS = "-ggdb";
+				OTHER_CFLAGS = (
+					"-ggdb",
+					"-ftrapv",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "epeg-bin";
 				STRIP_STYLE = "non-global";
@@ -768,7 +830,10 @@
 				GCC_ENABLE_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"_FORTIFY_SOURCE=2",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "epeg_test-Info.plist";
@@ -778,7 +843,10 @@
 					..,
 					"$(CONFIGURATION_BUILD_DIR)",
 				);
-				OTHER_CFLAGS = "-ggdb";
+				OTHER_CFLAGS = (
+					"-ggdb",
+					"-ftrapv",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
