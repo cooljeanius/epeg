@@ -1,15 +1,14 @@
-\hypertarget{epeg_8c}{\section{epeg.\+c File Reference}
-\label{epeg_8c}\index{epeg.\+c@{epeg.\+c}}
-}
+\hypertarget{epeg_8c}{}\doxysection{epeg.\+c File Reference}
+\label{epeg_8c}\index{epeg.c@{epeg.c}}
 
 
-Epeg J\+P\+E\+G Thumbnailer library.  
+Epeg JPEG Thumbnailer library.  
 
 
-{\ttfamily \#include $<$stdio.\+h$>$}\\*
-{\ttfamily \#include $<$stdlib.\+h$>$}\\*
-{\ttfamily \#include \char`\"{}Epeg.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}epeg\+\_\+private.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Epeg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}epeg\+\_\+private.\+h\char`\"{}}\newline
 Include dependency graph for epeg.\+c\+:
 \nopagebreak
 \begin{figure}[H]
@@ -18,64 +17,63 @@ Include dependency graph for epeg.\+c\+:
 \includegraphics[width=350pt]{epeg_8c__incl}
 \end{center}
 \end{figure}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-Epeg\+\_\+\+Image $\ast$ \hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open} (const char $\ast$file)
-\begin{DoxyCompactList}\small\item\em Open a J\+P\+E\+G image by filename. \end{DoxyCompactList}\item 
-Epeg\+\_\+\+Image $\ast$ \hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open} (unsigned char $\ast$data, int size)
-\begin{DoxyCompactList}\small\item\em Open a J\+P\+E\+G image stored in memory. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}{epeg\+\_\+size\+\_\+get} (Epeg\+\_\+\+Image $\ast$im, int $\ast$w, int $\ast$h)
-\begin{DoxyCompactList}\small\item\em Return the original J\+P\+E\+G pixel size. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a290a722dddc53761d213524ce0e89284}{epeg\+\_\+colorspace\+\_\+get} (Epeg\+\_\+\+Image $\ast$im, int $\ast$space)
-\begin{DoxyCompactList}\small\item\em Return the original J\+P\+E\+G pixel color space. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, int w, int h)
+Epeg\+\_\+\+Image $\ast$ \mbox{\hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open}} (const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Open a JPEG image by filename. \end{DoxyCompactList}\item 
+Epeg\+\_\+\+Image $\ast$ \mbox{\hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open}} (unsigned char $\ast$data, int size)
+\begin{DoxyCompactList}\small\item\em Open a JPEG image stored in memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}{epeg\+\_\+size\+\_\+get}} (Epeg\+\_\+\+Image $\ast$im, int $\ast$w, int $\ast$h)
+\begin{DoxyCompactList}\small\item\em Return the original JPEG pixel size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{epeg_8c_a290a722dddc53761d213524ce0e89284}{epeg\+\_\+colorspace\+\_\+get}} (Epeg\+\_\+\+Image $\ast$im, int $\ast$space)
+\begin{DoxyCompactList}\small\item\em Return the original JPEG pixel color space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, int w, int h)
 \begin{DoxyCompactList}\small\item\em Set the size of the image to decode in pixels. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
+void \mbox{\hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
 \begin{DoxyCompactList}\small\item\em Set the bounds of the image to decode in pixels. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, Epeg\+\_\+\+Colorspace colorspace)
+void \mbox{\hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, Epeg\+\_\+\+Colorspace colorspace)
 \begin{DoxyCompactList}\small\item\em Set the colorspace in which to decode the image. \end{DoxyCompactList}\item 
-const void $\ast$ \hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
+const void $\ast$ \mbox{\hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get}} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
 \begin{DoxyCompactList}\small\item\em Get a segment of decoded pixels from an image. \end{DoxyCompactList}\item 
-const void $\ast$ \hyperlink{epeg_8c_ac1d79775e08f47098507ac265581bf63}{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
+const void $\ast$ \mbox{\hyperlink{epeg_8c_ac1d79775e08f47098507ac265581bf63}{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+RGB8}} (Epeg\+\_\+\+Image $\ast$im, int x, int y, int w, int h)
 \begin{DoxyCompactList}\small\item\em Get a segment of decoded pixels from an image. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free} (Epeg\+\_\+\+Image $\ast$im, const void $\ast$data)
+void \mbox{\hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free}} (Epeg\+\_\+\+Image $\ast$im, const void $\ast$data)
 \begin{DoxyCompactList}\small\item\em Free requested pixel block from an image. \end{DoxyCompactList}\item 
-const char $\ast$ \hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get} (Epeg\+\_\+\+Image $\ast$im)
+const char $\ast$ \mbox{\hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get}} (Epeg\+\_\+\+Image $\ast$im)
 \begin{DoxyCompactList}\small\item\em Get the image comment field as a string. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get} (Epeg\+\_\+\+Image $\ast$im, Epeg\+\_\+\+Thumbnail\+\_\+\+Info $\ast$info)
+void \mbox{\hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get}} (Epeg\+\_\+\+Image $\ast$im, Epeg\+\_\+\+Thumbnail\+\_\+\+Info $\ast$info)
 \begin{DoxyCompactList}\small\item\em Get thumbnail comments of loaded image. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_ab96605b1c21ec8d791df705a5117233c}{epeg\+\_\+comment\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, const char $\ast$comment)
+void \mbox{\hyperlink{epeg_8c_ab96605b1c21ec8d791df705a5117233c}{epeg\+\_\+comment\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, const char $\ast$comment)
 \begin{DoxyCompactList}\small\item\em Set the comment field of the image for saving. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}{epeg\+\_\+quality\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, int quality)
+void \mbox{\hyperlink{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}{epeg\+\_\+quality\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, int quality)
 \begin{DoxyCompactList}\small\item\em Set the encoding quality of the saved image. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable} (Epeg\+\_\+\+Image $\ast$im, int onoff)
+void \mbox{\hyperlink{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable}} (Epeg\+\_\+\+Image $\ast$im, int onoff)
 \begin{DoxyCompactList}\small\item\em Enable thumbnail comments in saved image. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, const char $\ast$file)
+void \mbox{\hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, const char $\ast$file)
 \begin{DoxyCompactList}\small\item\em Set the output file path for the image when saved. \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set} (Epeg\+\_\+\+Image $\ast$im, unsigned char $\ast$$\ast$data, int $\ast$size)
+void \mbox{\hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set}} (Epeg\+\_\+\+Image $\ast$im, unsigned char $\ast$$\ast$data, int $\ast$size)
 \begin{DoxyCompactList}\small\item\em Set the output file to be a block of allocated memory. \end{DoxyCompactList}\item 
-int \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode} (Epeg\+\_\+\+Image $\ast$im)
+int \mbox{\hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode}} (Epeg\+\_\+\+Image $\ast$im)
 \begin{DoxyCompactList}\small\item\em This saves the image to its specified destination. \end{DoxyCompactList}\item 
-int \hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim} (Epeg\+\_\+\+Image $\ast$im)
-\begin{DoxyCompactList}\small\item\em F\+I\+X\+M\+E\+: Document this with a short, sentence-\/long description of \hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim()} \end{DoxyCompactList}\item 
-void \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close} (Epeg\+\_\+\+Image $\ast$im)
+int \mbox{\hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim}} (Epeg\+\_\+\+Image $\ast$im)
+\begin{DoxyCompactList}\small\item\em FIXME\+: Document this with a short, sentence-\/long description of \mbox{\hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close}} (Epeg\+\_\+\+Image $\ast$im)
 \begin{DoxyCompactList}\small\item\em Close an image handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-Epeg J\+P\+E\+G Thumbnailer library. 
+\doxysubsection{Detailed Description}
+Epeg JPEG Thumbnailer library. 
 
 These routines are used for the Epeg library. 
 
-\subsection{Function Documentation}
-\hypertarget{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+close@{epeg\+\_\+close}}
-\index{epeg\+\_\+close@{epeg\+\_\+close}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+close (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}\label{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}} 
+\index{epeg.c@{epeg.c}!epeg\_close@{epeg\_close}}
+\index{epeg\_close@{epeg\_close}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_close()}{epeg\_close()}}
+{\footnotesize\ttfamily void epeg\+\_\+close (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im }\end{DoxyParamCaption})}
+
 
 
 Close an image handle. 
@@ -88,35 +86,29 @@ Close an image handle.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This closes an opened image handle and frees all memory associated with it. It does N\+O\+T free encoded data generated by \hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()} followed by \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}, nor does it guarantee to free any data received by \hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()}. Once an image handle is closed, consider it invalid.
+This closes an opened image handle and frees all memory associated with it. It does NOT free encoded data generated by \mbox{\hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}} followed by \mbox{\hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}}, nor does it guarantee to free any data received by \mbox{\hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()}}. Once an image handle is closed, consider it invalid.
 
-See also\+: \hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open()}, \hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open()} 
+See also\+: \mbox{\hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open()}}, \mbox{\hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open()}} 
 
-Referenced by epeg\+\_\+file\+\_\+open(), and epeg\+\_\+memory\+\_\+open().
-
-
+Referenced by epeg\+\_\+file\+\_\+open().
 
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=292pt]{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c_icgraph}
+\includegraphics[width=269pt]{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{epeg_8c_a290a722dddc53761d213524ce0e89284}\label{epeg_8c_a290a722dddc53761d213524ce0e89284}} 
+\index{epeg.c@{epeg.c}!epeg\_colorspace\_get@{epeg\_colorspace\_get}}
+\index{epeg\_colorspace\_get@{epeg\_colorspace\_get}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_colorspace\_get()}{epeg\_colorspace\_get()}}
+{\footnotesize\ttfamily void epeg\+\_\+colorspace\+\_\+get (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int $\ast$}]{space }\end{DoxyParamCaption})}
 
 
-\hypertarget{epeg_8c_a290a722dddc53761d213524ce0e89284}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+colorspace\+\_\+get@{epeg\+\_\+colorspace\+\_\+get}}
-\index{epeg\+\_\+colorspace\+\_\+get@{epeg\+\_\+colorspace\+\_\+get}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+colorspace\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+colorspace\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int $\ast$}]{space}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a290a722dddc53761d213524ce0e89284}
 
-
-Return the original J\+P\+E\+G pixel color space. 
+Return the original JPEG pixel color space. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -130,13 +122,12 @@ Nothing.
 \end{DoxyReturn}
 Returns the image color space (not yet though).
 
-See also\+: \hyperlink{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}{epeg\+\_\+size\+\_\+get()} \hypertarget{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+comment\+\_\+get@{epeg\+\_\+comment\+\_\+get}}
-\index{epeg\+\_\+comment\+\_\+get@{epeg\+\_\+comment\+\_\+get}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+comment\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ epeg\+\_\+comment\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}
+See also\+: \mbox{\hyperlink{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}{epeg\+\_\+size\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}\label{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}} 
+\index{epeg.c@{epeg.c}!epeg\_comment\_get@{epeg\_comment\_get}}
+\index{epeg\_comment\_get@{epeg\_comment\_get}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_comment\_get()}{epeg\_comment\_get()}}
+{\footnotesize\ttfamily const char $\ast$ epeg\+\_\+comment\+\_\+get (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im }\end{DoxyParamCaption})}
+
 
 
 Get the image comment field as a string. 
@@ -149,16 +140,14 @@ Get the image comment field as a string.
 \begin{DoxyReturn}{Returns}
 A pointer to the loaded image comments.
 \end{DoxyReturn}
-This function returns the comment field as a string (N\+U\+L byte terminated) of the loaded image {\ttfamily im}, if there is a comment, or N\+U\+L\+L if no comment is saved with the image. Consider the string returned to be read-\/only.
+This function returns the comment field as a string (NUL byte terminated) of the loaded image {\ttfamily im}, if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-\/only.
 
-See also\+: \hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get()} \hypertarget{epeg_8c_ab96605b1c21ec8d791df705a5117233c}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+comment\+\_\+set@{epeg\+\_\+comment\+\_\+set}}
-\index{epeg\+\_\+comment\+\_\+set@{epeg\+\_\+comment\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+comment\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+comment\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{const char $\ast$}]{comment}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_ab96605b1c21ec8d791df705a5117233c}
+See also\+: \mbox{\hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_ab96605b1c21ec8d791df705a5117233c}\label{epeg_8c_ab96605b1c21ec8d791df705a5117233c}} 
+\index{epeg.c@{epeg.c}!epeg\_comment\_set@{epeg\_comment\_set}}
+\index{epeg\_comment\_set@{epeg\_comment\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_comment\_set()}{epeg\_comment\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+comment\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{const char $\ast$}]{comment }\end{DoxyParamCaption})}
+
 
 
 Set the comment field of the image for saving. 
@@ -173,21 +162,16 @@ Set the comment field of the image for saving.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-Set the comment for the image file for when it gets saved. This is a N\+U\+L byte terminated C string. If {\ttfamily comment} is N\+U\+L\+L the output file will have no comment field.
+Set the comment for the image file for when it gets saved. This is a NUL byte terminated C string. If {\ttfamily comment} is NULL the output file will have no comment field.
 
 The default comment will be any comment loaded from the input file.
 
-See also\+: \hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get()} \hypertarget{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+decode\+\_\+bounds\+\_\+set@{epeg\+\_\+decode\+\_\+bounds\+\_\+set}}
-\index{epeg\+\_\+decode\+\_\+bounds\+\_\+set@{epeg\+\_\+decode\+\_\+bounds\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+decode\+\_\+bounds\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+decode\+\_\+bounds\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{x, }
-\item[{int}]{y, }
-\item[{int}]{w, }
-\item[{int}]{h}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}
+See also\+: \mbox{\hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}\label{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}} 
+\index{epeg.c@{epeg.c}!epeg\_decode\_bounds\_set@{epeg\_decode\_bounds\_set}}
+\index{epeg\_decode\_bounds\_set@{epeg\_decode\_bounds\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_decode\_bounds\_set()}{epeg\_decode\_bounds\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+decode\+\_\+bounds\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
 
 
 Set the bounds of the image to decode in pixels. 
@@ -208,16 +192,14 @@ Set the bounds of the image to decode in pixels.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-Sets the bounds inside which to decode the J\+P\+E\+G image, giving an optimized load that only decodes the bounded pixels. (???)
+Sets the bounds inside which to decode the JPEG image, giving an optimized load that only decodes the bounded pixels. (???)
 
-See also\+: \hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set()}, \hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set()} \hypertarget{epeg_8c_afe41e06c6667542ad4685730538e03f7}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+decode\+\_\+colorspace\+\_\+set@{epeg\+\_\+decode\+\_\+colorspace\+\_\+set}}
-\index{epeg\+\_\+decode\+\_\+colorspace\+\_\+set@{epeg\+\_\+decode\+\_\+colorspace\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+decode\+\_\+colorspace\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+decode\+\_\+colorspace\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{Epeg\+\_\+\+Colorspace}]{colorspace}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_afe41e06c6667542ad4685730538e03f7}
+See also\+: \mbox{\hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set()}} \mbox{\Hypertarget{epeg_8c_afe41e06c6667542ad4685730538e03f7}\label{epeg_8c_afe41e06c6667542ad4685730538e03f7}} 
+\index{epeg.c@{epeg.c}!epeg\_decode\_colorspace\_set@{epeg\_decode\_colorspace\_set}}
+\index{epeg\_decode\_colorspace\_set@{epeg\_decode\_colorspace\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_decode\_colorspace\_set()}{epeg\_decode\_colorspace\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+decode\+\_\+colorspace\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{Epeg\+\_\+\+Colorspace}]{colorspace }\end{DoxyParamCaption})}
+
 
 
 Set the colorspace in which to decode the image. 
@@ -232,17 +214,14 @@ Set the colorspace in which to decode the image.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This sets the colorspace to decode the image in. The default is E\+P\+E\+G\+\_\+\+Y\+U\+V8, as this is normally the native colorspace of a J\+P\+E\+G file, avoiding any colorspace conversions for a faster load and/or save.
+This sets the colorspace to decode the image in. The default is EPEG\+\_\+\+YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save.
 
-See also\+: \hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set()}, \hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set()} \hypertarget{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+decode\+\_\+size\+\_\+set@{epeg\+\_\+decode\+\_\+size\+\_\+set}}
-\index{epeg\+\_\+decode\+\_\+size\+\_\+set@{epeg\+\_\+decode\+\_\+size\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+decode\+\_\+size\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+decode\+\_\+size\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{w, }
-\item[{int}]{h}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a800dc04316740427b1f4366d973ff4e4}
+See also\+: \mbox{\hyperlink{epeg_8c_a800dc04316740427b1f4366d973ff4e4}{epeg\+\_\+decode\+\_\+size\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set()}} \mbox{\Hypertarget{epeg_8c_a800dc04316740427b1f4366d973ff4e4}\label{epeg_8c_a800dc04316740427b1f4366d973ff4e4}} 
+\index{epeg.c@{epeg.c}!epeg\_decode\_size\_set@{epeg\_decode\_size\_set}}
+\index{epeg\_decode\_size\_set@{epeg\_decode\_size\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_decode\_size\_set()}{epeg\_decode\_size\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+decode\+\_\+size\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
 
 
 Set the size of the image to decode in pixels. 
@@ -259,15 +238,14 @@ Set the size of the image to decode in pixels.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-Sets the size at which to decode the J\+P\+E\+G image, giving an optimized load that only decodes the pixels needed.
+Sets the size at which to decode the JPEG image, giving an optimized load that only decodes the pixels needed.
 
-See also\+: \hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set()}, \hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set()} \hypertarget{epeg_8c_a12a018084510ebdc0e627f56305fea79}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+encode@{epeg\+\_\+encode}}
-\index{epeg\+\_\+encode@{epeg\+\_\+encode}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+encode}]{\setlength{\rightskip}{0pt plus 5cm}int epeg\+\_\+encode (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a12a018084510ebdc0e627f56305fea79}
+See also\+: \mbox{\hyperlink{epeg_8c_ab840f7b7ea8c21938a5210dee06e9dda}{epeg\+\_\+decode\+\_\+bounds\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_afe41e06c6667542ad4685730538e03f7}{epeg\+\_\+decode\+\_\+colorspace\+\_\+set()}} \mbox{\Hypertarget{epeg_8c_a12a018084510ebdc0e627f56305fea79}\label{epeg_8c_a12a018084510ebdc0e627f56305fea79}} 
+\index{epeg.c@{epeg.c}!epeg\_encode@{epeg\_encode}}
+\index{epeg\_encode@{epeg\_encode}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_encode()}{epeg\_encode()}}
+{\footnotesize\ttfamily int epeg\+\_\+encode (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im }\end{DoxyParamCaption})}
+
 
 
 This saves the image to its specified destination. 
@@ -280,18 +258,17 @@ This saves the image to its specified destination.
 \begin{DoxyReturn}{Returns}
 1 if something happened, otherwise 0.
 \end{DoxyReturn}
-This saves the image {\ttfamily im} to its destination specified by \hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()} or \hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}. The image will be encoded at the decoded pixel size, using the quality, comment, and thumbnail comment settings set on the image.
+This saves the image {\ttfamily im} to its destination specified by \mbox{\hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()}} or \mbox{\hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}}. The image will be encoded at the decoded pixel size, using the quality, comment, and thumbnail comment settings set on the image.
 
-See also\+: \hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()}, \hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()} \hypertarget{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+file\+\_\+open@{epeg\+\_\+file\+\_\+open}}
-\index{epeg\+\_\+file\+\_\+open@{epeg\+\_\+file\+\_\+open}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+file\+\_\+open}]{\setlength{\rightskip}{0pt plus 5cm}Epeg\+\_\+\+Image $\ast$ epeg\+\_\+file\+\_\+open (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{file}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}
+See also\+: \mbox{\hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}} \mbox{\Hypertarget{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}\label{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}} 
+\index{epeg.c@{epeg.c}!epeg\_file\_open@{epeg\_file\_open}}
+\index{epeg\_file\_open@{epeg\_file\_open}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_file\_open()}{epeg\_file\_open()}}
+{\footnotesize\ttfamily Epeg\+\_\+\+Image $\ast$ epeg\+\_\+file\+\_\+open (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 
 
-Open a J\+P\+E\+G image by filename. 
+
+Open a JPEG image by filename. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -299,17 +276,15 @@ Open a J\+P\+E\+G image by filename.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A handle to the opened J\+P\+E\+G file, with the header decoded.
+A handle to the opened JPEG file, with the header decoded.
 \end{DoxyReturn}
-This function opens the file indicated by the {\ttfamily file} parameter, and attempts to decode it as a jpeg file. If this failes, N\+U\+L\+L is returned. Otherwise a valid handle to an open J\+P\+E\+G file is returned that can be used by other Epeg calls.
+This function opens the file indicated by the {\ttfamily file} parameter, and attempts to decode it as a jpeg file. If this failes, NULL is returned. Otherwise a valid handle to an open JPEG file is returned that can be used by other Epeg calls.
 
-The {\ttfamily file} must be a pointer to a valid C string, N\+U\+L (0 byte) terminated thats is a relative or absolute file path. If not results are not determined.
+The {\ttfamily file} must be a pointer to a valid C string, NUL (0 byte) terminated thats is a relative or absolute file path. If not results are not determined.
 
-See also\+: \hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open()}, \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()} 
+See also\+: \mbox{\hyperlink{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{epeg\+\_\+memory\+\_\+open()}}, \mbox{\hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()}} 
 
 References epeg\+\_\+close().
-
-
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -319,16 +294,12 @@ Here is the call graph for this function\+:
 \includegraphics[width=269pt]{epeg_8c_a8295f48501747f18cbb74e4eb1c55836_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}\label{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}} 
+\index{epeg.c@{epeg.c}!epeg\_file\_output\_set@{epeg\_file\_output\_set}}
+\index{epeg\_file\_output\_set@{epeg\_file\_output\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_file\_output\_set()}{epeg\_file\_output\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+file\+\_\+output\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 
-
-\hypertarget{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+file\+\_\+output\+\_\+set@{epeg\+\_\+file\+\_\+output\+\_\+set}}
-\index{epeg\+\_\+file\+\_\+output\+\_\+set@{epeg\+\_\+file\+\_\+output\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+file\+\_\+output\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+file\+\_\+output\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{const char $\ast$}]{file}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}
 
 
 Set the output file path for the image when saved. 
@@ -343,57 +314,36 @@ Set the output file path for the image when saved.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This sets the output file path name (either a full or relative path name) to where the file will be written when saved. {\ttfamily file} must be a N\+U\+L terminated C string containing the path to the file to be saved to. If it is N\+U\+L\+L, then the image will not be saved to a file when calling \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}.
+This sets the output file path name (either a full or relative path name) to where the file will be written when saved. {\ttfamily file} must be a NUL terminated C string containing the path to the file to be saved to. If it is NULL, then the image will not be saved to a file when calling \mbox{\hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}}.
 
-See also\+: \hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}, \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()} \hypertarget{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+memory\+\_\+open@{epeg\+\_\+memory\+\_\+open}}
-\index{epeg\+\_\+memory\+\_\+open@{epeg\+\_\+memory\+\_\+open}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+memory\+\_\+open}]{\setlength{\rightskip}{0pt plus 5cm}Epeg\+\_\+\+Image $\ast$ epeg\+\_\+memory\+\_\+open (
-\begin{DoxyParamCaption}
-\item[{unsigned char $\ast$}]{data, }
-\item[{int}]{size}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}
+See also\+: \mbox{\hyperlink{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{epeg\+\_\+memory\+\_\+output\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}} \mbox{\Hypertarget{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}\label{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc}} 
+\index{epeg.c@{epeg.c}!epeg\_memory\_open@{epeg\_memory\_open}}
+\index{epeg\_memory\_open@{epeg\_memory\_open}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_memory\_open()}{epeg\_memory\_open()}}
+{\footnotesize\ttfamily Epeg\+\_\+\+Image $\ast$ epeg\+\_\+memory\+\_\+open (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data,  }\item[{int}]{size }\end{DoxyParamCaption})}
 
 
-Open a J\+P\+E\+G image stored in memory. 
+
+Open a JPEG image stored in memory. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em data} & A pointer to the memory containing the J\+P\+E\+G data. \\
+{\em data} & A pointer to the memory containing the JPEG data. \\
 \hline
-{\em size} & The size of the memory segment containing the J\+P\+E\+G. \\
+{\em size} & The size of the memory segment containing the JPEG. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A handle to the opened J\+P\+E\+G, with the header decoded.
+A handle to the opened JPEG, with the header decoded.
 \end{DoxyReturn}
-This function opens a J\+P\+E\+G file that is stored in memory pointed to by {\ttfamily data}, and that is {\ttfamily size} bytes in size. If successful a valid handle is returned, or on failure N\+U\+L\+L is returned.
+This function opens a JPEG file that is stored in memory pointed to by {\ttfamily data}, and that is {\ttfamily size} bytes in size. If successful a valid handle is returned, or on failure NULL is returned.
 
-See also\+: \hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open()}, \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()} 
+See also\+: \mbox{\hyperlink{epeg_8c_a8295f48501747f18cbb74e4eb1c55836}{epeg\+\_\+file\+\_\+open()}}, \mbox{\hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()}} \mbox{\Hypertarget{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}\label{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}} 
+\index{epeg.c@{epeg.c}!epeg\_memory\_output\_set@{epeg\_memory\_output\_set}}
+\index{epeg\_memory\_output\_set@{epeg\_memory\_output\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_memory\_output\_set()}{epeg\_memory\_output\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+memory\+\_\+output\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{unsigned char $\ast$$\ast$}]{data,  }\item[{int $\ast$}]{size }\end{DoxyParamCaption})}
 
-References epeg\+\_\+close().
-
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=292pt]{epeg_8c_a55d449402ab7ad9de9febd63b858a2dc_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+memory\+\_\+output\+\_\+set@{epeg\+\_\+memory\+\_\+output\+\_\+set}}
-\index{epeg\+\_\+memory\+\_\+output\+\_\+set@{epeg\+\_\+memory\+\_\+output\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+memory\+\_\+output\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+memory\+\_\+output\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{unsigned char $\ast$$\ast$}]{data, }
-\item[{int $\ast$}]{size}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_ae0e91c160074e6d96b7e366fb0eb6ec8}
 
 
 Set the output file to be a block of allocated memory. 
@@ -410,16 +360,14 @@ Set the output file to be a block of allocated memory.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This sets the output encoding of the image when saved to be allocated memory. After \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()} is called the pointer pointed to by {\ttfamily data} and the integer pointed to by {\ttfamily size} will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size.
+This sets the output encoding of the image when saved to be allocated memory. After \mbox{\hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()}} is called the pointer pointed to by {\ttfamily data} and the integer pointed to by {\ttfamily size} will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size.
 
-See also\+: \hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()}, \hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()} \hypertarget{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+pixels\+\_\+free@{epeg\+\_\+pixels\+\_\+free}}
-\index{epeg\+\_\+pixels\+\_\+free@{epeg\+\_\+pixels\+\_\+free}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+pixels\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+pixels\+\_\+free (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{const void $\ast$}]{data}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}
+See also\+: \mbox{\hyperlink{epeg_8c_a4aa4c7bbf3edf1f24603d3b4dad684b4}{epeg\+\_\+file\+\_\+output\+\_\+set()}}, \mbox{\hyperlink{epeg_8c_a12a018084510ebdc0e627f56305fea79}{epeg\+\_\+encode()}} \mbox{\Hypertarget{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}\label{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}} 
+\index{epeg.c@{epeg.c}!epeg\_pixels\_free@{epeg\_pixels\_free}}
+\index{epeg\_pixels\_free@{epeg\_pixels\_free}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_pixels\_free()}{epeg\_pixels\_free()}}
+{\footnotesize\ttfamily void epeg\+\_\+pixels\+\_\+free (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{const void $\ast$}]{data }\end{DoxyParamCaption})}
+
 
 
 Free requested pixel block from an image. 
@@ -434,17 +382,12 @@ Free requested pixel block from an image.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This frees the data for a block of pixels requested from image {\ttfamily im}. {\ttfamily data} must be a valid (non N\+U\+L\+L) pointer to a pixel block taken from the image {\ttfamily im} by \hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()} and must be called before the image is closed by \hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()}. \hypertarget{epeg_8c_acf990fda661066b46bbf470830288c78}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+pixels\+\_\+get@{epeg\+\_\+pixels\+\_\+get}}
-\index{epeg\+\_\+pixels\+\_\+get@{epeg\+\_\+pixels\+\_\+get}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+pixels\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ epeg\+\_\+pixels\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{x, }
-\item[{int}]{y, }
-\item[{int}]{w, }
-\item[{int}]{h}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_acf990fda661066b46bbf470830288c78}
+This frees the data for a block of pixels requested from image {\ttfamily im}. {\ttfamily data} must be a valid (non NULL) pointer to a pixel block taken from the image {\ttfamily im} by \mbox{\hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()}} and must be called before the image is closed by \mbox{\hyperlink{epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c}{epeg\+\_\+close()}}. \mbox{\Hypertarget{epeg_8c_acf990fda661066b46bbf470830288c78}\label{epeg_8c_acf990fda661066b46bbf470830288c78}} 
+\index{epeg.c@{epeg.c}!epeg\_pixels\_get@{epeg\_pixels\_get}}
+\index{epeg\_pixels\_get@{epeg\_pixels\_get}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_pixels\_get()}{epeg\_pixels\_get()}}
+{\footnotesize\ttfamily const void $\ast$ epeg\+\_\+pixels\+\_\+get (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
 
 
 Get a segment of decoded pixels from an image. 
@@ -465,21 +408,16 @@ Get a segment of decoded pixels from an image.
 \begin{DoxyReturn}{Returns}
 Pointer to the top left of the requested pixel block.
 \end{DoxyReturn}
-Return image pixels in the decoded format from the specified location rectangle bounded with the box {\ttfamily x}, {\ttfamily y} {\ttfamily w} X {\ttfamily y}. The pixel block is packed with no row padding, and it organized from top-\/left to bottom right, row by row. You must free the pixel block using \hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free()} before you close the image handle, and assume the pixels to be read-\/only memory.
+Return image pixels in the decoded format from the specified location rectangle bounded with the box {\ttfamily x}, {\ttfamily y} {\ttfamily w} X {\ttfamily y}. The pixel block is packed with no row padding, and it organized from top-\/left to bottom right, row by row. You must free the pixel block using \mbox{\hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free()}} before you close the image handle, and assume the pixels to be read-\/only memory.
 
-On success the pointer is returned, on failure, N\+U\+L\+L is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.
+On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.
 
-See also\+: \hyperlink{epeg_8c_ac1d79775e08f47098507ac265581bf63}{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8()} \hypertarget{epeg_8c_ac1d79775e08f47098507ac265581bf63}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8@{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8}}
-\index{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8@{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8}]{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+R\+G\+B8 (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{x, }
-\item[{int}]{y, }
-\item[{int}]{w, }
-\item[{int}]{h}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_ac1d79775e08f47098507ac265581bf63}
+See also\+: \mbox{\hyperlink{epeg_8c_ac1d79775e08f47098507ac265581bf63}{epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+RGB8()}} \mbox{\Hypertarget{epeg_8c_ac1d79775e08f47098507ac265581bf63}\label{epeg_8c_ac1d79775e08f47098507ac265581bf63}} 
+\index{epeg.c@{epeg.c}!epeg\_pixels\_get\_as\_RGB8@{epeg\_pixels\_get\_as\_RGB8}}
+\index{epeg\_pixels\_get\_as\_RGB8@{epeg\_pixels\_get\_as\_RGB8}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_pixels\_get\_as\_RGB8()}{epeg\_pixels\_get\_as\_RGB8()}}
+{\footnotesize\ttfamily const void $\ast$ epeg\+\_\+pixels\+\_\+get\+\_\+as\+\_\+\+RGB8 (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
 
 
 Get a segment of decoded pixels from an image. 
@@ -500,18 +438,16 @@ Get a segment of decoded pixels from an image.
 \begin{DoxyReturn}{Returns}
 Pointer to the top left of the requested pixel block.
 \end{DoxyReturn}
-Return image pixels in the decoded format from the specified location rectangle bounded with the box {\ttfamily x}, {\ttfamily y} {\ttfamily w} X {\ttfamily y}. The pixel block is packed with no row padding, and it organized from top-\/left to bottom right, row by row. You must free the pixel block using \hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free()} before you close the image handle, and assume the pixels to be read-\/only memory.
+Return image pixels in the decoded format from the specified location rectangle bounded with the box {\ttfamily x}, {\ttfamily y} {\ttfamily w} X {\ttfamily y}. The pixel block is packed with no row padding, and it organized from top-\/left to bottom right, row by row. You must free the pixel block using \mbox{\hyperlink{epeg_8c_adf9efc5d877afebda99aba8d5c2bbb0f}{epeg\+\_\+pixels\+\_\+free()}} before you close the image handle, and assume the pixels to be read-\/only memory.
 
-On success the pointer is returned, on failure, N\+U\+L\+L is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.
+On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.
 
-See also\+: \hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()} \hypertarget{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+quality\+\_\+set@{epeg\+\_\+quality\+\_\+set}}
-\index{epeg\+\_\+quality\+\_\+set@{epeg\+\_\+quality\+\_\+set}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+quality\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+quality\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{quality}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}
+See also\+: \mbox{\hyperlink{epeg_8c_acf990fda661066b46bbf470830288c78}{epeg\+\_\+pixels\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}\label{epeg_8c_ad0c11f61561f622ca4097c47c75129bc}} 
+\index{epeg.c@{epeg.c}!epeg\_quality\_set@{epeg\_quality\_set}}
+\index{epeg\_quality\_set@{epeg\_quality\_set}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_quality\_set()}{epeg\_quality\_set()}}
+{\footnotesize\ttfamily void epeg\+\_\+quality\+\_\+set (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{quality }\end{DoxyParamCaption})}
+
 
 
 Set the encoding quality of the saved image. 
@@ -530,18 +466,15 @@ Set the quality of the output encoded image. Values from 0 to 100 inclusive are 
 
 The default quality is 75.
 
-See also\+: \hyperlink{epeg_8c_ab96605b1c21ec8d791df705a5117233c}{epeg\+\_\+comment\+\_\+set()} \hypertarget{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+size\+\_\+get@{epeg\+\_\+size\+\_\+get}}
-\index{epeg\+\_\+size\+\_\+get@{epeg\+\_\+size\+\_\+get}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+size\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+size\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int $\ast$}]{w, }
-\item[{int $\ast$}]{h}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}
+See also\+: \mbox{\hyperlink{epeg_8c_ab96605b1c21ec8d791df705a5117233c}{epeg\+\_\+comment\+\_\+set()}} \mbox{\Hypertarget{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}\label{epeg_8c_a3b8680bdbf470d1a634618e5308ce147}} 
+\index{epeg.c@{epeg.c}!epeg\_size\_get@{epeg\_size\_get}}
+\index{epeg\_size\_get@{epeg\_size\_get}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_size\_get()}{epeg\_size\_get()}}
+{\footnotesize\ttfamily void epeg\+\_\+size\+\_\+get (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int $\ast$}]{w,  }\item[{int $\ast$}]{h }\end{DoxyParamCaption})}
 
 
-Return the original J\+P\+E\+G pixel size. 
+
+Return the original JPEG pixel size. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -557,14 +490,12 @@ Nothing.
 \end{DoxyReturn}
 Returns the image size in pixels (well not really).
 
-See also\+: \hyperlink{epeg_8c_a290a722dddc53761d213524ce0e89284}{epeg\+\_\+colorspace\+\_\+get()} \hypertarget{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable@{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable}}
-\index{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable@{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{int}]{onoff}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}
+See also\+: \mbox{\hyperlink{epeg_8c_a290a722dddc53761d213524ce0e89284}{epeg\+\_\+colorspace\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}\label{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}} 
+\index{epeg.c@{epeg.c}!epeg\_thumbnail\_comments\_enable@{epeg\_thumbnail\_comments\_enable}}
+\index{epeg\_thumbnail\_comments\_enable@{epeg\_thumbnail\_comments\_enable}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_thumbnail\_comments\_enable()}{epeg\_thumbnail\_comments\_enable()}}
+{\footnotesize\ttfamily void epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{int}]{onoff }\end{DoxyParamCaption})}
+
 
 
 Enable thumbnail comments in saved image. 
@@ -581,14 +512,12 @@ Nothing.
 \end{DoxyReturn}
 if {\ttfamily onoff} is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0.
 
-See also\+: \hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get()} \hypertarget{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+thumbnail\+\_\+comments\+\_\+get@{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get}}
-\index{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get@{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}void epeg\+\_\+thumbnail\+\_\+comments\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im, }
-\item[{Epeg\+\_\+\+Thumbnail\+\_\+\+Info $\ast$}]{info}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}
+See also\+: \mbox{\hyperlink{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+get()}} \mbox{\Hypertarget{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}\label{epeg_8c_a28e230b7b3bb05b8a470c80c45100c52}} 
+\index{epeg.c@{epeg.c}!epeg\_thumbnail\_comments\_get@{epeg\_thumbnail\_comments\_get}}
+\index{epeg\_thumbnail\_comments\_get@{epeg\_thumbnail\_comments\_get}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_thumbnail\_comments\_get()}{epeg\_thumbnail\_comments\_get()}}
+{\footnotesize\ttfamily void epeg\+\_\+thumbnail\+\_\+comments\+\_\+get (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im,  }\item[{Epeg\+\_\+\+Thumbnail\+\_\+\+Info $\ast$}]{info }\end{DoxyParamCaption})}
+
 
 
 Get thumbnail comments of loaded image. 
@@ -603,18 +532,17 @@ Get thumbnail comments of loaded image.
 \begin{DoxyReturn}{Returns}
 Nothing.
 \end{DoxyReturn}
-This function retrieves thumbnail comments written by Epeg to any saved J\+P\+E\+G files. If no thumbnail comments were saved, the fields will be 0 in the {\ttfamily info} struct on return.
+This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the {\ttfamily info} struct on return.
 
-See also\+: \hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get()}, \hyperlink{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable()} \hypertarget{epeg_8c_a327dab144744ba5f1892643d627e6df0}{\index{epeg.\+c@{epeg.\+c}!epeg\+\_\+trim@{epeg\+\_\+trim}}
-\index{epeg\+\_\+trim@{epeg\+\_\+trim}!epeg.\+c@{epeg.\+c}}
-\subsubsection[{epeg\+\_\+trim}]{\setlength{\rightskip}{0pt plus 5cm}int epeg\+\_\+trim (
-\begin{DoxyParamCaption}
-\item[{Epeg\+\_\+\+Image $\ast$}]{im}
-\end{DoxyParamCaption}
-)}}\label{epeg_8c_a327dab144744ba5f1892643d627e6df0}
+See also\+: \mbox{\hyperlink{epeg_8c_acf6013949f1cf3b4b5fc7f086fdaabaa}{epeg\+\_\+comment\+\_\+get()}}, \mbox{\hyperlink{epeg_8c_a5cfe689f77dbe7b120317a195585ee51}{epeg\+\_\+thumbnail\+\_\+comments\+\_\+enable()}} \mbox{\Hypertarget{epeg_8c_a327dab144744ba5f1892643d627e6df0}\label{epeg_8c_a327dab144744ba5f1892643d627e6df0}} 
+\index{epeg.c@{epeg.c}!epeg\_trim@{epeg\_trim}}
+\index{epeg\_trim@{epeg\_trim}!epeg.c@{epeg.c}}
+\doxysubsubsection{\texorpdfstring{epeg\_trim()}{epeg\_trim()}}
+{\footnotesize\ttfamily int epeg\+\_\+trim (\begin{DoxyParamCaption}\item[{Epeg\+\_\+\+Image $\ast$}]{im }\end{DoxyParamCaption})}
 
 
-F\+I\+X\+M\+E\+: Document this with a short, sentence-\/long description of \hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim()} 
+
+FIXME\+: Document this with a short, sentence-\/long description of \mbox{\hyperlink{epeg_8c_a327dab144744ba5f1892643d627e6df0}{epeg\+\_\+trim()}} 
 
 
 \begin{DoxyParams}{Parameters}
@@ -624,4 +552,4 @@ F\+I\+X\+M\+E\+: Document this with a short, sentence-\/long description of \hyp
 \begin{DoxyReturn}{Returns}
 1 if something happened, otherwise 0.
 \end{DoxyReturn}
-F\+I\+X\+M\+E\+: Document this with a longer, paragraph-\/long description. 
+FIXME\+: Document this with a longer, paragraph-\/long description. 

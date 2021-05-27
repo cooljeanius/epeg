@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Todo List</title>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_todo" xml:lang="en-US">
 
 <para><variablelist>
-<varlistentry><term><anchor id="todo_1_todo000001"/>page <link linkend="index">Epeg Library Documentation</link>  </term>
+<varlistentry><term>page <link linkend="_index">Epeg Library Documentation</link>  </term>
 <listitem>
-<para>Check all input parameters for sanity. </para>
+<para><anchor xml:id="_todo_1_todo000001"/>Check all input parameters for sanity. </para>
 
 <para>Actually report error conditions properly.</para>
 </listitem></varlistentry>
 </variablelist>
 </para>
-
-</chapter>
+</section>

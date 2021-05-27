@@ -1,16 +1,16 @@
-DOXY_EXEC_PATH = /Users/ericgallager/epeg
-DOXYFILE = /Users/ericgallager/epeg/Doxyfile
-DOXYDOCS_PM = /Users/ericgallager/epeg/doc/perlmod/DoxyDocs.pm
-DOXYSTRUCTURE_PM = /Users/ericgallager/epeg/doc/perlmod/DoxyStructure.pm
-DOXYRULES = /Users/ericgallager/epeg/doc/perlmod/doxyrules.make
-DOXYLATEX_PL = /Users/ericgallager/epeg/doc/perlmod/doxylatex.pl
-DOXYLATEXSTRUCTURE_PL = /Users/ericgallager/epeg/doc/perlmod/doxylatex-structure.pl
-DOXYSTRUCTURE_TEX = /Users/ericgallager/epeg/doc/perlmod/doxystructure.tex
-DOXYDOCS_TEX = /Users/ericgallager/epeg/doc/perlmod/doxydocs.tex
-DOXYFORMAT_TEX = /Users/ericgallager/epeg/doc/perlmod/doxyformat.tex
-DOXYLATEX_TEX = /Users/ericgallager/epeg/doc/perlmod/doxylatex.tex
-DOXYLATEX_DVI = /Users/ericgallager/epeg/doc/perlmod/doxylatex.dvi
-DOXYLATEX_PDF = /Users/ericgallager/epeg/doc/perlmod/doxylatex.pdf
+DOXY_EXEC_PATH = /Users/ericgallager/Documents/GitHub/epeg
+DOXYFILE = /Users/ericgallager/Documents/GitHub/epeg/Doxyfile
+DOXYDOCS_PM = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/DoxyDocs.pm
+DOXYSTRUCTURE_PM = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/DoxyStructure.pm
+DOXYRULES = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxyrules.make
+DOXYLATEX_PL = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxylatex.pl
+DOXYLATEXSTRUCTURE_PL = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxylatex-structure.pl
+DOXYSTRUCTURE_TEX = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxystructure.tex
+DOXYDOCS_TEX = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxydocs.tex
+DOXYFORMAT_TEX = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxyformat.tex
+DOXYLATEX_TEX = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxylatex.tex
+DOXYLATEX_DVI = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxylatex.dvi
+DOXYLATEX_PDF = /Users/ericgallager/Documents/GitHub/epeg/doc/perlmod/doxylatex.pdf
 
 .PHONY: clean-perlmod
 clean-perlmod::

@@ -13,7 +13,7 @@ struct = {
 FILE *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'f';
-      sec-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      sec-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       sec-mem-desc-line = '1502';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -31,7 +31,7 @@ _EnD_oF_dEf_TeXt_;
 void **
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'data';
-      sec-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      sec-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       sec-mem-desc-line = '1503';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -49,7 +49,7 @@ _EnD_oF_dEf_TeXt_;
 size_t *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'size';
-      sec-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      sec-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       sec-mem-desc-line = '1504';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -59,8 +59,8 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/Users/ericgallager/epeg/epeg.c';
-  cp-fileline  = '1501';
+  cp-filename  = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+  cp-fileline  = '1500';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -87,7 +87,7 @@ file = {
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) < (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '102';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -111,7 +111,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '105';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -135,7 +135,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '1615';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -159,7 +159,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '3125';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -183,7 +183,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '4636';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -207,7 +207,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '6148';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -231,7 +231,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '7660';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -255,7 +255,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '9172';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -279,7 +279,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '10684';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -303,7 +303,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '12196';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -327,7 +327,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '13708';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -351,7 +351,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '15220';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -375,7 +375,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '16732';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -399,7 +399,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '18244';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -423,7 +423,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '19756';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -447,7 +447,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '21268';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -471,7 +471,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '22780';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -495,7 +495,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '24292';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -519,7 +519,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '25804';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -543,7 +543,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '27316';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -567,7 +567,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '28828';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -591,7 +591,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '30340';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -615,7 +615,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '31852';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -639,7 +639,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '33364';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -663,7 +663,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '34876';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -687,7 +687,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '36388';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -711,7 +711,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '37900';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -735,7 +735,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '39412';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -759,7 +759,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '40924';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -783,7 +783,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '42437';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -807,8 +807,104 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 ((__x) > (__y) ? (__x) : (__y))
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       define-mem-desc-line = '43950';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '45597';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '47110';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '48623';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '50136';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -827,7 +923,7 @@ _EnD_oF_dEf_TeXt_;
 struct _Eet_Memfile_Write_Info
 _EnD_oF_dEf_TeXt_;
       typedef-mem-name = 'Eet_Memfile_Write_Info';
-      typedef-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      typedef-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       typedef-mem-desc-line = '1487';
       typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -853,8 +949,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '92';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '992';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -877,8 +973,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '93';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1071';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -901,8 +997,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '94';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1167';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -925,8 +1021,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '95';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1203';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -949,8 +1045,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '96';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1284';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -973,8 +1069,8 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '97';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1316';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -997,8 +1093,8 @@ j_common_ptr
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'cinfo';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
-      func-mem-desc-line = '99';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      func-mem-desc-line = '1435';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1021,7 +1117,7 @@ const char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'file';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '124';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Open a JPEG image by filename.
@@ -1068,7 +1164,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'size';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '152';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Open a JPEG image stored in memory.
@@ -1084,11 +1180,6 @@ is returned, or on failure NULL is returned.
 
 See also: epeg_file_open(), epeg_close()
 _EnD_oF_dEf_TeXt_;
-      func-mem-referenceto = {
-        func-mem-ref-id = 'epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c';
-        func-mem-ref-line = '950';
-        func-mem-ref-name = 'epeg_close';
-    };
     }; /* func-member */
     func-member = {
       func-mem-kind = 'function';
@@ -1117,7 +1208,7 @@ int *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'h';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '177';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Return the original JPEG pixel size.
@@ -1154,7 +1245,7 @@ int *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'space';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '197';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Return the original JPEG pixel color space.
@@ -1196,7 +1287,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'h';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '216';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the size of the image to decode in pixels.
@@ -1252,7 +1343,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'h';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '252';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the bounds of the image to decode in pixels.
@@ -1293,7 +1384,7 @@ Epeg_Colorspace
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'colorspace';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '291';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the colorspace in which to decode the image.
@@ -1349,7 +1440,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'h';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '324';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get a segment of decoded pixels from an image.
@@ -1414,7 +1505,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'h';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '587';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get a segment of decoded pixels from an image.
@@ -1461,7 +1552,7 @@ const void *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'data';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '729';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Free requested pixel block from an image.
@@ -1492,7 +1583,7 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '746';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get the image comment field as a string.
@@ -1529,7 +1620,7 @@ Epeg_Thumbnail_Info *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'info';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '763';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get thumbnail comments of loaded image.
@@ -1567,7 +1658,7 @@ const char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'comment';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '790';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the comment field of the image for saving.
@@ -1607,7 +1698,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'quality';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '817';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the encoding quality of the saved image.
@@ -1648,7 +1739,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'onoff';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '838';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enable thumbnail comments in saved image.
@@ -1685,7 +1776,7 @@ const char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'file';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '856';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the output file path for the image when saved.
@@ -1730,7 +1821,7 @@ int *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'size';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '884';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the output file to be a block of allocated memory.
@@ -1766,7 +1857,7 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '903';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This saves the image to its specified destination.
@@ -1798,7 +1889,7 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '924';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 FIXME: Document this with a short, sentence-long description of epeg_trim()
@@ -1825,7 +1916,7 @@ Epeg_Image *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'im';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '950';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Close an image handle.
@@ -1841,15 +1932,10 @@ epeg_pixels_get(). Once an image handle is closed, consider it invalid.
 
 See also: epeg_file_open(), epeg_memory_open()
 _EnD_oF_dEf_TeXt_;
-      func-mem-referenceby = {
+      func-mem-referencedby = {
         func-mem-ref-id = 'epeg_8c_1a8295f48501747f18cbb74e4eb1c55836';
         func-mem-ref-line = '124';
         func-mem-ref-name = 'epeg_file_open';
-    };
-      func-mem-referenceby = {
-        func-mem-ref-id = 'epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc';
-        func-mem-ref-line = '152';
-        func-mem-ref-name = 'epeg_memory_open';
     };
     }; /* func-member */
     func-member = {
@@ -1873,7 +1959,7 @@ size_t
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'size';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '1469';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1897,7 +1983,7 @@ FILE *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'f';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '1487';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1927,7 +2013,7 @@ size_t *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'size';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '1513';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1951,7 +2037,7 @@ FILE *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'f';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      func-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       func-mem-desc-line = '1548';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1974,7 +2060,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 0
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      var-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       var-mem-desc-line = '1508';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1995,7 +2081,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 0
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      var-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       var-mem-desc-line = '1509';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -2016,7 +2102,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = NULL
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/Users/ericgallager/epeg/epeg.c';
+      var-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
       var-mem-desc-line = '1510';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -2026,7 +2112,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* var-member */
     };
-  file-full-name  = '/Users/ericgallager/epeg/epeg.c';
+  file-full-name  = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Epeg JPEG Thumbnailer library.

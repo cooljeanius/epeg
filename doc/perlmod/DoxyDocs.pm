@@ -3,6 +3,9 @@ $doxydocs=
   classes => [
     {
       name => '_Eet_Memfile_Write_Info',
+      kind => 'struct',
+      inner => [
+      ],
       all_members => [
         {
           name => 'data',
@@ -101,6 +104,78 @@ $doxydocs=
               }
             ],
             initializer => '((__x) < (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
           },
           {
             kind => 'define',
@@ -795,6 +870,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Open a JPEG image by filename. '
                 }
@@ -802,21 +880,26 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'file'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'The file path to open. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'file'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The file path to open. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -918,6 +1001,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Open a JPEG image stored in memory. '
                 }
@@ -925,37 +1011,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'data'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A pointer to the memory containing the JPEG data. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'size'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The size of the memory segment containing the JPEG. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'data'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A pointer to the memory containing the JPEG data. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'size'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The size of the memory segment containing the JPEG. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1054,6 +1145,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Return the original JPEG pixel size. '
                 }
@@ -1061,53 +1155,58 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'w'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A pointer to the width value in pixels to be filled in. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'h'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A pointer to the height value in pixels to be filled in. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'w'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A pointer to the width value in pixels to be filled in. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'h'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A pointer to the height value in pixels to be filled in. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1165,6 +1264,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Return the original JPEG pixel color space. '
                 }
@@ -1172,37 +1274,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'space'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A pointer to the color space value to be filled in. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'space'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A pointer to the color space value to be filled in. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1266,53 +1373,58 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'w'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The width of the image to decode at, in pixels. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'h'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The height of the image to decode at, in pixels. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'w'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The width of the image to decode at, in pixels. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'h'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The height of the image to decode at, in pixels. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1379,6 +1491,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the bounds of the image to decode in pixels. '
                 }
@@ -1386,85 +1501,90 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'x'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Boundary X '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'y'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Boundary Y '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'w'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Boundary W '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'h'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Boundary H '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'x'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Boundary X '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'y'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Boundary Y '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'w'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Boundary W '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'h'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Boundary H '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1539,6 +1659,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the colorspace in which to decode the image. '
                 }
@@ -1546,37 +1669,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'colorspace'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The colorspace to decode the image in. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'colorspace'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The colorspace to decode the image in. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1639,6 +1767,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Get a segment of decoded pixels from an image. '
                 }
@@ -1646,85 +1777,90 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'x'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle X. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'y'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle Y. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'w'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle width. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'h'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle height. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'x'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle X. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'y'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle Y. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'w'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle width. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'h'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle height. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -1878,6 +2014,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Get a segment of decoded pixels from an image. '
                 }
@@ -1885,85 +2024,90 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'x'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle X. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'y'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle Y. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'w'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle width. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'h'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Rectangle height. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'x'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle X. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'y'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle Y. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'w'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle width. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'h'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Rectangle height. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2117,6 +2261,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Free requested pixel block from an image. '
                 }
@@ -2124,37 +2271,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image (unused). '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'data'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The pointer to the image pixels. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image (unused). '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'data'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The pointer to the image pixels. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2264,6 +2416,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Get the image comment field as a string. '
                 }
@@ -2271,21 +2426,26 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2353,6 +2513,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Get thumbnail comments of loaded image. '
                 }
@@ -2360,37 +2523,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'info'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'Pointer to a thumbnail info struct to be filled in. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'info'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'Pointer to a thumbnail info struct to be filled in. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2471,6 +2639,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the comment field of the image for saving. '
                 }
@@ -2478,37 +2649,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'comment'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The comment to set. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'comment'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The comment to set. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2587,6 +2763,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the encoding quality of the saved image. '
                 }
@@ -2594,37 +2773,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'quality'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The quality of encoding from 0 to 100. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'quality'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The quality of encoding from 0 to 100. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2685,6 +2869,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Enable thumbnail comments in saved image. '
                 }
@@ -2692,37 +2879,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'onoff'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A boolean on and off enabling flag. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'onoff'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A boolean on and off enabling flag. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2794,6 +2986,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the output file path for the image when saved. '
                 }
@@ -2801,37 +2996,42 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'file'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'The path to the output file. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'file'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The path to the output file. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -2921,6 +3121,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Set the output file to be a block of allocated memory. '
                 }
@@ -2928,53 +3131,58 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'data'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A pointer to a pointer to a memory block. '
-                      }
-                    ]
-                  },
-                  {
-                    parameters => [
-                      {
-                        name => 'size'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'parbreak'
-                      },
-                      {
-                        type => 'text',
-                        content => 'A pointer to a counter of the size of the memory block. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'data'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A pointer to a pointer to a memory block. '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'size'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'A pointer to a counter of the size of the memory block. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -3086,6 +3294,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'This saves the image to its specified destination. '
                 }
@@ -3093,21 +3304,26 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -3202,6 +3418,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'FIXME: Document this with a short, sentence-long description of '
                 },
@@ -3218,21 +3437,26 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -3266,6 +3490,9 @@ $doxydocs=
             brief => {
               doc => [
                 {
+                  type => 'parbreak'
+                },
+                {
                   type => 'text',
                   content => 'Close an image handle. '
                 }
@@ -3273,21 +3500,26 @@ $doxydocs=
             },
             detailed => {
               doc => [
-                params => [
-                  {
-                    parameters => [
-                      {
-                        name => 'im'
-                      }
-                    ],
-                    doc => [
-                      {
-                        type => 'text',
-                        content => 'A handle to an opened Epeg image. '
-                      }
-                    ]
-                  }
-                ],
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'im'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A handle to an opened Epeg image. '
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   return => [
                     {
@@ -3486,6 +3718,9 @@ $doxydocs=
       brief => {
         doc => [
           {
+            type => 'parbreak'
+          },
+          {
             type => 'text',
             content => 'Epeg JPEG Thumbnailer library. '
           }
@@ -3493,6 +3728,9 @@ $doxydocs=
       },
       detailed => {
         doc => [
+          {
+            type => 'parbreak'
+          },
           {
             type => 'text',
             content => 'These routines are used for the Epeg library. '
@@ -3510,8 +3748,7 @@ $doxydocs=
       detailed => {
         doc => [
           {
-            type => 'anchor',
-            id => 'todo_1_todo000001'
+            type => 'parbreak'
           },
           {
             type => 'text',
@@ -3529,7 +3766,15 @@ $doxydocs=
           },
           {
             type => 'text',
-            content => ' Check all input parameters for sanity. '
+            content => ' '
+          },
+          {
+            type => 'anchor',
+            id => 'todo_1_todo000001'
+          },
+          {
+            type => 'text',
+            content => 'Check all input parameters for sanity. '
           },
           {
             type => 'parbreak'
@@ -3546,6 +3791,9 @@ $doxydocs=
       title4 => 'Epeg Library Documentation',
       detailed => {
         doc => [
+          {
+            type => 'parbreak'
+          },
           {
             type => 'text',
             content => ' '
@@ -3584,6 +3832,7 @@ $doxydocs=
           },
           {
             type => 'sect1',
+            title => 'What is Epeg?',
             content => [
               {
                 type => 'text',
@@ -3619,6 +3868,36 @@ $doxydocs=
               },
               {
                 type => 'parbreak'
+              },
+              {
+                type => 'preformatted',
+                content => '#include <stdio.h> /* for printf() */
+#include <stdlib.h> /* for exit() */
+#include "Epeg.h"
+
+int main(int argc, char **argv)
+{
+   Epeg_Image *im;
+
+   if (argc != 3) {
+        printf("Usage: %s input.jpg thumb.jpg\\n", argv[0]);
+        exit(0);
+   }
+   im = epeg_file_open(argv[1]);
+   if (!im) {
+        printf("Cannot open %s\\n", argv[1]);
+        exit(-1);
+   }
+   
+   epeg_decode_size_set(im, 128, 96);
+   epeg_quality_set(im, 75);
+   epeg_thumbnail_comments_enable(im, 1);
+   epeg_file_output_set(im, argv[2]);
+   epeg_encode(im);
+   epeg_close(im);
+   
+   return 0;
+}'
               },
               {
                 type => 'parbreak'

@@ -1,21 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Epeg Library Documentation</title>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage" xml:lang="en-US">
 
-<para> <formalpara><title>Version: </title>
+<para> <formalpara><title>Version</title>
 
 <para>0.9.0 </para>
 </formalpara>
-<formalpara><title>Author: </title>
+<formalpara><title>Author</title>
 
 <para>Carsten Haitzler <link xlink:href="mailto:raster@rasterman.com">raster@rasterman.com</link> </para>
 </formalpara>
-<formalpara><title>Date: </title>
+<formalpara><title>Date</title>
 
 <para>2000-2003</para>
 </formalpara>
 </para>
-<section xml:id="index_1intro">
+<section xml:id="_index_1intro">
 <title>What is Epeg?</title>
 
 <para>An IMMENSELY FAST JPEG thumbnailer library API.</para>
@@ -28,47 +27,46 @@
 
 <para>Using the library is very easy; look at this example:</para>
 
-<para><programlisting><emphasis>#include&#32;&lt;stdio.h&gt;</emphasis>&#32;<emphasis>/*&#32;for&#32;printf()&#32;*/</emphasis>
-<emphasis>#include&#32;&lt;stdlib.h&gt;</emphasis>&#32;<emphasis>/*&#32;for&#32;exit()&#32;*/</emphasis>
-<emphasis>#include&#32;&quot;Epeg.h&quot;</emphasis>
+<para><literallayout><computeroutput>#include&#32;&lt;stdio.h&gt;&#32;/*&#32;for&#32;printf()&#32;*/
+#include&#32;&lt;stdlib.h&gt;&#32;/*&#32;for&#32;exit()&#32;*/
+#include&#32;&quot;Epeg.h&quot;
 
-<emphasis>int</emphasis>&#32;main(<emphasis>int</emphasis>&#32;argc,&#32;<emphasis>char</emphasis>&#32;**argv)
+int&#32;main(int&#32;argc,&#32;char&#32;**argv)
 {
 &#32;&#32;&#32;Epeg_Image&#32;*im;
 
-&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(argc&#32;!=&#32;3)&#32;{
-&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis>&quot;Usage:&#32;%s&#32;input.jpg&#32;thumb.jpg\n&quot;</emphasis>,&#32;argv[0]);
+&#32;&#32;&#32;if&#32;(argc&#32;!=&#32;3)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(&quot;Usage:&#32;%s&#32;input.jpg&#32;thumb.jpg\n&quot;,&#32;argv[0]);
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit(0);
 &#32;&#32;&#32;}
-&#32;&#32;&#32;im&#32;=&#32;<link linkend="epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open</link>(argv[1]);
-&#32;&#32;&#32;<emphasis>if</emphasis>&#32;(!im)&#32;{
-&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis>&quot;Cannot&#32;open&#32;%s\n&quot;</emphasis>,&#32;argv[1]);
+&#32;&#32;&#32;im&#32;=&#32;epeg_file_open(argv[1]);
+&#32;&#32;&#32;if&#32;(!im)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(&quot;Cannot&#32;open&#32;%s\n&quot;,&#32;argv[1]);
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit(-1);
 &#32;&#32;&#32;}
 &#32;&#32;&#32;
-&#32;&#32;&#32;<link linkend="epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link>(im,&#32;128,&#32;96);
-&#32;&#32;&#32;<link linkend="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link>(im,&#32;75);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link>(im,&#32;1);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link>(im,&#32;argv[2]);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link>(im);
-&#32;&#32;&#32;<link linkend="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link>(im);
+&#32;&#32;&#32;epeg_decode_size_set(im,&#32;128,&#32;96);
+&#32;&#32;&#32;epeg_quality_set(im,&#32;75);
+&#32;&#32;&#32;epeg_thumbnail_comments_enable(im,&#32;1);
+&#32;&#32;&#32;epeg_file_output_set(im,&#32;argv[2]);
+&#32;&#32;&#32;epeg_encode(im);
+&#32;&#32;&#32;epeg_close(im);
 &#32;&#32;&#32;
-&#32;&#32;&#32;<emphasis>return</emphasis>&#32;0;
+&#32;&#32;&#32;return&#32;0;
 }
-</programlisting></para>
+</computeroutput></literallayout></para>
 
 <para>This program exists as epeg_test.c so that you can compile this program with as small a line as:</para>
 
-<para><programlisting><literallayout>gcc epeg_test.c -o epeg_test `epeg-config --cflags --libs`
-</literallayout></programlisting></para>
+<para><literallayout><computeroutput>gcc epeg_test.c -o epeg_test `epeg-config --cflags --libs`
+</computeroutput></literallayout></para>
 
 <para>It is a very simple library that just makes life easier when trying to generate lots of thumbnails for large JPEG images as quickly as possible. Your milage may vary, but it should save you lots of time and effort in using libjpeg in general.</para>
 
-<para><para><link linkend="todo_1_todo000001">Todo</link> 
+<para><para><link linkend="_todo_1_todo000001">Todo</link> 
 <para>Check all input parameters for sanity. </para>
 
 <para>Actually report error conditions properly.</para>
 </para></para>
 </section>
-
 </chapter>

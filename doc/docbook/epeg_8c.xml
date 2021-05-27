@@ -1,734 +1,1049 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="epeg_8c">
-    <title>epeg.c File Reference</title>
-    <programlisting>#include &lt;stdio.h&gt;</programlisting>
-    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
-    <programlisting>#include &quot;Epeg.h&quot;</programlisting>
-    <programlisting>#include &quot;epeg_private.h&quot;</programlisting>
-        <simplesect>
-            <title> Classes </title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="struct__Eet__Memfile__Write__Info">_Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </simplesect>
-        <simplesect>
-            <title>Defines</title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1a359255b849555840ffd0860f74b1370b">MIN</link> ((__x) &lt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>#define <link linkend="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db">MAX</link> ((__x) &gt; (__y) ? (__x) : (__y))</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </simplesect>
-        <simplesect>
-            <title>Typedefs</title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                            <para>typedef struct _Eet_Memfile_Write_Info  <link linkend="epeg_8c_1aa03171b6ccd3d8001d991640ab9fce68">Eet_Memfile_Write_Info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </simplesect>
-        <simplesect>
-            <title>Variables</title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1aac9b753c871b7fbc1020859672fc7a06">_epeg_memfile_info_alloc_num</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1af3717f2fa85018cbe201973c410d1589">_epeg_memfile_info_num</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static Eet_Memfile_Write_Info * <link linkend="epeg_8c_1a5ea8b8cfd6054a5711fecc6e37d4a83d">_epeg_memfile_info</link></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </simplesect>
-        <simplesect>
-            <title>Functions</title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static Epeg_Image * <link linkend="epeg_8c_1acf535fd90db7bcf1a82dbe15a50c2a8a">_epeg_open_header</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1a34d52540e579ae654881d3be16d19cef">_epeg_decode</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1ab0adef2394722a2cc7bdd33ec06ae42e">_epeg_scale</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1ae8695051f772eab34219a680b8e1dd8f">_epeg_decode_for_trim</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1a0c0ab083531f6313b9ed79b0c1e0fa74">_epeg_trim</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static int <link linkend="epeg_8c_1a30a4e820dc4a083dcb7e6dad777f6d6b">_epeg_encode</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>static void <link linkend="epeg_8c_1a15f7830f31f23ee1ba5d86e1ec4f5b52">_epeg_fatal_error_handler</link> (
-j_common_ptr cinfo)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>Epeg_Image * <link linkend="epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open</link> (
-const char * file)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>Epeg_Image * <link linkend="epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open</link> (
-unsigned char * data, int size)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a3b8680bdbf470d1a634618e5308ce147">epeg_size_get</link> (
-Epeg_Image * im, int * w, int * h)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a290a722dddc53761d213524ce0e89284">epeg_colorspace_get</link> (
-Epeg_Image * im, int * space)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link> (
-Epeg_Image * im, int w, int h)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set</link> (
-Epeg_Image * im, int x, int y, int w, int h)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set</link> (
-Epeg_Image * im, Epeg_Colorspace colorspace)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>const void * <link linkend="epeg_8c_1acf990fda661066b46bbf470830288c78">epeg_pixels_get</link> (
-Epeg_Image * im, int x, int y, int w, int h)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>const void * <link linkend="epeg_8c_1ac1d79775e08f47098507ac265581bf63">epeg_pixels_get_as_RGB8</link> (
-Epeg_Image * im, int x, int y, int w, int h)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free</link> (
-Epeg_Image * im, const void * data)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>const char * <link linkend="epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa">epeg_comment_get</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get</link> (
-Epeg_Image * im, Epeg_Thumbnail_Info * info)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1ab96605b1c21ec8d791df705a5117233c">epeg_comment_set</link> (
-Epeg_Image * im, const char * comment)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link> (
-Epeg_Image * im, int quality)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link> (
-Epeg_Image * im, int onoff)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link> (
-Epeg_Image * im, const char * file)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set</link> (
-Epeg_Image * im, unsigned char ** data, int * size)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>int <link linkend="epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>int <link linkend="epeg_8c_1a327dab144744ba5f1892643d627e6df0">epeg_trim</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link> (
-Epeg_Image * im)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>FILE * <link linkend="epeg_8c_1a53e2a3cdd57f720752e84dc96397c01e">_epeg_memfile_read_open</link> (
-void * data, size_t size)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1a801d6fb607e27d00017db7bfc6c7f212">_epeg_memfile_read_close</link> (
-FILE * f)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>FILE * <link linkend="epeg_8c_1a7aec5c9eff289c265d307e07d08ee3c1">_epeg_memfile_write_open</link> (
-void ** data, size_t * size)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="epeg_8c_1ad794241cb0e85dc676c5fe8ad0fb0de3">_epeg_memfile_write_close</link> (
-FILE * f)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </simplesect>
-    <simplesect>
-        <title>Detailed Description</title>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_epeg_8c" xml:lang="en-US">
+<title>epeg.c File Reference</title>
+<indexterm><primary>epeg.c</primary></indexterm>
+<para>
+
+<para>Epeg JPEG Thumbnailer library. </para>
+ 
+</para>
+<programlisting>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &quot;Epeg.h&quot;
+#include &quot;epeg_private.h&quot;
+</programlisting>Include dependency graph for epeg.c:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="epeg_8c__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>Epeg_Image * <link linkend="_epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open</link> (const char *file)</para>
+
+<para>Open a JPEG image by filename. </para>
+</listitem>
+            <listitem><para>Epeg_Image * <link linkend="_epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open</link> (unsigned char *data, int size)</para>
+
+<para>Open a JPEG image stored in memory. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a3b8680bdbf470d1a634618e5308ce147">epeg_size_get</link> (Epeg_Image *im, int *w, int *h)</para>
+
+<para>Return the original JPEG pixel size. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a290a722dddc53761d213524ce0e89284">epeg_colorspace_get</link> (Epeg_Image *im, int *space)</para>
+
+<para>Return the original JPEG pixel color space. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set</link> (Epeg_Image *im, int w, int h)</para>
+
+<para>Set the size of the image to decode in pixels. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set</link> (Epeg_Image *im, int x, int y, int w, int h)</para>
+
+<para>Set the bounds of the image to decode in pixels. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set</link> (Epeg_Image *im, Epeg_Colorspace colorspace)</para>
+
+<para>Set the colorspace in which to decode the image. </para>
+</listitem>
+            <listitem><para>const void * <link linkend="_epeg_8c_1acf990fda661066b46bbf470830288c78">epeg_pixels_get</link> (Epeg_Image *im, int x, int y, int w, int h)</para>
+
+<para>Get a segment of decoded pixels from an image. </para>
+</listitem>
+            <listitem><para>const void * <link linkend="_epeg_8c_1ac1d79775e08f47098507ac265581bf63">epeg_pixels_get_as_RGB8</link> (Epeg_Image *im, int x, int y, int w, int h)</para>
+
+<para>Get a segment of decoded pixels from an image. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free</link> (Epeg_Image *im, const void *data)</para>
+
+<para>Free requested pixel block from an image. </para>
+</listitem>
+            <listitem><para>const char * <link linkend="_epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa">epeg_comment_get</link> (Epeg_Image *im)</para>
+
+<para>Get the image comment field as a string. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get</link> (Epeg_Image *im, Epeg_Thumbnail_Info *info)</para>
+
+<para>Get thumbnail comments of loaded image. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1ab96605b1c21ec8d791df705a5117233c">epeg_comment_set</link> (Epeg_Image *im, const char *comment)</para>
+
+<para>Set the comment field of the image for saving. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1ad0c11f61561f622ca4097c47c75129bc">epeg_quality_set</link> (Epeg_Image *im, int quality)</para>
+
+<para>Set the encoding quality of the saved image. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable</link> (Epeg_Image *im, int onoff)</para>
+
+<para>Enable thumbnail comments in saved image. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set</link> (Epeg_Image *im, const char *file)</para>
+
+<para>Set the output file path for the image when saved. </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set</link> (Epeg_Image *im, unsigned char **data, int *size)</para>
+
+<para>Set the output file to be a block of allocated memory. </para>
+</listitem>
+            <listitem><para>int <link linkend="_epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode</link> (Epeg_Image *im)</para>
+
+<para>This saves the image to its specified destination. </para>
+</listitem>
+            <listitem><para>int <link linkend="_epeg_8c_1a327dab144744ba5f1892643d627e6df0">epeg_trim</link> (Epeg_Image *im)</para>
+
+<para>FIXME: Document this with a short, sentence-long description of <link linkend="_epeg_8c_1a327dab144744ba5f1892643d627e6df0">epeg_trim()</link> </para>
+</listitem>
+            <listitem><para>void <link linkend="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close</link> (Epeg_Image *im)</para>
+
+<para>Close an image handle. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
 
 <para>Epeg JPEG Thumbnailer library. </para>
 
 <para>These routines are used for the Epeg library. </para>
-    <para>Definition in file /Users/ericgallager/epeg/epeg.c</para>
-    </simplesect>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c"/>    <section>
+    <title>epeg_close()</title>
+<indexterm><primary>epeg_close</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_close</secondary></indexterm>
+<para><computeroutput>void epeg_close (Epeg_Image * im)</computeroutput></para><para>
+
+<para>Close an image handle. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This closes an opened image handle and frees all memory associated with it. It does NOT free encoded data generated by <link linkend="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set()</link> followed by <link linkend="_epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode()</link>, nor does it guarantee to free any data received by <link linkend="_epeg_8c_1acf990fda661066b46bbf470830288c78">epeg_pixels_get()</link>. Once an image handle is closed, consider it invalid.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open()</link>, <link linkend="_epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open()</link> </para>
+<para>
+Referenced by epeg_file_open().</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="epeg_8c_a8faf0f0fab47ac97b86ee7e00e1bee7c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_epeg_8c_1a290a722dddc53761d213524ce0e89284"/>    <section>
+    <title>epeg_colorspace_get()</title>
+<indexterm><primary>epeg_colorspace_get</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_colorspace_get</secondary></indexterm>
+<para><computeroutput>void epeg_colorspace_get (Epeg_Image * im, int * space)</computeroutput></para><para>
+
+<para>Return the original JPEG pixel color space. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>space</entry>
+                                <entry>
+<para>A pointer to the color space value to be filled in. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Returns the image color space (not yet though).</para>
+
+<para>See also: <link linkend="_epeg_8c_1a3b8680bdbf470d1a634618e5308ce147">epeg_size_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa"/>    <section>
+    <title>epeg_comment_get()</title>
+<indexterm><primary>epeg_comment_get</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_comment_get</secondary></indexterm>
+<para><computeroutput>const char * epeg_comment_get (Epeg_Image * im)</computeroutput></para><para>
+
+<para>Get the image comment field as a string. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the loaded image comments.</para>
+</formalpara>
+This function returns the comment field as a string (NUL byte terminated) of the loaded image <computeroutput>im</computeroutput>, if there is a comment, or NULL if no comment is saved with the image. Consider the string returned to be read-only.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1ab96605b1c21ec8d791df705a5117233c"/>    <section>
+    <title>epeg_comment_set()</title>
+<indexterm><primary>epeg_comment_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_comment_set</secondary></indexterm>
+<para><computeroutput>void epeg_comment_set (Epeg_Image * im, const char * comment)</computeroutput></para><para>
+
+<para>Set the comment field of the image for saving. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>comment</entry>
+                                <entry>
+<para>The comment to set. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Set the comment for the image file for when it gets saved. This is a NUL byte terminated C string. If <computeroutput>comment</computeroutput> is NULL the output file will have no comment field.</para>
+
+<para>The default comment will be any comment loaded from the input file.</para>
+
+<para>See also: <link linkend="_epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa">epeg_comment_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda"/>    <section>
+    <title>epeg_decode_bounds_set()</title>
+<indexterm><primary>epeg_decode_bounds_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_decode_bounds_set</secondary></indexterm>
+<para><computeroutput>void epeg_decode_bounds_set (Epeg_Image * im, int x, int y, int w, int h)</computeroutput></para><para>
+
+<para>Set the bounds of the image to decode in pixels. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Boundary X </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Boundary Y </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>Boundary W </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>Boundary H </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Sets the bounds inside which to decode the JPEG image, giving an optimized load that only decodes the bounded pixels. (???)</para>
+
+<para>See also: <link linkend="_epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set()</link>, <link linkend="_epeg_8c_1afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1afe41e06c6667542ad4685730538e03f7"/>    <section>
+    <title>epeg_decode_colorspace_set()</title>
+<indexterm><primary>epeg_decode_colorspace_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_decode_colorspace_set</secondary></indexterm>
+<para><computeroutput>void epeg_decode_colorspace_set (Epeg_Image * im, Epeg_Colorspace colorspace)</computeroutput></para><para>
+
+<para>Set the colorspace in which to decode the image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>colorspace</entry>
+                                <entry>
+<para>The colorspace to decode the image in. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This sets the colorspace to decode the image in. The default is EPEG_YUV8, as this is normally the native colorspace of a JPEG file, avoiding any colorspace conversions for a faster load and/or save.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a800dc04316740427b1f4366d973ff4e4">epeg_decode_size_set()</link>, <link linkend="_epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a800dc04316740427b1f4366d973ff4e4"/>    <section>
+    <title>epeg_decode_size_set()</title>
+<indexterm><primary>epeg_decode_size_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_decode_size_set</secondary></indexterm>
+<para><computeroutput>void epeg_decode_size_set (Epeg_Image * im, int w, int h)</computeroutput></para><para>
+
+<para>Set the size of the image to decode in pixels. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>The width of the image to decode at, in pixels. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>The height of the image to decode at, in pixels. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Sets the size at which to decode the JPEG image, giving an optimized load that only decodes the pixels needed.</para>
+
+<para>See also: <link linkend="_epeg_8c_1ab840f7b7ea8c21938a5210dee06e9dda">epeg_decode_bounds_set()</link>, <link linkend="_epeg_8c_1afe41e06c6667542ad4685730538e03f7">epeg_decode_colorspace_set()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a12a018084510ebdc0e627f56305fea79"/>    <section>
+    <title>epeg_encode()</title>
+<indexterm><primary>epeg_encode</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_encode</secondary></indexterm>
+<para><computeroutput>int epeg_encode (Epeg_Image * im)</computeroutput></para><para>
+
+<para>This saves the image to its specified destination. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 if something happened, otherwise 0.</para>
+</formalpara>
+This saves the image <computeroutput>im</computeroutput> to its destination specified by <link linkend="_epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set()</link> or <link linkend="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set()</link>. The image will be encoded at the decoded pixel size, using the quality, comment, and thumbnail comment settings set on the image.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set()</link>, <link linkend="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a8295f48501747f18cbb74e4eb1c55836"/>    <section>
+    <title>epeg_file_open()</title>
+<indexterm><primary>epeg_file_open</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_file_open</secondary></indexterm>
+<para><computeroutput>Epeg_Image * epeg_file_open (const char * file)</computeroutput></para><para>
+
+<para>Open a JPEG image by filename. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>The file path to open. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A handle to the opened JPEG file, with the header decoded.</para>
+</formalpara>
+This function opens the file indicated by the <computeroutput>file</computeroutput> parameter, and attempts to decode it as a jpeg file. If this failes, NULL is returned. Otherwise a valid handle to an open JPEG file is returned that can be used by other Epeg calls.</para>
+
+<para>The <computeroutput>file</computeroutput> must be a pointer to a valid C string, NUL (0 byte) terminated thats is a relative or absolute file path. If not results are not determined.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc">epeg_memory_open()</link>, <link linkend="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</link> </para>
+<para>
+References epeg_close().</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="epeg_8c_a8295f48501747f18cbb74e4eb1c55836_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4"/>    <section>
+    <title>epeg_file_output_set()</title>
+<indexterm><primary>epeg_file_output_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_file_output_set</secondary></indexterm>
+<para><computeroutput>void epeg_file_output_set (Epeg_Image * im, const char * file)</computeroutput></para><para>
+
+<para>Set the output file path for the image when saved. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>The path to the output file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This sets the output file path name (either a full or relative path name) to where the file will be written when saved. <computeroutput>file</computeroutput> must be a NUL terminated C string containing the path to the file to be saved to. If it is NULL, then the image will not be saved to a file when calling <link linkend="_epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode()</link>.</para>
+
+<para>See also: <link linkend="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8">epeg_memory_output_set()</link>, <link linkend="_epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a55d449402ab7ad9de9febd63b858a2dc"/>    <section>
+    <title>epeg_memory_open()</title>
+<indexterm><primary>epeg_memory_open</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_memory_open</secondary></indexterm>
+<para><computeroutput>Epeg_Image * epeg_memory_open (unsigned char * data, int size)</computeroutput></para><para>
+
+<para>Open a JPEG image stored in memory. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>A pointer to the memory containing the JPEG data. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>The size of the memory segment containing the JPEG. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A handle to the opened JPEG, with the header decoded.</para>
+</formalpara>
+This function opens a JPEG file that is stored in memory pointed to by <computeroutput>data</computeroutput>, and that is <computeroutput>size</computeroutput> bytes in size. If successful a valid handle is returned, or on failure NULL is returned.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a8295f48501747f18cbb74e4eb1c55836">epeg_file_open()</link>, <link linkend="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1ae0e91c160074e6d96b7e366fb0eb6ec8"/>    <section>
+    <title>epeg_memory_output_set()</title>
+<indexterm><primary>epeg_memory_output_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_memory_output_set</secondary></indexterm>
+<para><computeroutput>void epeg_memory_output_set (Epeg_Image * im, unsigned char ** data, int * size)</computeroutput></para><para>
+
+<para>Set the output file to be a block of allocated memory. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>A pointer to a pointer to a memory block. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>A pointer to a counter of the size of the memory block. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This sets the output encoding of the image when saved to be allocated memory. After <link linkend="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</link> is called the pointer pointed to by <computeroutput>data</computeroutput> and the integer pointed to by <computeroutput>size</computeroutput> will contain the pointer to the memory block and its size in bytes, respecitvely. The memory block can be freed with the free() function call. If the save fails the pointer to the memory block will be unaffected, as will the size.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a4aa4c7bbf3edf1f24603d3b4dad684b4">epeg_file_output_set()</link>, <link linkend="_epeg_8c_1a12a018084510ebdc0e627f56305fea79">epeg_encode()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f"/>    <section>
+    <title>epeg_pixels_free()</title>
+<indexterm><primary>epeg_pixels_free</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_pixels_free</secondary></indexterm>
+<para><computeroutput>void epeg_pixels_free (Epeg_Image * im, const void * data)</computeroutput></para><para>
+
+<para>Free requested pixel block from an image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image (unused). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>The pointer to the image pixels. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This frees the data for a block of pixels requested from image <computeroutput>im</computeroutput>. <computeroutput>data</computeroutput> must be a valid (non NULL) pointer to a pixel block taken from the image <computeroutput>im</computeroutput> by <link linkend="_epeg_8c_1acf990fda661066b46bbf470830288c78">epeg_pixels_get()</link> and must be called before the image is closed by <link linkend="_epeg_8c_1a8faf0f0fab47ac97b86ee7e00e1bee7c">epeg_close()</link>. </para>
+    </section><anchor xml:id="_epeg_8c_1acf990fda661066b46bbf470830288c78"/>    <section>
+    <title>epeg_pixels_get()</title>
+<indexterm><primary>epeg_pixels_get</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_pixels_get</secondary></indexterm>
+<para><computeroutput>const void * epeg_pixels_get (Epeg_Image * im, int x, int y, int w, int h)</computeroutput></para><para>
+
+<para>Get a segment of decoded pixels from an image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Rectangle X. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Rectangle Y. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>Rectangle width. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>Rectangle height. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Pointer to the top left of the requested pixel block.</para>
+</formalpara>
+Return image pixels in the decoded format from the specified location rectangle bounded with the box <computeroutput>x</computeroutput>, <computeroutput>y</computeroutput> <computeroutput>w</computeroutput> X <computeroutput>y</computeroutput>. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using <link linkend="_epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free()</link> before you close the image handle, and assume the pixels to be read-only memory.</para>
+
+<para>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.</para>
+
+<para>See also: <link linkend="_epeg_8c_1ac1d79775e08f47098507ac265581bf63">epeg_pixels_get_as_RGB8()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1ac1d79775e08f47098507ac265581bf63"/>    <section>
+    <title>epeg_pixels_get_as_RGB8()</title>
+<indexterm><primary>epeg_pixels_get_as_RGB8</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_pixels_get_as_RGB8</secondary></indexterm>
+<para><computeroutput>const void * epeg_pixels_get_as_RGB8 (Epeg_Image * im, int x, int y, int w, int h)</computeroutput></para><para>
+
+<para>Get a segment of decoded pixels from an image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Rectangle X. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Rectangle Y. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>Rectangle width. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>Rectangle height. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Pointer to the top left of the requested pixel block.</para>
+</formalpara>
+Return image pixels in the decoded format from the specified location rectangle bounded with the box <computeroutput>x</computeroutput>, <computeroutput>y</computeroutput> <computeroutput>w</computeroutput> X <computeroutput>y</computeroutput>. The pixel block is packed with no row padding, and it organized from top-left to bottom right, row by row. You must free the pixel block using <link linkend="_epeg_8c_1adf9efc5d877afebda99aba8d5c2bbb0f">epeg_pixels_free()</link> before you close the image handle, and assume the pixels to be read-only memory.</para>
+
+<para>On success the pointer is returned, on failure, NULL is returned. Failure may be because the rectangle is out of the bounds of the image, memory allocations failed, or the image data cannot be decoded.</para>
+
+<para>See also: <link linkend="_epeg_8c_1acf990fda661066b46bbf470830288c78">epeg_pixels_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1ad0c11f61561f622ca4097c47c75129bc"/>    <section>
+    <title>epeg_quality_set()</title>
+<indexterm><primary>epeg_quality_set</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_quality_set</secondary></indexterm>
+<para><computeroutput>void epeg_quality_set (Epeg_Image * im, int quality)</computeroutput></para><para>
+
+<para>Set the encoding quality of the saved image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>quality</entry>
+                                <entry>
+<para>The quality of encoding from 0 to 100. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Set the quality of the output encoded image. Values from 0 to 100 inclusive are valid, with 100 being the maximum quality, and 0 being the minimum. If the quality is set equal to or above 90%, the output U and V color planes are encoded at 1:1 with the Y plane.</para>
+
+<para>The default quality is 75.</para>
+
+<para>See also: <link linkend="_epeg_8c_1ab96605b1c21ec8d791df705a5117233c">epeg_comment_set()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a3b8680bdbf470d1a634618e5308ce147"/>    <section>
+    <title>epeg_size_get()</title>
+<indexterm><primary>epeg_size_get</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_size_get</secondary></indexterm>
+<para><computeroutput>void epeg_size_get (Epeg_Image * im, int * w, int * h)</computeroutput></para><para>
+
+<para>Return the original JPEG pixel size. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>A pointer to the width value in pixels to be filled in. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>A pointer to the height value in pixels to be filled in. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+Returns the image size in pixels (well not really).</para>
+
+<para>See also: <link linkend="_epeg_8c_1a290a722dddc53761d213524ce0e89284">epeg_colorspace_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a5cfe689f77dbe7b120317a195585ee51"/>    <section>
+    <title>epeg_thumbnail_comments_enable()</title>
+<indexterm><primary>epeg_thumbnail_comments_enable</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_thumbnail_comments_enable</secondary></indexterm>
+<para><computeroutput>void epeg_thumbnail_comments_enable (Epeg_Image * im, int onoff)</computeroutput></para><para>
+
+<para>Enable thumbnail comments in saved image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>onoff</entry>
+                                <entry>
+<para>A boolean on and off enabling flag. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+if <computeroutput>onoff</computeroutput> is 1, the output file will have thumbnail comments added to it, and if it is 0, it will not. The default is 0.</para>
+
+<para>See also: <link linkend="_epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52">epeg_thumbnail_comments_get()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a28e230b7b3bb05b8a470c80c45100c52"/>    <section>
+    <title>epeg_thumbnail_comments_get()</title>
+<indexterm><primary>epeg_thumbnail_comments_get</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_thumbnail_comments_get</secondary></indexterm>
+<para><computeroutput>void epeg_thumbnail_comments_get (Epeg_Image * im, Epeg_Thumbnail_Info * info)</computeroutput></para><para>
+
+<para>Get thumbnail comments of loaded image. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>info</entry>
+                                <entry>
+<para>Pointer to a thumbnail info struct to be filled in. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing.</para>
+</formalpara>
+This function retrieves thumbnail comments written by Epeg to any saved JPEG files. If no thumbnail comments were saved, the fields will be 0 in the <computeroutput>info</computeroutput> struct on return.</para>
+
+<para>See also: <link linkend="_epeg_8c_1acf6013949f1cf3b4b5fc7f086fdaabaa">epeg_comment_get()</link>, <link linkend="_epeg_8c_1a5cfe689f77dbe7b120317a195585ee51">epeg_thumbnail_comments_enable()</link> </para>
+    </section><anchor xml:id="_epeg_8c_1a327dab144744ba5f1892643d627e6df0"/>    <section>
+    <title>epeg_trim()</title>
+<indexterm><primary>epeg_trim</primary><secondary>epeg.c</secondary></indexterm>
+<indexterm><primary>epeg.c</primary><secondary>epeg_trim</secondary></indexterm>
+<para><computeroutput>int epeg_trim (Epeg_Image * im)</computeroutput></para><para>
+
+<para>FIXME: Document this with a short, sentence-long description of <link linkend="_epeg_8c_1a327dab144744ba5f1892643d627e6df0">epeg_trim()</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>im</entry>
+                                <entry>
+<para>A handle to an opened Epeg image. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 if something happened, otherwise 0.</para>
+</formalpara>
+FIXME: Document this with a longer, paragraph-long description. </para>
+</section>
+</section>
 </section>
