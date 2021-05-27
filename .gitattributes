@@ -9,3 +9,5 @@ build-aux/missing linguist-vendored
 build-aux/mkinstalldirs linguist-vendored
 build-aux/test-driver linguist-vendored
 build-aux/texinfo.tex linguist-vendored
+epeg-config.in diff=shell
+epeg.c.in diff=c

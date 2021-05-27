@@ -1,4 +1,4 @@
-/* epeg_test.c */
+/* epeg_test.c -*- C -*- */
 /* the example from the comment in epeg.c.in, extracted for easy compilation */
 
 #include <stdio.h> /* for printf() */
