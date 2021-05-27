@@ -84,7 +84,7 @@ AM_MISSING_PROG([LATEX],[latex])dnl
 AM_MISSING_PROG([MAKEINDEX],[makeindex])dnl
 AM_MISSING_PROG([PS2PDF],[ps2pdf])dnl
 AM_MISSING_PROG([PSNUP],[psnup])dnl
-AC_PATH_PROGS([PERL_BIN],[perl perl5 perl5.16 perl5.12])dnl
+AC_PATH_PROGS([PERL_BIN],[perl perl5 perl5.30 perl5.28 perl5.26])dnl
 AC_PATH_PROG([MSCGEN_BIN],[mscgen])dnl
 AC_PATH_PROG([DIA_BIN],[dia])dnl
 AC_PATH_PROG([DOT_BIN],[dot])dnl
@@ -114,7 +114,20 @@ AC_DEFUN([AC_REQUIRE_HEADER_STDC],[
 AC_REQUIRE_HEADER_STDC([])dnl
 AC_HEADER_TIME([])dnl
 AC_HEADER_STAT([])dnl
-AC_CHECK_HEADERS([fcntl.h limits.h setjmp.h stdio.h time.h])dnl
+AC_CHECK_HEADERS([fcntl.h limits.h setjmp.h time.h])dnl
+
+if test "x${ac_cv_header_stdint_h}" = "x"; then
+  test -z "${ac_cv_header_stdint_h}"
+  AC_CHECK_HEADERS([stdint.h])
+fi
+if test "x${ac_cv_header_stdio_h}" = "x"; then
+  test -z "${ac_cv_header_stdio_h}"
+  AC_CHECK_HEADERS([stdio.h])
+fi
+if test "x${ac_cv_header_unistd_h}" = "x"; then
+  test -z "${ac_cv_header_unistd_h}"
+  AC_CHECK_HEADERS([unistd.h])
+fi
 
 # jpeg-specific headers:
 AC_CHECK_HEADERS([jconfig.h jerror.h jmorecfg.h jpeglib.h])dnl
@@ -149,6 +162,15 @@ AC_CHECK_TYPES([jmp_buf],[
 #  warning "This conftest for jmp_buf expects <setjmp.h> to be included."
 # endif /* __GNUC__ && !__STRICT_ANSI__ */
 #endif /* HAVE_SETJMP_H */
+
+#ifndef offsetof
+# ifndef __has_builtin
+#  define __has_builtin(x) 0
+# endif /* !__has_builtin */
+# if __has_builtin(__builtin_offsetof)
+#  define offsetof(x, y) __builtin_offsetof(x, y)
+# endif /* __has_builtin(__builtin_offsetof) */
+#endif /* !offsetof */
   ])dnl
 ],[],[
 #ifdef HAVE_SETJMP_H
