@@ -1,3 +1,4 @@
+aclocal.m4 linguist-vendored
 build-aux/compile linguist-vendored
 build-aux/config.guess linguist-vendored
 build-aux/config.sub linguist-vendored
