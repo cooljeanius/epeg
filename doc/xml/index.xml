@@ -41,6 +41,8 @@
     <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
     <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
     <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
+    <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
+    <member refid="epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db" kind="define"><name>MAX</name></member>
     <member refid="epeg_8c_1aa03171b6ccd3d8001d991640ab9fce68" kind="typedef"><name>Eet_Memfile_Write_Info</name></member>
     <member refid="epeg_8c_1aac9b753c871b7fbc1020859672fc7a06" kind="variable"><name>_epeg_memfile_info_alloc_num</name></member>
     <member refid="epeg_8c_1af3717f2fa85018cbe201973c410d1589" kind="variable"><name>_epeg_memfile_info_num</name></member>

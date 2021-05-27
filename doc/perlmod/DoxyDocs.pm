@@ -716,6 +716,42 @@ $doxydocs=
               }
             ],
             initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
+          },
+          {
+            kind => 'define',
+            name => 'MAX',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {},
+            parameters => [
+              {
+                name => '__x'
+              },
+              {
+                name => '__y'
+              }
+            ],
+            initializer => '((__x) > (__y) ? (__x) : (__y))'
           }
         ]
       },

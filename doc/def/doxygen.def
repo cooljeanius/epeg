@@ -912,6 +912,54 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
     }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '51649';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'epeg_8c_1af10c259c53d5fb4a67591734c7c6d3db';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'MAX';
+      define-mem-param  = {
+        define-mem-def-name = '__x';
+      }; /*        define-mem-def--param */
+      define-mem-param  = {
+        define-mem-def-name = '__y';
+      }; /*        define-mem-def--param */
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+((__x) > (__y) ? (__x) : (__y))
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/ericgallager/Documents/GitHub/epeg/epeg.c';
+      define-mem-desc-line = '53162';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
     };
     typedef = {
     typedef-member = {
