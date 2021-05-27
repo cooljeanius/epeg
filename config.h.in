@@ -1,0 +1,459 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#undef AC_APPLE_UNIVERSAL_BUILD
+
+/* The normal alignment of `FILE *', in bytes. */
+#undef ALIGNOF_FILE_P
+
+/* The normal alignment of `jmp_buf', in bytes. */
+#undef ALIGNOF_JMP_BUF
+
+/* Define to 1 if you have the `atoi' function. */
+#undef HAVE_ATOI
+
+/* Define to 1 if you have the `calloc' function. */
+#undef HAVE_CALLOC
+
+/* Define to 1 if the system has the type `const JOCTET *'. */
+#undef HAVE_CONST_JOCTET_P
+
+/* Define to 1 if you have the declaration of `JCS_CMYK', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_CMYK
+
+/* Define to 1 if you have the declaration of `JCS_GRAYSCALE', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_GRAYSCALE
+
+/* Define to 1 if you have the declaration of `JCS_RGB', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_RGB
+
+/* Define to 1 if you have the declaration of `JCS_YCbCr', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JCS_YCBCR
+
+/* Define to 1 if you have the declaration of `JDCT_IFAST', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JDCT_IFAST
+
+/* Define to 1 if you have the declaration of `JDCT_ISLOW', and to 0 if you
+   don't. */
+#undef HAVE_DECL_JDCT_ISLOW
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the `exit' function. */
+#undef HAVE_EXIT
+
+/* Define to 1 if you have the `fclose' function. */
+#undef HAVE_FCLOSE
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `fileno' function. */
+#undef HAVE_FILENO
+
+/* Define to 1 if the system has the type `FILE *'. */
+#undef HAVE_FILE_P
+
+/* Define to 1 if you have the `fmemopen' function. */
+#undef HAVE_FMEMOPEN
+
+/* Define to 1 if you have the `fopen' function. */
+#undef HAVE_FOPEN
+
+/* Define to 1 if you have the `free' function. */
+#undef HAVE_FREE
+
+/* Define to 1 if you have the `fseek' function. */
+#undef HAVE_FSEEK
+
+/* Define to 1 if you have the `fstat' function. */
+#undef HAVE_FSTAT
+
+/* Define to 1 if you have the `ftell' function. */
+#undef HAVE_FTELL
+
+/* Define to 1 if you have the `fwrite' function. */
+#undef HAVE_FWRITE
+
+/* Define if you have gd library. */
+#undef HAVE_GD
+
+/* Define if GD supports gif. */
+#undef HAVE_GD_GIF
+
+/* Define if GD supports jpeg. */
+#undef HAVE_GD_JPEG
+
+/* Define if GD supports png. */
+#undef HAVE_GD_PNG
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <jconfig.h> header file. */
+#undef HAVE_JCONFIG_H
+
+/* Define to 1 if you have the <jerror.h> header file. */
+#undef HAVE_JERROR_H
+
+/* Define to 1 if you have the <jmorecfg.h> header file. */
+#undef HAVE_JMORECFG_H
+
+/* Define to 1 if the system has the type `jmp_buf'. */
+#undef HAVE_JMP_BUF
+
+/* Define to 1 if you have the <jpeglib.h> header file. */
+#undef HAVE_JPEGLIB_H
+
+/* Define to 1 if you have the `jpeg_calc_output_dimensions' function. */
+#undef HAVE_JPEG_CALC_OUTPUT_DIMENSIONS
+
+/* Define to 1 if you have the `jpeg_create_compress' function. */
+#undef HAVE_JPEG_CREATE_COMPRESS
+
+/* Define to 1 if you have the `jpeg_create_decompress' function. */
+#undef HAVE_JPEG_CREATE_DECOMPRESS
+
+/* Define to 1 if you have the `jpeg_destroy_compress' function. */
+#undef HAVE_JPEG_DESTROY_COMPRESS
+
+/* Define to 1 if you have the `jpeg_destroy_decompress' function. */
+#undef HAVE_JPEG_DESTROY_DECOMPRESS
+
+/* Define to 1 if you have the `jpeg_finish_compress' function. */
+#undef HAVE_JPEG_FINISH_COMPRESS
+
+/* Define to 1 if you have the `jpeg_finish_decompress' function. */
+#undef HAVE_JPEG_FINISH_DECOMPRESS
+
+/* Define to 1 if you have the `jpeg_read_header' function. */
+#undef HAVE_JPEG_READ_HEADER
+
+/* Define to 1 if you have the `jpeg_read_scanlines' function. */
+#undef HAVE_JPEG_READ_SCANLINES
+
+/* Define to 1 if you have the `jpeg_save_markers' function. */
+#undef HAVE_JPEG_SAVE_MARKERS
+
+/* Define to 1 if you have the `jpeg_set_defaults' function. */
+#undef HAVE_JPEG_SET_DEFAULTS
+
+/* Define to 1 if you have the `jpeg_set_quality' function. */
+#undef HAVE_JPEG_SET_QUALITY
+
+/* Define to 1 if you have the `jpeg_start_compress' function. */
+#undef HAVE_JPEG_START_COMPRESS
+
+/* Define to 1 if you have the `jpeg_start_decompress' function. */
+#undef HAVE_JPEG_START_DECOMPRESS
+
+/* Define to 1 if you have the `jpeg_stdio_dest' function. */
+#undef HAVE_JPEG_STDIO_DEST
+
+/* Define to 1 if you have the `jpeg_stdio_src' function. */
+#undef HAVE_JPEG_STDIO_SRC
+
+/* Define to 1 if you have the `jpeg_std_error' function. */
+#undef HAVE_JPEG_STD_ERROR
+
+/* Define to 1 if you have the `jpeg_write_marker' function. */
+#undef HAVE_JPEG_WRITE_MARKER
+
+/* Define to 1 if the system has the type `J_COLOR_SPACE'. */
+#undef HAVE_J_COLOR_SPACE
+
+/* Define to 1 if the system has the type `j_common_ptr'. */
+#undef HAVE_J_COMMON_PTR
+
+/* Define to 1 if you have the `c' library (-lc). */
+#undef HAVE_LIBC
+
+/* Define to 1 if you have the `jpeg' library (-ljpeg). */
+#undef HAVE_LIBJPEG
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the `longjmp' function. */
+#undef HAVE_LONGJMP
+
+/* Define to 1 if you support file names longer than 14 characters. */
+#undef HAVE_LONG_FILE_NAMES
+
+/* Define to 1 if your system has a GNU libc compatible `malloc' function, and
+   to 0 otherwise. */
+#undef HAVE_MALLOC
+
+/* Define to 1 if you have the `memcpy' function. */
+#undef HAVE_MEMCPY
+
+/* Define to 1 if you have the <minix/config.h> header file. */
+#undef HAVE_MINIX_CONFIG_H
+
+/* Define to 1 if you have the `open_memstream' function. */
+#undef HAVE_OPEN_MEMSTREAM
+
+/* Define to 1 if you have the `printf' function. */
+#undef HAVE_PRINTF
+
+/* Define to 1 if your system has a GNU libc compatible `realloc' function,
+   and to 0 otherwise. */
+#undef HAVE_REALLOC
+
+/* Define to 1 if you have the `rewind' function. */
+#undef HAVE_REWIND
+
+/* Define to 1 if you have the `setjmp' function. */
+#undef HAVE_SETJMP
+
+/* Define to 1 if you have the <setjmp.h> header file. */
+#undef HAVE_SETJMP_H
+
+/* Define to 1 if you have the `snprintf' function. */
+#undef HAVE_SNPRINTF
+
+/* Define to 1 if you have the `sscanf' function. */
+#undef HAVE_SSCANF
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the `strchr' function. */
+#undef HAVE_STRCHR
+
+/* Define to 1 if you have the `strcmp' function. */
+#undef HAVE_STRCMP
+
+/* Define to 1 if you have the `strdup' function. */
+#undef HAVE_STRDUP
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `strlen' function. */
+#undef HAVE_STRLEN
+
+/* Define to 1 if you have the `strncmp' function. */
+#undef HAVE_STRNCMP
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#undef HAVE_TIME_H
+
+/* Define to 1 if you have the `tmpfile' function. */
+#undef HAVE_TMPFILE
+
+/* Define to 1 if the system has the type `uintmax_t'. */
+#undef HAVE_UINTMAX_T
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if the system has the type `unsigned long long int'. */
+#undef HAVE_UNSIGNED_LONG_LONG_INT
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#undef HAVE_WCHAR_H
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* Name of package */
+#undef PACKAGE
+
+/* Installation directory for user executables */
+#undef PACKAGE_BIN_DIR
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Installation directory for libraries */
+#undef PACKAGE_LIB_DIR
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Source code directory */
+#undef PACKAGE_SOURCE_DIR
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if the C compiler supports function prototypes. */
+#undef PROTOTYPES
+
+/* The size of `FILE *', as computed by sizeof. */
+#undef SIZEOF_FILE_P
+
+/* The size of `jmp_buf', as computed by sizeof. */
+#undef SIZEOF_JMP_BUF
+
+/* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
+#undef STAT_MACROS_BROKEN
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#undef STDC_HEADERS
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. This
+   macro is obsolete. */
+#undef TIME_WITH_SYS_TIME
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+/* Enable general extensions on macOS.  */
+#ifndef _DARWIN_C_SOURCE
+# undef _DARWIN_C_SOURCE
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+/* Identify the host operating system as Minix.
+   This macro does not affect the system headers' behavior.
+   A future release of Autoconf may stop defining this macro.  */
+#ifndef _MINIX
+# undef _MINIX
+#endif
+/* Enable general extensions on NetBSD.
+   Enable NetBSD compatibility extensions on Minix.  */
+#ifndef _NETBSD_SOURCE
+# undef _NETBSD_SOURCE
+#endif
+/* Enable OpenBSD compatibility extensions on NetBSD.
+   Oddly enough, this does nothing on OpenBSD.  */
+#ifndef _OPENBSD_SOURCE
+# undef _OPENBSD_SOURCE
+#endif
+/* Define to 1 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_SOURCE
+# undef _POSIX_SOURCE
+#endif
+/* Define to 2 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_1_SOURCE
+# undef _POSIX_1_SOURCE
+#endif
+/* Enable POSIX-compatible threading on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-5:2014.  */
+#ifndef __STDC_WANT_IEC_60559_ATTRIBS_EXT__
+# undef __STDC_WANT_IEC_60559_ATTRIBS_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-1:2014.  */
+#ifndef __STDC_WANT_IEC_60559_BFP_EXT__
+# undef __STDC_WANT_IEC_60559_BFP_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-2:2015.  */
+#ifndef __STDC_WANT_IEC_60559_DFP_EXT__
+# undef __STDC_WANT_IEC_60559_DFP_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-4:2015.  */
+#ifndef __STDC_WANT_IEC_60559_FUNCS_EXT__
+# undef __STDC_WANT_IEC_60559_FUNCS_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-3:2015.  */
+#ifndef __STDC_WANT_IEC_60559_TYPES_EXT__
+# undef __STDC_WANT_IEC_60559_TYPES_EXT__
+#endif
+/* Enable extensions specified by ISO/IEC TR 24731-2:2010.  */
+#ifndef __STDC_WANT_LIB_EXT2__
+# undef __STDC_WANT_LIB_EXT2__
+#endif
+/* Enable extensions specified by ISO/IEC 24747:2009.  */
+#ifndef __STDC_WANT_MATH_SPEC_FUNCS__
+# undef __STDC_WANT_MATH_SPEC_FUNCS__
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+/* Enable X/Open extensions.  Define to 500 only if necessary
+   to make mbstate_t available.  */
+#ifndef _XOPEN_SOURCE
+# undef _XOPEN_SOURCE
+#endif
+
+
+/* Version number of package */
+#undef VERSION
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Number of bits in a file offset, on hosts where this is settable. */
+#undef _FILE_OFFSET_BITS
+
+/* Define for large files, on AIX-style hosts. */
+#undef _LARGE_FILES
+
+/* Define like PROTOTYPES; this can be used by system headers. */
+#undef __PROTOTYPES
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
+
+/* Define to rpl_malloc if the replacement function should be used. */
+#undef malloc
+
+/* Define to rpl_realloc if the replacement function should be used. */
+#undef realloc
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#undef size_t
+
+/* Define to the widest unsigned integer type if <stdint.h> and <inttypes.h>
+   do not define. */
+#undef uintmax_t
