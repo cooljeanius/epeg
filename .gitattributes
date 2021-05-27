@@ -9,5 +9,12 @@ build-aux/missing linguist-vendored
 build-aux/mkinstalldirs linguist-vendored
 build-aux/test-driver linguist-vendored
 build-aux/texinfo.tex linguist-vendored
+doc/Makefile.in linguist-vendored
+doc/latex/Makefile.in linguist-vendored
+doc/texinfo/Makefile.in linguist-vendored
+Makefile.in linguist-vendored
+src/Makefile.in linguist-vendored
+src/bin/Makefile.in linguist-vendored
+src/lib/Makefile.in linguist-vendored
 epeg-config.in diff=shell
 epeg.c.in diff=c
