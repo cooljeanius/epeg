@@ -57,6 +57,9 @@ epeg.c
 *.build
 Xcode/build/*
 !Xcode/*.ico
+Xcode/*.xcodeproj/*.xcworkspace/xcuserdata/*
+*.xcuserdatad
+*.xcuserstate
 
 # Now a generated file:
 Doxyfile
