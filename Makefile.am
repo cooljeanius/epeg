@@ -97,7 +97,7 @@ TESTS = test_epeg-config
 EXTRA_DIST = README AUTHORS COPYING COPYING-PLAIN epeg.spec epeg.c.in gendoc Doxyfile epeg_docs.tar.gz test_epeg-config doc/html/html.helpindex
 
 DISTCLEANFILES = *~ .DS_Store doc/.DS_Store m4/.DS_Store autoscan.log \
-		 stamp-gendoc @MAINTAINER_MODE_TRUE@ epeg.c
+  build-aux/*~ stamp-gendoc @MAINTAINER_MODE_TRUE@ epeg.c
 
 ## (MAINTAINERCLEANFILES is already set above)
 

@@ -25,20 +25,19 @@ AC_EXEEXT
 AC_USE_SYSTEM_EXTENSIONS([])dnl
 AM_INIT_AUTOMAKE([1.4 gnits])
 AM_SANITY_CHECK([])dnl
-AM_MAINTAINER_MODE([])dnl
+AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS([config.h])dnl
-AC_SYS_LARGEFILE([])dnl
+AC_SYS_LARGEFILE
 AC_SYS_LONG_FILE_NAMES([])dnl
 AC_SEARCH_LIBS([strerror],[cposix]) dnl# used to be AC\_ISC\_POSIX
 
 # Checks for programs.
 if test "x${CC}" = "x"; then
-  test -z "${CC}"
+  test -z "${CC}" || unset CC
   AC_PROG_CC([])dnl
 else
-  test ! -z "${CC}" && export CC
+  test -n "${CC}" && export CC
   AC_SUBST([CC])
-  AC_PROG_GCC_TRADITIONAL([])dnl
 fi
 AC_PROG_CC_C_O([])dnl
 AC_PROG_CPP([])dnl
@@ -61,7 +60,7 @@ if test "x${RANLIB}" = "x"; then
   test -z "${RANLIB}" && test -z "${ac_cv_prog_ac_ct_RANLIB}"
   AC_REQUIRE_RANLIB([])
 else
-  test ! -z "${RANLIB}" && export RANLIB
+  test -n "${RANLIB}" && export RANLIB
   AC_SUBST([RANLIB])
 fi
 AC_DEFUN([AC_REQUIRE_GREPS],[
@@ -84,7 +83,7 @@ AM_MISSING_PROG([LATEX],[latex])dnl
 AM_MISSING_PROG([MAKEINDEX],[makeindex])dnl
 AM_MISSING_PROG([PS2PDF],[ps2pdf])dnl
 AM_MISSING_PROG([PSNUP],[psnup])dnl
-AC_PATH_PROGS([PERL_BIN],[perl perl5 perl5.30 perl5.28 perl5.26])dnl
+AC_PATH_PROGS([PERL_BIN],[perl perl5 perl5.34 perl5.32 perl5.30 perl5.28])dnl
 AC_PATH_PROG([MSCGEN_BIN],[mscgen])dnl
 AC_PATH_PROG([DIA_BIN],[dia])dnl
 AC_PATH_PROG([DOT_BIN],[dot])dnl
@@ -117,15 +116,15 @@ AC_HEADER_STAT([])dnl
 AC_CHECK_HEADERS([fcntl.h limits.h setjmp.h time.h])dnl
 
 if test "x${ac_cv_header_stdint_h}" = "x"; then
-  test -z "${ac_cv_header_stdint_h}"
+  test -z "${ac_cv_header_stdint_h}" || unset ac_cv_header_stdint_h
   AC_CHECK_HEADERS([stdint.h])
 fi
 if test "x${ac_cv_header_stdio_h}" = "x"; then
-  test -z "${ac_cv_header_stdio_h}"
+  test -z "${ac_cv_header_stdio_h}" || unset ac_cv_header_stdio_h
   AC_CHECK_HEADERS([stdio.h])
 fi
 if test "x${ac_cv_header_unistd_h}" = "x"; then
-  test -z "${ac_cv_header_unistd_h}"
+  test -z "${ac_cv_header_unistd_h}" || unset ac_cv_header_unistd_h
   AC_CHECK_HEADERS([unistd.h])
 fi
 
